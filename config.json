@@ -5,7 +5,8 @@
   "active": false,
   "test_pattern": "TODO",
   "problems": [
-      "hello-world"
+      "hello-world",
+      "bob"
   ],
   "deprecated": [
 
