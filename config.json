@@ -5,8 +5,10 @@
   "active": false,
   "test_pattern": "TODO",
   "problems": [
+      "hello-world",
+      "bob",
       "difference-of-squares"
-  ],
+   ],
   "deprecated": [
 
   ],
