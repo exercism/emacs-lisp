@@ -1,0 +1,19 @@
+{
+  "slug": "xelisp",
+  "language": "Emacs Lisp",
+  "repository": "https://github.com/exercism/xelisp",
+  "active": false,
+  "test_pattern": "TODO",
+  "problems": [
+
+  ],
+  "deprecated": [
+
+  ],
+  "ignored": [
+    "bin"
+  ],
+  "foregone": [
+
+  ]
+}
