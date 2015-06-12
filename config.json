@@ -7,7 +7,8 @@
   "problems": [
       "hello-world",
       "bob",
-      "difference-of-squares"
+      "difference-of-squares",
+      "gigasecond"
    ],
   "deprecated": [
 
