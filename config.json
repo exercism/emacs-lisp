@@ -2,7 +2,7 @@
   "slug": "xelisp",
   "language": "Emacs Lisp",
   "repository": "https://github.com/exercism/xelisp",
-  "active": false,
+  "active": true,
   "test_pattern": "TODO",
   "problems": [
       "hello-world",
