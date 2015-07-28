@@ -2,7 +2,7 @@
   "slug": "xelisp",
   "language": "Emacs Lisp",
   "repository": "https://github.com/exercism/xelisp",
-  "active": false,
+  "active": true,
   "test_pattern": "TODO",
   "problems": [
       "hello-world",
@@ -14,7 +14,8 @@
       "binary",
       "leap",
       "allergies",
-      "robot-name"
+      "robot-name",
+      "rna-transcription"
    ],
   "deprecated": [
 
