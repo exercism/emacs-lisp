@@ -1,5 +1,5 @@
 {
-  "slug": "xelisp",
+  "slug": "elisp",
   "language": "Emacs Lisp",
   "repository": "https://github.com/exercism/xelisp",
   "active": true,
