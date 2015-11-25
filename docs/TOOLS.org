@@ -1,7 +1,0 @@
-#+TITLE: Tools
-#+AUTHOR: Jason Lewis
-#+EMAIL: jason@decomplecting.org
-
-Emacs. Pretty much just Emacs.
-
-(Srsly, more to follow)
