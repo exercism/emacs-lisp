@@ -1,1 +1,51 @@
-#+TITLE: Installation
+#+TITLE: Installing Emacs
+
+Since Emacs Lisp (elisp) is the extension language for Emacs, you'll need to
+install [[http://www.gnu.org/software/emacs/][GNU Emacs]] first.
+
+It is recommended to get the latest Emacs, currently 24.5-1, but 24.4 or higher
+should be considered the target implementation for the exercises.
+
+*** On OS X
+The easiest way is to visit [[http://emacsformacosx.com/][Emacs For Mac OS X]] and download the dmg, which will
+install GNU Emacs as a packaged OS X app.
+
+Alternatives exist, such as Aquamacs (not recommended) or installing via
+Homebrew, if you prefer.
+
+*** On Linux
+On some distros, Emacs is already installed, since it's part of GNU.
+
+**** Ubuntu
+Prior to Ubuntu 15.04 "vivid vervet", the highest available Emacs version was
+24.3, so you'll need to use a [[https://launchpad.net/ubuntu/+ppas?name_filter=emacs][PPA]] or [[http://linuxg.net/how-to-install-emacs-24-4-on-ubuntu-14-10-ubuntu-14-04-and-derivative-systems/][build from source]] if you're on 14.10 or
+earlier.
+
+Otherwise, if you're running vivid, it should be as simple as
+
+#+BEGIN_SRC sh
+sudo apt-get install emacs
+#+END_SRC
+
+**** Arch
+Arch currently ships with the latest Emacs 24.5-1, so run:
+
+#+BEGIN_SRC sh
+sudo pacman -S emacs
+#+END_SRC
+
+and you should be set.
+
+**** Other distros
+Check with your distro to see what version is current, and use your package
+manager or build from source as appropriate.
+
+*** Windows
+So you've decided to install Emacs on Windows.
+
+[[http:/www.zeldauniverse.net/wp-content/uploads/2012/01/83-Image-2.jpg]]
+
+I've never done it, but the prevailing wisdom is that you just need to visit the
+[[http://ftp.wayne.edu/gnu/emacs/windows/][FTP archive]], grab the correct binary (=emacs-24.x-bin-xxx.zip=), unzip it and
+launch. YMMV, please let us know in the issues or [[https://gitter.im/exercism/support][on Gitter]] if this section
+needs some love.
