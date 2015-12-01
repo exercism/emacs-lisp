@@ -3,10 +3,11 @@
 Elisp tests are run using [[http://www.emacswiki.org/emacs/ErtTestLibrary][ERT]], an Emacs Lisp library for regression/unit
 testing. Tests can be run several ways:
 
-1. Interactively, with =M-x ert RET test-name=
-2. From the terminal, in batch mode, with ~emacs -batch -l ert -l my-test.el -f
+1. Interactively and individually, with =M-x ert RET test-name RET=
+2. Interactively and all at once, with =M-x ert RET t RET=
+3. From the terminal, in batch mode, with ~emacs -batch -l ert -l my-test.el -f
    ert-run-tests-batch-and-exit~
-3. Other options can be found in the docs, =C-h i m ert RET=
+4. Other options can be found in the docs, =C-h i m ert RET=
 
 Interactive testing is great while you're working on an exercise, but batch mode
 testing is preferable for when you want to check that an exercise is ready for
@@ -36,5 +37,5 @@ your exercise code in a buffer pane side-by side with its test, like so:
 
 #+HTML: <img src="http://x.exercism.io/v3/tracks/elisp/docs/img/dual-pane.png">
 
-Split the frame vertically with =C-x 3=, and open the file with =C-x C-f
-/path/to/file=.
+Split the frame vertically with =C-x 3=, switch to the new window with =C-x o=,
+and open the file with =C-x C-f /path/to/file=.
