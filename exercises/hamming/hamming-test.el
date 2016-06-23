@@ -1,10 +1,10 @@
-;;; point-mutations-test.el --- Tests for point-mutations (exercism)
+;;; hamming-test.el --- Tests for hamming (exercism)
 
 ;;; Commentary:
 
 ;;; Code:
 
-(load-file "point-mutations.el")
+(load-file "hamming.el")
 
 (ert-deftest no-difference-between-empty-strands ()
   (should (= 0 (hamming-distance "" ""))))
@@ -28,5 +28,5 @@
   (should-error (hamming-distance "AGG" "CATCATCATCATCATGAT")))
 
 
-(provide 'point-mutations-test)
-;;; point-mutations-test.el ends here
+(provide 'hamming-test)
+;;; hamming-test.el ends here
