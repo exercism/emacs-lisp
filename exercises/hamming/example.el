@@ -1,4 +1,4 @@
-;;; point-mutations.el --- Point Mutations (exercism)
+;;; hamming.el --- Hamming (exercism)
 
 ;;; Commentary:
 
@@ -22,5 +22,5 @@
     (error "Strands are of different lengths")))
 
 
-(provide 'point-mutations)
-;;; point-mutations.el ends here
+(provide 'hamming)
+;;; hamming.el ends here
