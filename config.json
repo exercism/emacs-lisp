@@ -16,7 +16,8 @@
       "robot-name",
       "rna-transcription",
       "atbash-cipher",
-      "raindrops"
+      "raindrops",
+      "word-count"
    ],
   "deprecated": [
 
