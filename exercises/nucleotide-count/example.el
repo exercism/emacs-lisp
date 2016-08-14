@@ -11,7 +11,7 @@
       (let ((n (assoc i counts)))
         (if n
             (setcdr n (1+ (cdr n)))
-          (error "Unknown value '%c' %d" i i))))
+          (error "Invalid nucleotide '%c'" i))))
     counts))
 
 
