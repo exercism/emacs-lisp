@@ -19,7 +19,8 @@
       "raindrops",
       "roman-numerals",
       "perfect-numbers",
-      "etl"
+      "etl",
+      "word-count"
    ],
   "deprecated": [
 
