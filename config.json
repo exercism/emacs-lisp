@@ -17,7 +17,8 @@
       "rna-transcription",
       "atbash-cipher",
       "raindrops",
-      "roman-numerals"
+      "roman-numerals",
+      "perfect-numbers"
    ],
   "deprecated": [
 
