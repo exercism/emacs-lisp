@@ -20,7 +20,8 @@
       "roman-numerals",
       "perfect-numbers",
       "etl",
-      "word-count"
+      "word-count",
+      "nucleotide-count"
    ],
   "deprecated": [
 
