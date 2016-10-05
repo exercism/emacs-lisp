@@ -18,7 +18,8 @@
       "atbash-cipher",
       "raindrops",
       "roman-numerals",
-      "perfect-numbers"
+      "perfect-numbers",
+      "etl"
    ],
   "deprecated": [
 
