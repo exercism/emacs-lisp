@@ -3,26 +3,6 @@
   "language": "Emacs Lisp",
   "repository": "https://github.com/exercism/xelisp",
   "active": true,
-  "problems": [
-      "hello-world",
-      "bob",
-      "difference-of-squares",
-      "gigasecond",
-      "hamming",
-      "anagram",
-      "binary",
-      "leap",
-      "allergies",
-      "robot-name",
-      "rna-transcription",
-      "atbash-cipher",
-      "raindrops",
-      "roman-numerals",
-      "perfect-numbers",
-      "etl",
-      "word-count",
-      "nucleotide-count"
-   ],
   "deprecated": [
 
   ],
@@ -32,5 +12,97 @@
   ],
   "foregone": [
 
+  ],
+  "exercises": [
+    {
+      "difficulty": 1,
+      "slug": "hello-world",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "bob",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "difference-of-squares",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "gigasecond",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "hamming",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "anagram",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "binary",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "leap",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "allergies",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "robot-name",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "rna-transcription",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "atbash-cipher",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "raindrops",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "roman-numerals",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "perfect-numbers",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "etl",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "word-count",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "nucleotide-count",
+      "topics": []
+    }
   ]
 }
