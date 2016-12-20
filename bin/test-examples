@@ -1,0 +1,27 @@
+#!/bin/bash
+
+if [[ ! -d "exercises" ]]
+then
+    {echo "exercises directory not found!"; exit 1}
+fi
+
+cd ./exercises
+
+for ex in *; do
+    err_cnt=0;
+    impl="${ex}.el";
+    cd $ex;
+    mv $impl "${impl}.tmp";
+    cp example.el $impl;
+    emacs -batch -l ert -l "${ex}-test.el" -f ert-run-tests-batch-and-exit;
+    let "err_cnt += $?";
+    mv "${impl}.tmp" $impl;
+    cd -;
+done
+
+if [ $err_cnt > 0]
+then
+    exit 1;
+else
+    exit 0;
+fi
