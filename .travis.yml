@@ -1,6 +1,8 @@
 ---
 language: bash
+before_install:
+  - sudo apt-get install -y emacs24-nox
 script:
-- bin/fetch-configlet
-- bin/configlet .
-sudo: false
+  - bin/fetch-configlet
+  - bin/configlet .
+  - bin/test-examples
