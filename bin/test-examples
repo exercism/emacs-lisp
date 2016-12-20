@@ -19,7 +19,7 @@ for ex in *; do
     cd -;
 done
 
-if [ $err_cnt > 0]
+if [ $err_cnt -ne 0 ]
 then
     exit 1;
 else
