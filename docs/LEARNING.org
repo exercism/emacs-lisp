@@ -4,9 +4,6 @@ Well, you can start the tutoral by pressing =C-h t=, and that's not a bad place
 to start. If you're completely new to Emacs, the [[http://batsov.com/prelude/][Emacs Prelude]] package offers a
 nice set of sensible defaults and packages.
 
-A guide I wrote a while ago for getting started with the editor (including
-Prelude) can be found [[http://decomplecting.org/blog/2014/10/23/welcome-to-the-dark-side-switching-to-emacs/][here]].
-
 The best documentation on Emacs Lisp is... shipped with Emacs itself!
 
 From the [[http://www.emacswiki.org/emacs/EmacsLisp][EmacsWiki Entry]]:
