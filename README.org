@@ -26,12 +26,6 @@ request. You will need a GitHub account and you will need to fork
 with the process.
 
 
-** License
-
-The MIT License (MIT)
-
-Copyright (c) 2015 Katrina Owen, _@kytrinyx.com
-
 *** GNU Emacs icon
 The GNU Emacs icon was designed by Andrew Zhilin and is licensed under the Creative Commons Attribution-ShareAlike 3.0 License.
 We have modified the GNU Emacs icon to create the Emacs Lisp icon for Exercism.
