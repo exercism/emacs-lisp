@@ -103,6 +103,11 @@
       "difficulty": 1,
       "slug": "nucleotide-count",
       "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "phone-number",
+      "topics": []
     }
   ]
 }
