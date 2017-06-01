@@ -27,7 +27,7 @@
 
 
 (defun pprint (num)
-  (concat "(" (area-code num) ") " (prefix num) "-" (line-number num)))
+  (format "(%s) %s-%s" (area-code num) (prefix num) (line-number num)))
 
 
 (provide 'phone-number)
