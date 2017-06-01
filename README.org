@@ -1,6 +1,9 @@
 #+TITLE: xelisp
 #+AUTHOR: Jason Lewis
 
+#+ATTR_HTML: :alt Build Status
+[[https://travis-ci.org/exercism/xelisp][https://api.travis-ci.org/exercism/xelisp.svg?branch=master]]
+
 Exercism problems in Emacs Lisp.
 
 ** Contributing to The Emacs Lisp Track
