@@ -7,8 +7,8 @@ fi
 
 cd ./exercises
 
+err_cnt=0
 for ex in *; do
-    err_cnt=0
     impl="${ex}.el"
     cd $ex
     mv $impl "${impl}.tmp"
