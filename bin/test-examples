@@ -5,23 +5,20 @@ if [[ ! -d "exercises" ]]; then
     exit 1
 fi
 
-cd ./exercises
+tar czf exercises.tgz exercises
+pushd $_
 
+err_cnt=0
 for ex in *; do
-    err_cnt=0
-    impl="${ex}.el"
-    cd $ex
-    mv $impl "${impl}.tmp"
-    cp example.el $impl
+    pushd $ex
+    mv example.el "${ex}.el"
     emacs -batch -l ert -l "${ex}-test.el" -f ert-run-tests-batch-and-exit
     let "err_cnt += $?"
-    mv "${impl}.tmp" $impl
-    cd -
+    popd
 done
 
-if [ $err_cnt -ne 0 ]
-then
-    exit 1
-else
-    exit 0
-fi
+popd
+tar xzf exercises.tgz
+rm $_
+
+[ $err_cnt -eq 0 ] || exit 1
