@@ -6,22 +6,7 @@
 
 ;;; Code:
 
-(require 'cl)
-
 (load-file "robot-name.el")
-
-(defun is-upper-alpha-p (c)
-  "Test if char C is an uppercase alpha char."
-  (let ((c (string-to-char c))
-        (A (string-to-char "A"))
-        (Z (string-to-char "Z")))
-    (<= A c Z)))
-
-(defun is-digit-p (d)
-  "Test if D is an integer from 0-9."
-  (when (string-match "[[:digit:]]" d)
-      (let ((d (string-to-char d)))
-     (<= ?0 d ?9))))
 
 (defvar *robbie* (build-robot))
 (defvar *clutz*  (build-robot))
@@ -29,10 +14,7 @@
 (ert-deftest name-matches-expected-pattern ()
   (let ((name (robot-name *robbie*)))
     (should (= (length name) 5))
-    (should (every 'is-upper-alpha-p
-                   (split-string-and-unquote (substring name 0 2) "")))
-    (should (every 'is-digit-p
-                   (split-string-and-unquote (substring name 2 5) "")))))
+    (should (string-match-p "^[A-Z]\\{2\\}[0-9]\\{3\\}$" name))))
 
 (ert-deftest name-is-persistent ()
   "Test that robot name is persistent."
