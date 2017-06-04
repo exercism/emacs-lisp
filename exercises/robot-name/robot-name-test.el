@@ -13,7 +13,6 @@
 
 (ert-deftest name-matches-expected-pattern ()
   (let ((name (robot-name *robbie*)))
-    (should (= (length name) 5))
     (should (string-match-p "^[A-Z]\\{2\\}[0-9]\\{3\\}$" name))))
 
 (ert-deftest name-is-persistent ()
