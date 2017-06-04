@@ -6,14 +6,22 @@
 
 ;;; Code:
 
+(require 'rx)
+
 (load-file "robot-name.el")
 
 (defvar *robbie* (build-robot))
 (defvar *clutz*  (build-robot))
 
+(defvar robot-name-re
+  (rx string-start
+      (= 2 upper-case)
+      (= 3 digit)
+      string-end))
+
 (ert-deftest name-matches-expected-pattern ()
   (let ((name (robot-name *robbie*)))
-    (should (string-match-p "^[A-Z]\\{2\\}[0-9]\\{3\\}$" name))))
+    (should (string-match-p robot-name-re name))))
 
 (ert-deftest name-is-persistent ()
   "Test that robot name is persistent."
