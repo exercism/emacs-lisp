@@ -1,8 +1,8 @@
-#+TITLE: xelisp
+#+TITLE: elisp
 #+AUTHOR: Jason Lewis
 
 #+ATTR_HTML: :alt Build Status
-[[https://travis-ci.org/exercism/xelisp][https://api.travis-ci.org/exercism/xelisp.svg?branch=master]]
+[[https://travis-ci.org/exercism/elisp][https://api.travis-ci.org/exercism/elisp.svg?branch=master]]
 
 Exercism problems in Emacs Lisp.
 
@@ -17,7 +17,7 @@ information about contributing to existing problems and adding new problems.
 
 *** Issues
 
-Feel free to file any issues on the [[https://github.com/exercism/xelisp/issues][xelisp issue tracker]] for problems of
+Feel free to file any issues on the [[https://github.com/exercism/elisp/issues][elisp issue tracker]] for problems of
 any size. Feel free to report typographical errors or poor wording for
 example. You can greatly help improve the quality of the exercises by
 filing reports of invalid solutions that pass tests or of valid solutions
@@ -25,7 +25,7 @@ that fail tests.
 
 New exercises or changes to existing ones can be submitted via a pull
 request. You will need a GitHub account and you will need to fork
-[[https://github.com/exercism/xelisp][exercism/xelisp]] to your account. See GitHub Help if you are unfamiliar
+[[https://github.com/exercism/elisp][exercism/elisp]] to your account. See GitHub Help if you are unfamiliar
 with the process.
 
 
