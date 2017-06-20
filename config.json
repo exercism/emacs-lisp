@@ -1,7 +1,7 @@
 {
   "slug": "elisp",
   "language": "Emacs Lisp",
-  "repository": "https://github.com/exercism/xelisp",
+  "repository": "https://github.com/exercism/elisp",
   "active": true,
   "deprecated": [
 
