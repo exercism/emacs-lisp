@@ -6,5 +6,5 @@ before_install:
   - sudo apt-get install -y emacs24-nox
 script:
   - bin/fetch-configlet
-  - bin/configlet .
+  - bin/configlet lint .
   - bin/test-examples
