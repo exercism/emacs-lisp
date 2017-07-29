@@ -1,148 +1,205 @@
 {
   "language": "Emacs Lisp",
   "active": true,
-  "deprecated": [
-
-  ],
   "foregone": [
 
   ],
   "exercises": [
     {
-      "difficulty": 1,
+      "uuid": "c4fdc935-885b-44bd-84e4-fae4a09e8c39",
       "slug": "hello-world",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
       "topics": [
 
       ]
     },
     {
-      "difficulty": 1,
+      "uuid": "c02c7392-9478-4cfd-81eb-0cb8ebe78fe5",
       "slug": "bob",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
       "topics": [
 
       ]
     },
     {
-      "difficulty": 1,
+      "uuid": "7b421b14-c33c-41a6-9e7e-4f9b6fbe6fcc",
       "slug": "difference-of-squares",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
       "topics": [
 
       ]
     },
     {
-      "difficulty": 1,
+      "uuid": "e9e27a75-143a-439f-98d0-a604724a7af2",
       "slug": "gigasecond",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
       "topics": [
 
       ]
     },
     {
-      "difficulty": 1,
+      "uuid": "2bfb508e-7ceb-4ae1-8316-1e2daf771807",
       "slug": "hamming",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
       "topics": [
 
       ]
     },
     {
-      "difficulty": 1,
+      "uuid": "d8906a7e-9d7e-4e8e-aff0-da877291d8dc",
       "slug": "anagram",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
       "topics": [
 
       ]
     },
     {
-      "difficulty": 1,
+      "uuid": "7307e13e-7a18-4654-8df4-96951d4dccc6",
       "slug": "binary",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
       "topics": [
 
       ]
     },
     {
-      "difficulty": 1,
+      "uuid": "84eaff19-cb25-46af-a34e-1379e692e57b",
       "slug": "leap",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
       "topics": [
 
       ]
     },
     {
-      "difficulty": 1,
+      "uuid": "e0d7220f-5d3a-4f10-842e-3d49df714cac",
       "slug": "allergies",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
       "topics": [
 
       ]
     },
     {
-      "difficulty": 1,
+      "uuid": "55bc8c2a-1db3-4d26-b7c6-a778b61bf46b",
       "slug": "robot-name",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
       "topics": [
 
       ]
     },
     {
-      "difficulty": 1,
+      "uuid": "7b6767b9-2efc-414d-83f7-def9c371d63d",
       "slug": "rna-transcription",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
       "topics": [
 
       ]
     },
     {
-      "difficulty": 1,
+      "uuid": "89125ff6-f94b-46a4-9a5d-84539674238d",
       "slug": "atbash-cipher",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
       "topics": [
 
       ]
     },
     {
-      "difficulty": 1,
+      "uuid": "9a97c992-3da0-4f6d-b2f6-1f2683417e3b",
       "slug": "raindrops",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
       "topics": [
 
       ]
     },
     {
-      "difficulty": 1,
+      "uuid": "c4875bc5-e295-4782-99c7-cb3370ac8e08",
       "slug": "roman-numerals",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
       "topics": [
 
       ]
     },
     {
-      "difficulty": 1,
+      "uuid": "30971b02-79fc-40a1-aa70-ada3fec85548",
       "slug": "perfect-numbers",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
       "topics": [
 
       ]
     },
     {
-      "difficulty": 1,
+      "uuid": "d8f4c530-02f0-44d3-b5b8-858fec4b6a9d",
       "slug": "etl",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
       "topics": [
 
       ]
     },
     {
-      "difficulty": 1,
+      "uuid": "1a3c64b1-8447-451f-985d-f7bd6d42bdb6",
       "slug": "word-count",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
       "topics": [
 
       ]
     },
     {
-      "difficulty": 1,
+      "uuid": "aaff28dd-718b-48d4-b507-a0b9b01bb6ad",
       "slug": "nucleotide-count",
-      "topics": [
-
-      ]
-    },
-    {
+      "core": false,
+      "unlocked_by": null,
       "difficulty": 1,
-      "slug": "phone-number",
       "topics": [
 
       ]
     },
     {
+      "uuid": "c211045e-da97-479d-9df4-5d812573e2d0",
+      "slug": "phone-number",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+
+      ]
+    },
+    {
+      "uuid": "d219aab6-11ec-4e0c-b041-f06c8d523946",
       "slug": "grains",
+      "core": false,
+      "unlocked_by": null,
       "difficulty": 1,
       "topics": [
 
