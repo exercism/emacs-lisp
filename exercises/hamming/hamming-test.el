@@ -1,32 +1,55 @@
 ;;; hamming-test.el --- Tests for hamming (exercism)
 
 ;;; Commentary:
+;; Common test data version: 2.0.1 f79dfd7
 
 ;;; Code:
 
 (load-file "hamming.el")
 
-(ert-deftest no-difference-between-empty-strands ()
+(declare-function hamming-distance "hamming.el")
+
+(ert-deftest empty-strands ()
   (should (= 0 (hamming-distance "" ""))))
 
-(ert-deftest no-difference-between-identical-strands ()
-  (should (= 0 (hamming-distance "GATTACA" "GATTACA"))))
+(ert-deftest identical-strands ()
+  (should (= 0 (hamming-distance "A" "A"))))
 
-(ert-deftest complete-hamming-distance-in-small-strand ()
-  (should (= 3 (hamming-distance "ACT" "GGA"))))
+(ert-deftest long-identical-strands ()
+  (should (= 0 (hamming-distance "GGACTGA" "GGACTGA"))))
 
-(ert-deftest small-hamming-distance-in-middle-somwhere ()
+(ert-deftest complete-distance-in-single-nucleotide-strands ()
+  (should (= 1 (hamming-distance "A" "G"))))
+
+(ert-deftest complete-distance-in-small-strands ()
+  (should (= 2 (hamming-distance "AG" "CT"))))
+
+(ert-deftest small-distance-in-small-strands ()
+  (should (= 1 (hamming-distance "AT" "CT"))))
+
+(ert-deftest small-distance ()
   (should (= 1 (hamming-distance "GGACG" "GGTCG"))))
 
-(ert-deftest larger-distance ()
+(ert-deftest small-distance-in-long-strands ()
   (should (= 2 (hamming-distance "ACCAGGG" "ACTATGG"))))
 
-(ert-deftest invalid-to-get-distance-for-different-length-strings ()
-  (should-error (hamming-distance "AGACAACAGCCAGCCGCCGGATT" "AGGCAA"))
-  (should-error (hamming-distance
-                 "AGACAACAGCCAGCCGCCGGATT" "AGACATCTTTCAGCCGCCGGATTAGGCAA"))
-  (should-error (hamming-distance "AGG" "CATCATCATCATCATGAT")))
+(ert-deftest non-unique-character-in-first-strand ()
+  (should (= 1 (hamming-distance "AAA" "AAG"))))
 
+(ert-deftest same-nucleotides-in-different-positions ()
+  (should (= 2 (hamming-distance "TAG" "GAT"))))
+
+(ert-deftest large-distance ()
+  (should (= 4 (hamming-distance "GATACA" "GCATAA"))))
+
+(ert-deftest large-distance-in-off-by-one-strand ()
+  (should (= 9 (hamming-distance "GGACGGATTCTG" "AGGACGGATTCT"))))
+
+(ert-deftest disallow-first-strand-longer ()
+  (should-error (hamming-distance "AATG" "AAA")))
+
+(ert-deftest disallow-first-strand-longer ()
+  (should-error (hamming-distance "ATA" "AGTG")))
 
 (provide 'hamming-test)
 ;;; hamming-test.el ends here
