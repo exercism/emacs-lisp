@@ -44,6 +44,14 @@
     {
       "core": false,
       "difficulty": 1,
+      "slug": "pangram",
+      "topics": null,
+      "unlocked_by": null,
+      "uuid": "28aea3bc-0ca0-4af9-868a-02e71c3d996"
+    },
+    {
+      "core": false,
+      "difficulty": 1,
       "slug": "anagram",
       "topics": null,
       "unlocked_by": null,
