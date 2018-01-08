@@ -3,12 +3,10 @@
 ;;; Commentary:
 
 ;;; Code:
-(eval-when-compile (require 'subr-x))
-
 (defun response-for (phrase)
   "Provides Bob's response to PHRASE."
   (cond ((shoutp phrase) "Whoa, chill out!")
-        ((string-blank-p phrase) "Fine. Be that way!")
+        ((string-match-p "^[[:space:]]*$" phrase) "Fine. Be that way!")
         ((questionp phrase) "Sure.")
         (t "Whatever.")))
 
