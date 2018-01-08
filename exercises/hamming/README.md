@@ -34,9 +34,11 @@ The Hamming distance between these two DNA strands is 7.
 The Hamming distance is only defined for sequences of equal length. This means
 that based on the definition, each language could deal with getting sequences
 of equal length differently.
+
 ## Source
 
 The Calculating Point Mutations problem at Rosalind [http://rosalind.info/problems/hamm/](http://rosalind.info/problems/hamm/)
 
 ## Submitting Incomplete Solutions
+
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
