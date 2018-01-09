@@ -160,6 +160,14 @@
       "topics": null,
       "unlocked_by": null,
       "uuid": "d219aab6-11ec-4e0c-b041-f06c8d523946"
+    },
+    {
+      "core": false,
+      "difficulty": 1,
+      "slug": "acronym",
+      "topics": null,
+      "unlocked_by": null,
+      "uuid": "a252e137-8a63-4f26-b119-7264f12a257a"
     }
   ],
   "foregone": [],
