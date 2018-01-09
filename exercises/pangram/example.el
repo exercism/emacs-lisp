@@ -3,11 +3,12 @@
 ;;; Commentary:
 
 ;;; Code:
+(require 'cl-lib)
 
 (defun is-pangram (phrase)
   "Determine if a given phrase is a pangram."
   (let ((alphabet "abcdefghijklmnopqrstuvwxyz"))
-        (seq-every-p
+        (cl-every
          (lambda (c) (string-match-p (char-to-string c) phrase))
          alphabet)))
 
