@@ -48,7 +48,7 @@
 (ert-deftest disallow-first-strand-longer ()
   (should-error (hamming-distance "AATG" "AAA")))
 
-(ert-deftest disallow-first-strand-longer ()
+(ert-deftest disallow-second-strand-longer ()
   (should-error (hamming-distance "ATA" "AGTG")))
 
 (provide 'hamming-test)
