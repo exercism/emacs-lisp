@@ -12,6 +12,14 @@
     {
       "core": false,
       "difficulty": 1,
+      "slug": "two-fer",
+      "topics": null,
+      "unlocked_by": null,
+      "uuid": "36e5dc3a-2122-484a-ae82-beb7b813e2cd"
+    },
+    {
+      "core": false,
+      "difficulty": 1,
       "slug": "bob",
       "topics": null,
       "unlocked_by": null,
