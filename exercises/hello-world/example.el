@@ -4,10 +4,8 @@
 
 ;;; Code:
 
-(defun hello (&optional name)
-  "Say hello, optionally to NAME."
-  (let ((greetee (or name "World")))
-    (concat "Hello, " greetee "!")))
+(defun hello ()
+  "Hello, World!")
 
 (provide 'hello-world)
 ;;; hello-world.el ends here
