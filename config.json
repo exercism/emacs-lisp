@@ -192,6 +192,14 @@
       "topics": null,
       "unlocked_by": null,
       "uuid": "059141f0-f28d-4d10-a03a-7852dbfc2d2e"
+    },
+    {
+      "core": false,
+      "difficulty": 1,
+      "slug": "run-length-encoding",
+      "topics": null,
+      "unlocked_by": null,
+      "uuid": "9e8f98f0-6fff-4389-a9a2-9ae43edefa21"
     }
   ],
   "foregone": [],
