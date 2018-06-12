@@ -1,9 +1,9 @@
-;;; hello-world.el --- Hello World Exercise (exercism)
+;;; two-fer.el --- Two-fer Exercise (exercism)
 
 ;;; Commentary:
 
 ;;; Code:
 
 
-(provide 'hello-world)
-;;; hello-world.el ends here
+(provide 'two-fer)
+;;; two-fer.el ends here
