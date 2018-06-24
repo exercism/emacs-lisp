@@ -6,7 +6,7 @@
     {
       "slug": "hello-world",
       "uuid": "c4fdc935-885b-44bd-84e4-fae4a09e8c39",
-      "core": false,
+      "core": true,
       "auto_approve": true,
       "unlocked_by": null,
       "difficulty": 1,
@@ -15,7 +15,7 @@
     {
       "slug": "two-fer",
       "uuid": "36e5dc3a-2122-484a-ae82-beb7b813e2cd",
-      "core": false,
+      "core": true,
       "unlocked_by": null,
       "difficulty": 1,
       "topics": null
@@ -23,7 +23,7 @@
     {
       "slug": "bob",
       "uuid": "c02c7392-9478-4cfd-81eb-0cb8ebe78fe5",
-      "core": false,
+      "core": true,
       "unlocked_by": null,
       "difficulty": 1,
       "topics": null
@@ -31,7 +31,7 @@
     {
       "slug": "difference-of-squares",
       "uuid": "7b421b14-c33c-41a6-9e7e-4f9b6fbe6fcc",
-      "core": false,
+      "core": true,
       "unlocked_by": null,
       "difficulty": 1,
       "topics": null
@@ -47,7 +47,7 @@
     {
       "slug": "hamming",
       "uuid": "2bfb508e-7ceb-4ae1-8316-1e2daf771807",
-      "core": false,
+      "core": true,
       "unlocked_by": null,
       "difficulty": 1,
       "topics": null
@@ -119,7 +119,7 @@
     {
       "slug": "raindrops",
       "uuid": "9a97c992-3da0-4f6d-b2f6-1f2683417e3b",
-      "core": false,
+      "core": true,
       "unlocked_by": null,
       "difficulty": 1,
       "topics": null
