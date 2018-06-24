@@ -1,7 +1,7 @@
 {
   "language": "Emacs Lisp",
   "active": true,
-  "blurb": "",
+  "blurb": "Emacs Lisp is a variant of lisp used as a scripting language by the Emacs text edior. Not only is it used to customize Emacs, but much of the core editing functionality itself is written in Emacs Lisp",
   "exercises": [
     {
       "slug": "hello-world",
