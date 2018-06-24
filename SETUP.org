@@ -1,5 +1,0 @@
-#+TITLE: xelisp setup
-#+AUTHOR: Jason Lewis
-
-Check out [[http://exercism.io/languages/elisp][Exercism Help]] for instructions getting started with Emacs and
-Emacs Lisp.
