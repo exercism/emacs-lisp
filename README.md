@@ -1,23 +1,21 @@
-#+TITLE: elisp
-#+AUTHOR: Jason Lewis
+# elisp
 
-#+ATTR_HTML: :alt Build Status
-[[https://travis-ci.org/exercism/elisp][https://api.travis-ci.org/exercism/elisp.svg?branch=master]]
+[![Build Status](https://travis-ci.org/exercism/elisp.svg?branch=master)](https://travis-ci.org/exercism/elisp)
 
 Exercism problems in Emacs Lisp.
 
-** Contributing to The Emacs Lisp Track
+## Contributing to The Emacs Lisp Track
 
-*** Contributing Guide
+### Contributing Guide
 
-Please see the [[https://github.com/exercism/x-api/blob/master/CONTRIBUTING.md#the-exercise-data)][contributing guide]].
+Please see the [contributing guide](https://github.com/exercism/x-api/blob/master/CONTRIBUTING.md#the-exercise-data)
 This describes how all the language tracks are put together,
 as well as details about the common metadata, and high-level
 information about contributing to existing problems and adding new problems.
 
-*** Issues
+### Issues
 
-Feel free to file any issues on the [[https://github.com/exercism/elisp/issues][elisp issue tracker]] for problems of
+Feel free to file any issues on the [elisp issue tracker](https://github.com/exercism/elisp/issues) for problems of
 any size. Feel free to report typographical errors or poor wording for
 example. You can greatly help improve the quality of the exercises by
 filing reports of invalid solutions that pass tests or of valid solutions
@@ -25,10 +23,10 @@ that fail tests.
 
 New exercises or changes to existing ones can be submitted via a pull
 request. You will need a GitHub account and you will need to fork
-[[https://github.com/exercism/elisp][exercism/elisp]] to your account. See GitHub Help if you are unfamiliar
+[exercism/elips](https://github.com/exercism/elisp) to your account. See GitHub Help if you are unfamiliar
 with the process.
 
 
-*** GNU Emacs icon
+### GNU Emacs icon
 The GNU Emacs icon was designed by Andrew Zhilin and is licensed under the Creative Commons Attribution-ShareAlike 3.0 License.
 We have modified the GNU Emacs icon to create the Emacs Lisp icon for Exercism.
