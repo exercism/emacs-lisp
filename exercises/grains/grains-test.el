@@ -26,13 +26,13 @@
   (should (= 2147483648
              (square 32))))
 
-(ert-deftest square-64 ()
-  (should (= 9223372036854775808
-             (square 64))))
+(ert-deftest total-3 ()
+  (should (= 7
+             (total 3))))
 
-(ert-deftest total-grains ()
-  (should (= 18446744073709551615
-             (total))))
+(ert-deftest total-32 ()
+  (should (= 4294967295
+             (total 32))))
 
 (provide 'grains-test.el)
 ;;; grains-test.el ends here.
