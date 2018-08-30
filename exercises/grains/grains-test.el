@@ -27,8 +27,8 @@
              (square 32))))
 
 (ert-deftest total-3 ()
-  (should (= 4294967295
-             (total 7))))
+  (should (= 7
+             (total 3))))
 
 (ert-deftest total-32 ()
   (should (= 4294967295
