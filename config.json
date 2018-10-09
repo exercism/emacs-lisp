@@ -301,9 +301,16 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 2,
+      "topics": null
+    },
+    {
+      "slug": "trinary",
+      "uuid": "c5239cf6-c5a3-4d81-a4d9-504c292ff11e",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
       "topics": [
-        "strings",
-        "transforming"
+        "math"
       ]
     }
   ]
