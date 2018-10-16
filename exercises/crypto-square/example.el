@@ -22,8 +22,8 @@
 (defun strings-column (strings column)
   (mapconcat (lambda (string)
                (if (< column (length string))
-                      (char-to-string (aref string column))
-                      " "))
+                   (char-to-string (aref string column))
+                 " "))
              strings ""))
 
 (defun transpose-strings (strings columns)
