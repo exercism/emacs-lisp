@@ -1,3 +1,9 @@
+;;; crypto-square.el --- Crypto Square (exercism)
+
+;;; Commentary:
+
+;;; Code:
+
 (defun normalize-text (string)
   (replace-regexp-in-string "[^a-z0-9]" "" (downcase string)))
 
@@ -30,3 +36,6 @@
          (strings (chop-string text columns))
          (transposed (transpose-strings strings columns)))
     (mapconcat 'identity transposed " ")))
+
+(provide 'crypto-square)
+;;; crypto-square.el ends here
