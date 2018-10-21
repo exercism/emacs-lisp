@@ -26,7 +26,7 @@ in batch mode.
 
 ### Working on exercises
 Since Emacs is, itself, an elisp interpreter, your working code is always in its
-native execution environment. You an evaluate any form by pressing `C-x e` at
+native execution environment. You can evaluate any form by pressing `C-x e` at
 the end of the form, or a selection with `M-x eval-region` or the whole buffer
 with `M-x eval-buffer`. This can be extremely useful for quickly debugging your
 code.
