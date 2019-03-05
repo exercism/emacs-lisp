@@ -16,7 +16,7 @@
 	  (let ((digit-list (reverse (mapcar #'(lambda (x) (- x 48))
 					     (string-to-list (replace-regexp-in-string " " "" str))))))
 	    (zerop (mod (apply #'+ (seq-map-indexed
-				    (lambda (elt idx) (if (oddp idx)
+				    (lambda (elt idx) (if (equal 1 (% idx 2))
 							  (if (> (* 2 elt) 9)
 							      (- (* 2 elt) 9)
 							    (* 2 elt))
@@ -26,3 +26,4 @@
 
 (provide 'luhn)
 ;;; luhn.el ends here
+
