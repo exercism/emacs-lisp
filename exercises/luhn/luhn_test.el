@@ -51,3 +51,6 @@
 (ert-deftest input-string-containing-a-punctuation-in-the-middle ()
   (should-error (luhn-p "12_45678!!@45670")))
 
+(provide 'luhn-test)
+;;; luhn-test.el ends here
+
