@@ -1,3 +1,9 @@
+;;; luhn.el --- luhn (exercism)
+
+;;; Commentary:
+
+;;; Code:
+
 (require 'seq)
 (defun luhn-p (dastring)
   "Check if an input string DASTRING is valid using lhun algorithm."
@@ -17,3 +23,5 @@
 							elt))
 				    digit-list))
 			10))))))))
+(provide 'luhn)
+;;; luhn.el ends here
