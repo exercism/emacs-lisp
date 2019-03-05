@@ -1,4 +1,4 @@
-;;; perfect-numbers-test.el --- Tests for perfect-numbers (exercism)
+;;; luhn-test.el --- Tests for luhn (exercism)
 
 ;;; Commentary:
 
