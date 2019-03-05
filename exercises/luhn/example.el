@@ -26,4 +26,3 @@
 
 (provide 'luhn)
 ;;; luhn.el ends here
-
