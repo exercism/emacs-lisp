@@ -23,5 +23,6 @@
 							elt))
 				    digit-list))
 			10))))))))
+
 (provide 'luhn)
 ;;; luhn.el ends here
