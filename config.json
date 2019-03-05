@@ -326,8 +326,8 @@
       ]
     },
     {
-      "slug": "crypto-square",
-      "uuid": "884cd761-e764-4c1e-8240-bb4454b43ea9",
+      "slug": "luhn",
+      "uuid": "bb10d7e4-6006-4dfd-81ae-45062a0ec999",
       "core": false,
       "unlocked_by": null,
       "difficulty": 3,
