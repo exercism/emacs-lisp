@@ -324,6 +324,18 @@
         "transforming",
         "cryptograpy"
       ]
+    },
+    {
+      "slug": "crypto-square",
+      "uuid": "884cd761-e764-4c1e-8240-bb4454b43ea9",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 3,
+      "topics": [
+        "strings",
+        "list operations",
+        "checksums"
+      ]
     }
   ]
 }
