@@ -4,7 +4,8 @@
 
 ;;; Code:
 
-(require 'seq)
+(require 'cl)
+
 (defun luhn-p (dastring)
   "Check if an input string DASTRING is valid using lhun algorithm."
   (let ((str (replace-regexp-in-string " " "" dastring)))
@@ -13,15 +14,16 @@
       (progn
 	(if (<= (length str) 1)
 	    nil
-	  (let ((digit-list (reverse (mapcar #'(lambda (x) (- x 48))
-					     (string-to-list (replace-regexp-in-string " " "" str))))))
-	    (zerop (mod (apply #'+ (seq-map-indexed
-				    (lambda (elt idx) (if (equal 1 (% idx 2))
-							  (if (> (* 2 elt) 9)
-							      (- (* 2 elt) 9)
-							    (* 2 elt))
-							elt))
-				    digit-list))
+	  (let* ((digit-list (reverse (mapcar #'(lambda (x) (- x 48))
+					     (string-to-list (replace-regexp-in-string " " "" str)))))
+		 (digit-list-with-index (pairlis (number-sequence 0 (- (length digit-list) 1)) digit-list)))
+
+	    (zerop (mod (apply #'+ (mapcar #'(lambda (x) (if (equal 1 (mod (car x) 2))
+					    (if (> (* 2 (cdr x)) 9)
+						(- (* 2 (cdr x)) 9)
+					      (* 2 (cdr x)))
+					    (cdr x)))
+					   digit-list-with-index))
 			10))))))))
 
 (provide 'luhn)
