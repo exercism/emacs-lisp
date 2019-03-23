@@ -4,7 +4,7 @@
 
 ;;; Code:
 
-(require 'cl)
+(require 'cl-lib)
 
 (defun luhn-p (dastring)
   "Check if an input string DASTRING is valid using lhun algorithm."
