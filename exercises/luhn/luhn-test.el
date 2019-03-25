@@ -4,7 +4,7 @@
 
 ;;; Code:
 
-(require 'cl)
+(require 'cl-lib)
 (load-file "luhn.el")
 
 (ert-deftest an-empty-string ()
