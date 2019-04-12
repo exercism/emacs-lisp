@@ -13,6 +13,9 @@ anything.
 
 He answers 'Whatever.' to anything else.
 
+Implement a function `response-for` that takes a string as argument
+and returns the appropriate response.
+
 ## Source
 
 Inspired by the 'Deaf Grandma' exercise in Chris Pine's Learn to Program tutorial. [http://pine.fm/LearnToProgram/?Chapter=06](http://pine.fm/LearnToProgram/?Chapter=06)
