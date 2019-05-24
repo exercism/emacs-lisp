@@ -15,7 +15,7 @@
 	  nil
 	(let* ((digit-list (reverse (mapcar (lambda (x) (- x 48))
 				            (string-to-list str))))
-	       (digit-list-with-index (cl-pairlis (number-sequence 0 (- (length digit-list) 1))
+	       (digit-list-with-index (cl-pairlis (number-sequence 0 (1- (length digit-list)))
                                                   digit-list)))
 	  (zerop (mod (apply #'+
                              (mapcar (lambda (x)
