@@ -8,8 +8,8 @@
 
 
 (defun equal-assoc (a b)
-  (equal (sort a #'(lambda (a b) (not (string< (car a) (car b)))))
-         (sort b #'(lambda (a b) (not (string< (car a) (car b)))))))
+  (equal (sort a (lambda (a b) (not (string< (car a) (car b)))))
+         (sort b (lambda (a b) (not (string< (car a) (car b)))))))
 
 
 (ert-deftest no-words-test ()

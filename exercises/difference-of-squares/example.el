@@ -7,7 +7,7 @@
 
 (defun sum-of-squares (n)
   "Square of sum of N."
-  (reduce #'+ (mapcar #'(lambda (i) (expt i 2)) (number-sequence 1 n))))
+  (reduce #'+ (mapcar (lambda (i) (expt i 2)) (number-sequence 1 n))))
 
 (defun square-of-sum (n)
   "Sum of squares of N."
