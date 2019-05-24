@@ -19,7 +19,7 @@
                                                   digit-list)))
 	  (zerop (mod (apply #'+
                              (mapcar (lambda (x)
-                                       (if (equal 1 (mod (car x) 2))
+                                       (if (= 1 (mod (car x) 2))
 				           (if (> (* 2 (cdr x)) 9)
 				               (- (* 2 (cdr x)) 9)
 				             (* 2 (cdr x)))
