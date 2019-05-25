@@ -11,8 +11,7 @@
   (let ((str (replace-regexp-in-string " " "" dastring)))
     (if (string-match-p "[^0-9 ]" str)
         (error "String contains invalid character")
-      (if (<= (length str) 1)
-          nil
+      (unless (<= (length str) 1)
         (let* ((digit-list (reverse (mapcar (lambda (x) (- x 48))
                                             (string-to-list str))))
                (digit-list-with-index (cl-pairlis (number-sequence 0 (1- (length digit-list)))
