@@ -6,9 +6,9 @@
 
 (require 'cl-lib)
 
-(defun luhn-p (dastring)
-  "Check if an input string DASTRING is valid using lhun algorithm."
-  (let ((str (replace-regexp-in-string " " "" dastring)))
+(defun luhn-p (str)
+  "Check if STR is valid using the Luhn algorithm."
+  (let ((str (replace-regexp-in-string " " "" str)))
     (if (string-match-p "[^0-9 ]" str)
         (error "String contains invalid character")
       (unless (<= (length str) 1)
