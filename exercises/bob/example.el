@@ -21,8 +21,7 @@
 
 (defun questionp (phrase)
   "Determines if PHRASE is a question."
-  (and (> (length phrase) 0)
-   (= ?? (aref phrase (1- (length phrase))))))
+  (string-suffix-p "?" phrase))
 
 (defun shout-questionp (phrase)
   "Determines if PHRASE is a shouted question."
