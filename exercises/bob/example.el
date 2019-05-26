@@ -8,10 +8,18 @@
 (defun response-for (phrase)
   "Provides Bob's response to PHRASE."
   (let ((stripped-phrase (string-trim phrase)))
-    (cond ((string-empty-p stripped-phrase) "Fine. Be that way!")
-          ((shout-questionp stripped-phrase) "Calm down, I know what I'm doing!")
-          ((shoutp stripped-phrase) "Whoa, chill out!")
-          ((questionp stripped-phrase) "Sure.")
+    (cond ((string-empty-p stripped-phrase)
+           "Fine. Be that way!")
+
+          ((shout-questionp stripped-phrase)
+           "Calm down, I know what I'm doing!")
+
+          ((shoutp stripped-phrase)
+           "Whoa, chill out!")
+
+          ((questionp stripped-phrase)
+           "Sure.")
+
           (t "Whatever."))))
 
 (defun shoutp (phrase)
