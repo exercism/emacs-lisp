@@ -7,10 +7,11 @@
 
 (defun word-count (sentence)
   (let ((count nil))
-    (dolist (i (split-string (downcase sentence) "[^a-z0-9]" t))
-      (let ((n (assoc i count)))
-        (if n (setcdr n (1+ (cdr n)))
-          (push (cons i 1) count))))
+    (dolist (word (split-string (downcase sentence) "[^a-z0-9]" t))
+      (let ((entry (assoc word count)))
+        (if entry
+            (setcdr entry (1+ (cdr entry)))
+          (push (cons word 1) count))))
     count))
 
 
