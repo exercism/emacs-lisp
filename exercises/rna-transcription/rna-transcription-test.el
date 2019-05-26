@@ -5,7 +5,7 @@
 
 ;;; Code:
 
-(require 'cl)
+(require 'cl-lib)
 
 (load-file "rna-transcription.el")
 

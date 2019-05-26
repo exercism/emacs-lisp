@@ -4,7 +4,7 @@
 
 ;;; Code:
 
-(require 'cl)
+(require 'cl-lib)
 
 (defvar *allergens-scores*
   '(("eggs" 1)

@@ -4,7 +4,7 @@
 
 ;;; Code:
 
-(require 'cl)
+(require 'cl-lib)
 
 
 (defun divisors (n)

@@ -4,7 +4,7 @@
 
 ;;; Code:
 
-(require 'cl)
+(require 'cl-lib)
 
 (defun acronym (input)
   (let ((words (split-string input "\\W+")))

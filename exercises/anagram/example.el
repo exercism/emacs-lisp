@@ -4,7 +4,7 @@
 
 ;;; Code:
 
-(require 'cl)
+(require 'cl-lib)
 
 (defun anagram-equal (a b)
   "Check that words A and B are anagrams of each other, but not identical."

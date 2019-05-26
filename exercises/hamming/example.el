@@ -4,7 +4,7 @@
 
 ;;; Code:
 
-(require 'cl)
+(require 'cl-lib)
 
 (defun hamming-distance (dna1 dna2)
   "Determine number of mutations between DNA strands DNA1 and DNA2."
