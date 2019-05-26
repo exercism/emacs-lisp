@@ -11,7 +11,8 @@
     (cond ((string-empty-p stripped-phrase)
            "Fine. Be that way!")
 
-          ((shout-questionp stripped-phrase)
+          ((and (shoutp    stripped-phrase)
+                (questionp stripped-phrase))
            "Calm down, I know what I'm doing!")
 
           ((shoutp stripped-phrase)
@@ -30,10 +31,6 @@
 (defun questionp (phrase)
   "Determines if PHRASE is a question."
   (string-suffix-p "?" phrase))
-
-(defun shout-questionp (phrase)
-  "Determines if PHRASE is a shouted question."
-  (and (shoutp phrase) (questionp phrase)))
 
 (provide 'bob)
 ;;; bob.el ends here
