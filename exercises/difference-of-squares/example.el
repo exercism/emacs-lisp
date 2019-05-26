@@ -3,7 +3,7 @@
 ;;; Commentary:
 
 ;;; Code:
-(eval-when-compile (require 'cl))
+(eval-when-compile (require 'cl-lib))
 
 (defun sum-of-squares (n)
   "Square of sum of N."
