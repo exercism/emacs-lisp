@@ -10,7 +10,7 @@
   (let ((stripped-phrase (string-trim phrase)))
     (cond ((shout-questionp stripped-phrase) "Calm down, I know what I'm doing!")
           ((shoutp stripped-phrase) "Whoa, chill out!")
-          ((string-match-p "^[[:space:]]*$" stripped-phrase) "Fine. Be that way!")
+          ((string-empty-p stripped-phrase) "Fine. Be that way!")
           ((questionp stripped-phrase) "Sure.")
           (t "Whatever."))))
 
