@@ -3,15 +3,15 @@
 ;;; Commentary:
 
 ;;; Code:
-(eval-when-compile (require 'cl-lib))
+(require 'cl-lib)
 
 (defun sum-of-squares (n)
   "Square of sum of N."
-  (reduce #'+ (mapcar (lambda (i) (expt i 2)) (number-sequence 1 n))))
+  (cl-reduce #'+ (mapcar (lambda (i) (expt i 2)) (number-sequence 1 n))))
 
 (defun square-of-sum (n)
   "Sum of squares of N."
-  (expt (reduce #'+ (number-sequence 1 n)) 2))
+  (expt (cl-reduce #'+ (number-sequence 1 n)) 2))
 
 (defun difference (n)
   "Difference of squares pertaining to N."

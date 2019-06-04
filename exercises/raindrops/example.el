@@ -11,9 +11,9 @@
 (defun convert (n)
   "Convert integer N to its raindrops string."
   (let ((drops "")
-        (factors (remove-if-not (lambda (v)
-                                  (and (>= v 3) (<= v 7)))
-                                (prime-factors n))))
+        (factors (cl-remove-if-not (lambda (v)
+                                     (and (>= v 3) (<= v 7)))
+                                   (prime-factors n))))
     (if (not (null factors))
         (progn
           (when (member 3 factors)
