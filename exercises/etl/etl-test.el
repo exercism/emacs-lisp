@@ -75,7 +75,7 @@
 
 
 (ert-deftest mixed-case-test ()
-  (should (hash-equal (etl mixed-case-input) mixed-case-expected 'string<)))
+  (should (hash-equal (etl mixed-case-input) mixed-case-expected #'string<)))
 
 
 (ert-deftest negative-key-test ()

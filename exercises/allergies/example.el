@@ -34,20 +34,20 @@
 
 (defun allergen-list (score)
   "List all allergens with a given SCORE."
-  (mapcar 'allergen
+  (mapcar #'allergen
           (find-all
-           '(lambda (as) (score-matches as score))
+           (lambda (as) (score-matches as score))
            *allergens-scores*)))
 
 (defun allergic-to-p (score allergen)
   "Allergic-to predicate based on SCORE and ALLERGEN."
-  (score-matches (cl-assoc allergen *allergens-scores* :test 'string=)
+  (score-matches (cl-assoc allergen *allergens-scores* :test #'string=)
                  score))
 
 
 (let ((score 1))
- (find-all
-  '(lambda (as) (score-matches as score)) *allergens-scores*))
+  (find-all
+   (lambda (as) (score-matches as score)) *allergens-scores*))
 
 (provide 'allergies)
 ;;; allergies.el ends here

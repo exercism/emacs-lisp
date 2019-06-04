@@ -29,7 +29,7 @@
           (setq roman (append roman (make-list (/ value d) r)))
           (setq value (% value d)))
         (setq decode (cdr decode))))
-    (apply 'concat roman)))
+    (apply #'concat roman)))
 
 
 (provide 'roman-numerals)
