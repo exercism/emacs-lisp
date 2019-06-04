@@ -35,7 +35,7 @@
          (columns (find-rectangle-size text))
          (strings (chop-string text columns))
          (transposed (transpose-strings strings columns)))
-    (mapconcat 'identity transposed " ")))
+    (mapconcat #'identity transposed " ")))
 
 (provide 'crypto-square)
 ;;; crypto-square.el ends here

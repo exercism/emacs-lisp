@@ -15,7 +15,7 @@
 
 (defun sum-divisors (n)
   ;; Remove n from the list and add'em up.
-  (apply '+ (cdr (sort (divisors n) '>))))
+  (apply #'+ (cdr (sort (divisors n) '>))))
 
 
 (defun perfect-numbers (n)
