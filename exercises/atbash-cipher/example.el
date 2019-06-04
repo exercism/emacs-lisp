@@ -14,12 +14,12 @@
 
 (defun to-string (seq)
   "Convert SEQ of characters to a string."
-  (concatenate 'string seq))
+  (cl-concatenate 'string seq))
 
 (defun group (seq &optional group-size)
   "Group SEQ into chunks of size GROUP-SIZE."
   (let ((length (or group-size 5)))
-    (loop
+    (cl-loop
      for c in seq and i from 1
      collect c
      when (and (not (= i (length seq)))
@@ -29,7 +29,7 @@
 
 (defun to-cipher-seq (plaintext)
   "Convert PLAINTEXT to a ciphered sequence."
-  (cleanup-ciphered-seq (map 'list #'encipher plaintext)))
+  (cleanup-ciphered-seq (cl-map 'list #'encipher plaintext)))
 
 (defun cleanup-ciphered-seq (seq)
   "Clean values of char code 0 from SEQ."

@@ -18,11 +18,11 @@
 
 (defun allergen (allergen-and-score)
   "Return allergen from ALLERGEN-AND-SCORE."
-  (first allergen-and-score))
+  (cl-first allergen-and-score))
 
 (defun score (allergen-and-score)
   "Return score from ALLERGEN-AND-SCORE."
-  (second allergen-and-score))
+  (cl-second allergen-and-score))
 
 (defun score-matches (allergen-and-score score)
   "Determine if ALLERGEN-AND-SCORE entry match SCORE."
@@ -30,7 +30,7 @@
 
 (defun find-all (check seq)
   "Find each match for CHECK in SEQ."
-  (remove-if-not check seq))
+  (cl-remove-if-not check seq))
 
 (defun allergen-list (score)
   "List all allergens with a given SCORE."
