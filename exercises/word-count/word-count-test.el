@@ -8,8 +8,9 @@
 
 
 (defun equal-assoc (a b)
-  (equal (sort a (lambda (a b) (not (string< (car a) (car b)))))
-         (sort b (lambda (a b) (not (string< (car a) (car b)))))))
+  (let ((strcmp (lambda (a b) (not (string< (car a) (car b))))))
+    (equal (sort (copy-sequence a) strcmp)
+           (sort (copy-sequence b) strcmp))))
 
 
 (ert-deftest no-words-test ()
