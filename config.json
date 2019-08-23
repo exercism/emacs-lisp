@@ -84,8 +84,8 @@
       "unlocked_by": null,
       "difficulty": 1,
       "topics": [
-        "strings",
-        "control_flow_loops"
+        "control_flow_loops",
+        "strings"
       ]
     },
     {
@@ -320,9 +320,9 @@
       "unlocked_by": null,
       "difficulty": 2,
       "topics": [
+        "cryptograpy",
         "strings",
-        "transforming",
-        "cryptograpy"
+        "transforming"
       ]
     },
     {
@@ -332,9 +332,9 @@
       "unlocked_by": null,
       "difficulty": 3,
       "topics": [
-        "strings",
-        "list operations",
-        "checksums"
+        "checksums",
+        "list_operations",
+        "strings"
       ]
     }
   ]
