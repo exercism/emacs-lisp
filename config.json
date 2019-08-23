@@ -25,15 +25,42 @@
       ]
     },
     {
-      "slug": "bob",
-      "uuid": "c02c7392-9478-4cfd-81eb-0cb8ebe78fe5",
+      "slug": "leap",
+      "uuid": "84eaff19-cb25-46af-a34e-1379e692e57b",
       "core": true,
       "unlocked_by": null,
       "difficulty": 1,
       "topics": [
         "control_flow_conditionals",
-        "parsing",
+        "equality",
+        "integers",
+        "logic"
+      ]
+    },
+    {
+      "slug": "anagram",
+      "uuid": "d8906a7e-9d7e-4e8e-aff0-da877291d8dc",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 2,
+      "topics": [
+        "equality",
+        "filtering",
         "strings"
+      ]
+    },
+    {
+      "slug": "roman-numerals",
+      "uuid": "c4875bc5-e295-4782-99c7-cb3370ac8e08",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "control_flow_conditionals",
+        "control_flow_loops",
+        "integers",
+        "strings",
+        "text_formatting"
       ]
     },
     {
@@ -51,31 +78,6 @@
       ]
     },
     {
-      "slug": "anagram",
-      "uuid": "d8906a7e-9d7e-4e8e-aff0-da877291d8dc",
-      "core": true,
-      "unlocked_by": null,
-      "difficulty": 2,
-      "topics": [
-        "equality",
-        "filtering",
-        "strings"
-      ]
-    },
-    {
-      "slug": "leap",
-      "uuid": "84eaff19-cb25-46af-a34e-1379e692e57b",
-      "core": true,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-        "control_flow_conditionals",
-        "equality",
-        "integers",
-        "logic"
-      ]
-    },
-    {
       "slug": "rna-transcription",
       "uuid": "7b6767b9-2efc-414d-83f7-def9c371d63d",
       "core": true,
@@ -88,17 +90,15 @@
       ]
     },
     {
-      "slug": "roman-numerals",
-      "uuid": "c4875bc5-e295-4782-99c7-cb3370ac8e08",
+      "slug": "bob",
+      "uuid": "c02c7392-9478-4cfd-81eb-0cb8ebe78fe5",
       "core": true,
       "unlocked_by": null,
       "difficulty": 1,
       "topics": [
         "control_flow_conditionals",
-        "control_flow_loops",
-        "integers",
-        "strings",
-        "text_formatting"
+        "parsing",
+        "strings"
       ]
     },
     {
