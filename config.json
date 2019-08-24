@@ -25,6 +25,71 @@
       ]
     },
     {
+      "slug": "leap",
+      "uuid": "84eaff19-cb25-46af-a34e-1379e692e57b",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "control_flow_conditionals",
+        "equality",
+        "integers",
+        "logic"
+      ]
+    },
+    {
+      "slug": "anagram",
+      "uuid": "d8906a7e-9d7e-4e8e-aff0-da877291d8dc",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 2,
+      "topics": [
+        "equality",
+        "filtering",
+        "strings"
+      ]
+    },
+    {
+      "slug": "roman-numerals",
+      "uuid": "c4875bc5-e295-4782-99c7-cb3370ac8e08",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "control_flow_conditionals",
+        "control_flow_loops",
+        "integers",
+        "strings",
+        "text_formatting"
+      ]
+    },
+    {
+      "slug": "hamming",
+      "uuid": "2bfb508e-7ceb-4ae1-8316-1e2daf771807",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "control_flow_conditionals",
+        "control_flow_loops",
+        "equality",
+        "filtering",
+        "strings"
+      ]
+    },
+    {
+      "slug": "rna-transcription",
+      "uuid": "7b6767b9-2efc-414d-83f7-def9c371d63d",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "control_flow_conditionals",
+        "strings",
+        "transforming"
+      ]
+    },
+    {
       "slug": "bob",
       "uuid": "c02c7392-9478-4cfd-81eb-0cb8ebe78fe5",
       "core": true,
@@ -33,6 +98,19 @@
       "topics": [
         "control_flow_conditionals",
         "parsing",
+        "strings"
+      ]
+    },
+    {
+      "slug": "word-count",
+      "uuid": "1a3c64b1-8447-451f-985d-f7bd6d42bdb6",
+      "core": true,
+      "unlocked_by": null,
+      "difficulty": 2,
+      "topics": [
+        "control_flow_conditionals",
+        "control_flow_loops",
+        "filtering",
         "strings"
       ]
     },
@@ -64,39 +142,13 @@
       ]
     },
     {
-      "slug": "hamming",
-      "uuid": "2bfb508e-7ceb-4ae1-8316-1e2daf771807",
-      "core": true,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-        "control_flow_conditionals",
-        "control_flow_loops",
-        "equality",
-        "filtering",
-        "strings"
-      ]
-    },
-    {
       "slug": "pangram",
       "uuid": "28aea3bc-0ca0-4af9-868a-02e71c3d996",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
       "topics": [
-        "strings",
-        "control_flow_loops"
-      ]
-    },
-    {
-      "slug": "anagram",
-      "uuid": "d8906a7e-9d7e-4e8e-aff0-da877291d8dc",
-      "core": true,
-      "unlocked_by": null,
-      "difficulty": 2,
-      "topics": [
-        "equality",
-        "filtering",
+        "control_flow_loops",
         "strings"
       ]
     },
@@ -111,19 +163,6 @@
         "control_flow_conditionals",
         "integers",
         "math"
-      ]
-    },
-    {
-      "slug": "leap",
-      "uuid": "84eaff19-cb25-46af-a34e-1379e692e57b",
-      "core": true,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-        "control_flow_conditionals",
-        "equality",
-        "integers",
-        "logic"
       ]
     },
     {
@@ -152,18 +191,6 @@
       ]
     },
     {
-      "slug": "rna-transcription",
-      "uuid": "7b6767b9-2efc-414d-83f7-def9c371d63d",
-      "core": true,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-        "control_flow_conditionals",
-        "strings",
-        "transforming"
-      ]
-    },
-    {
       "slug": "atbash-cipher",
       "uuid": "89125ff6-f94b-46a4-9a5d-84539674238d",
       "core": false,
@@ -189,20 +216,6 @@
       ]
     },
     {
-      "slug": "roman-numerals",
-      "uuid": "c4875bc5-e295-4782-99c7-cb3370ac8e08",
-      "core": true,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-        "control_flow_conditionals",
-        "control_flow_loops",
-        "integers",
-        "strings",
-        "text_formatting"
-      ]
-    },
-    {
       "slug": "perfect-numbers",
       "uuid": "30971b02-79fc-40a1-aa70-ada3fec85548",
       "core": false,
@@ -223,19 +236,6 @@
         "control_flow_loops",
         "maps",
         "transforming"
-      ]
-    },
-    {
-      "slug": "word-count",
-      "uuid": "1a3c64b1-8447-451f-985d-f7bd6d42bdb6",
-      "core": true,
-      "unlocked_by": null,
-      "difficulty": 2,
-      "topics": [
-        "control_flow_conditionals",
-        "control_flow_loops",
-        "filtering",
-        "strings"
       ]
     },
     {
@@ -320,9 +320,9 @@
       "unlocked_by": null,
       "difficulty": 2,
       "topics": [
+        "cryptograpy",
         "strings",
-        "transforming",
-        "cryptograpy"
+        "transforming"
       ]
     },
     {
@@ -332,9 +332,9 @@
       "unlocked_by": null,
       "difficulty": 3,
       "topics": [
-        "strings",
-        "list operations",
-        "checksums"
+        "checksums",
+        "list_operations",
+        "strings"
       ]
     }
   ]
