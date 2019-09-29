@@ -6,19 +6,54 @@
 
 (load-file "perfect-numbers.el")
 
+;;; Perfect Numbers
+(ert-deftest smallest-perfect-number ()
+    (should (equal (classify 6) 'perfect)))
 
-(ert-deftest no-perfect-numbers-in-1-to-5 ()
-    (should (equal (perfect-numbers 5) '())))
+(ert-deftest medium-perfect-number ()
+  (should (equal (classify 28) 'perfect)))
 
-(ert-deftest return-one-perfect-number-for-range-1-to-6 ()
-    (should (equal (perfect-numbers 6) '(6))))
+(ert-deftest large-perfect-number ()
+  (should (equal (classify 33550336) 'perfect)))
 
-(ert-deftest return-3-perfect-numbers-for-range-1-to-1000 ()
-    (should (equal (perfect-numbers 1000) '(6 28 496))))
+;;; Abundant Numbers
+(ert-deftest smallest-abundant-number ()
+  (should (equal (classify 12) 'abundant)))
 
-(ert-deftest return-4-perfect-numbers-for-range-1-to-10000 ()
-    (should (equal (perfect-numbers 10000) '(6 28 496 8128))))
+(ert-deftest medium-abundant-number ()
+  (should (equal (classify 30) 'abundant)))
 
+(ert-deftest large-abundant-number ()
+  (should (equal (classify 33550335) 'abundant)))
+
+;;; Deficient Numbers
+(ert-deftest smallest-deficient-number ()
+  (should (equal (classify 2) 'deficient)))
+
+(ert-deftest smallest-non-prime-deficient-number ()
+  (should (equal (classify 4) 'deficient)))
+
+(ert-deftest medium-deficient-number ()
+  (should (equal (classify 32) 'deficient)))
+
+(ert-deftest large-deficient-number ()
+  (should (equal (classify 33550337) 'deficient)))
+
+(ert-deftest edge-case-no-factors-other-than-self ()
+  (should (equal (classify 1) 'deficient)))
+
+;;; Invalid Inputs
+(ert-deftest zero-is-rejected ()
+  (should
+   (equal
+    (should-error (classify -1))
+    '(error . ("Classification is only possible for natural numbers")))))
+
+(ert-deftest negative-integer-is-rejected ()
+  (should
+   (equal
+    (should-error (classify -1))
+    '(error . ("Classification is only possible for natural numbers")))))
 
 (provide 'perfect-numbers)
 ;;; perfect-numbers-test.el ends here
