@@ -4,7 +4,8 @@
 
 ;;; Code:
 
-
+(defun classify (number)
+  "Do something with NUMBER here.")
 
 (provide 'perfect-numbers)
 ;;; perfect-numbers.el ends here
