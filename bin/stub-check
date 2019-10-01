@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+# convenience to pretend like this is perl
+die () {
+    # the unicode value prints '✗'
+    printf '\u2717 %s\n' "${1:-'something has gone horribly wrong'}"
+    exit 1
+}
+
+success () {
+    # the unicode value prints '✓'
+    printf '\u2713 %s\n' "$1"
+}
+
+# make sure we are in the right place
+#
+# special '##' syntax removes the prefix from $PWD
+if [[ elisp == ${PWD##*/} ]]; then
+    # make life easier = less string parsing
+    cd exercises
+else
+    # can't run this script from wherever we are
+    die "can't run 'stub-check' from ${PWD}."
+fi
+
+# loop the directory in 'elisp/exercises'
+for exercise in *; do
+    # verify the existence of the stub file
+    if [[ -f "${exercise}/${exercise}.el" ]]; then
+        success "$exercise"
+    else
+        # no stub present
+        die "${exercise} is is missing its stub file."
+    fi
+done
