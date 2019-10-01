@@ -14,4 +14,5 @@ before_install:
 script:
   - bin/fetch-configlet
   - bin/configlet lint .
+  - bin/stub-check
   - bin/test-examples
