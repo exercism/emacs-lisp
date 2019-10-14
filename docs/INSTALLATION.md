@@ -43,9 +43,9 @@ manager or build from source as appropriate.
 ### Windows
 So you've decided to install Emacs on Windows.
 
-[[http://www.zeldauniverse.net/wp-content/uploads/2012/01/83-Image-2.jpg]]
+![](http://www.zeldauniverse.net/wp-content/uploads/2012/01/83-Image-2.jpg)
 
 I've never done it, but the prevailing wisdom is that you just need to visit the
-[[http://ftp.wayne.edu/gnu/emacs/windows/][FTP archive]], grab the correct binary (=emacs-24.x-bin-xxx.zip=), unzip it and
-launch. YMMV, please let us know in the issues or [[https://gitter.im/exercism/support][on Gitter]] if this section
+[FTP archive](http://ftp.wayne.edu/gnu/emacs/windows/), grab the correct binary (=emacs-24.x-bin-xxx.zip=), unzip it and
+launch. YMMV, please let us know in the issues or [on Gitter](https://gitter.im/exercism/support) if this section
 needs some love.
