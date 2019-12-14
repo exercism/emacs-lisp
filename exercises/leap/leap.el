@@ -5,5 +5,5 @@
 ;;; Code:
 
 
-(provide 'leap)
+(provide 'leap-year-p)
 ;;; leap.el ends here
