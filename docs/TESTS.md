@@ -35,7 +35,7 @@ code.
 Since both your code and tests are valid elisp, it is suggested to work with
 your exercise code in a buffer pane side-by side with its test, like so:
 
-![](docs/img/dual-pane.png)
+![](img/dual-pane.png)
 
 Split the frame vertically with `C-x 3`, switch to the new window with `C-x o`,
 and open the file with `C-x C-f /path/to/file`.
