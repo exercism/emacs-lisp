@@ -20,7 +20,7 @@ die () {
 # make sure we are in the right place
 #
 # special '##' syntax removes the prefix from $PWD
-if [[ elisp == ${PWD##*/} ]]; then
+if [[ emacs-lisp == ${PWD##*/} ]]; then
     # make life easier = less string parsing
     cd exercises
 else
@@ -28,7 +28,7 @@ else
     die "can't run 'stub-check' from ${PWD}."
 fi
 
-# loop the directory in 'elisp/exercises'
+# loop the directory in 'emacs-lisp/exercises'
 for exercise in *; do
     # verify the existence of the stub file
     if [[ -f "${exercise}/${exercise}.el" ]]; then
