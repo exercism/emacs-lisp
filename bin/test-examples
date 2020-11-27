@@ -21,7 +21,4 @@ popd
 tar xzf exercises.tgz
 rm $_
 
-if [ $err_cnt -ne 0 ]; then
-    echo "err_cnt=$err_cnt"
-    exit 1
-fi
+[ $err_cnt -eq 0 ] || exit 1
