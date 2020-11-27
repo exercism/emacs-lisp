@@ -1,7 +1,7 @@
 # elisp
 
-[![Configlet Status](https://github.com/exercism//workflows/configlet/badge.svg)]
-[![Exercise Test Status](https://github.com/exercism//workflows/emacs-lisp%20%2F%20main/badge.svg)]
+[![Configlet Status](https://github.com/exercism/emacs-lisp/workflows/configlet/badge.svg)]
+[![Exercise Test Status](https://github.com/exercism/emacs-lisp/workflows/emacs-lisp%20%2F%20main/badge.svg)]
 
 Exercism problems in Emacs Lisp.
 
