@@ -25,4 +25,4 @@ jobs:
       - name: Run exercism/emacs-lisp ci (runs tests) for all exercises
         run: |
           bash -e bin/stub-check
-          bash -e bin/test-examples
+          bash -ex bin/test-examples
