@@ -127,6 +127,53 @@
       ]
     },
     {
+      "slug": "acronym",
+      "uuid": "a252e137-8a63-4f26-b119-7264f12a257a",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "strings",
+        "transforming"
+      ]
+    },
+    {
+      "slug": "allergies",
+      "uuid": "e0d7220f-5d3a-4f10-842e-3d49df714cac",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "bitwise_operations",
+        "control_flow_conditionals",
+        "integers",
+        "text_formatting"
+      ]
+    },
+    {
+      "slug": "armstrong-numbers",
+      "uuid": "059141f0-f28d-4d10-a03a-7852dbfc2d2e",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "math"
+      ]
+    },
+    {
+      "slug": "binary",
+      "uuid": "7307e13e-7a18-4654-8df4-96951d4dccc6",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "bitwise_operations",
+        "control_flow_conditionals",
+        "integers",
+        "math"
+      ]
+    },
+    {
       "slug": "difference-of-squares",
       "uuid": "7b421b14-c33c-41a6-9e7e-4f9b6fbe6fcc",
       "core": false,
@@ -137,6 +184,18 @@
         "floating_point_numbers",
         "integers",
         "math"
+      ]
+    },
+    {
+      "slug": "etl",
+      "uuid": "d8f4c530-02f0-44d3-b5b8-858fec4b6a9d",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "control_flow_loops",
+        "maps",
+        "transforming"
       ]
     },
     {
@@ -154,100 +213,14 @@
       ]
     },
     {
-      "slug": "pangram",
-      "uuid": "28aea3bc-0ca0-4af9-868a-02e71c3d996",
+      "slug": "grains",
+      "uuid": "d219aab6-11ec-4e0c-b041-f06c8d523946",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
       "topics": [
-        "control_flow_loops",
-        "strings"
-      ]
-    },
-    {
-      "slug": "binary",
-      "uuid": "7307e13e-7a18-4654-8df4-96951d4dccc6",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-        "bitwise_operations",
-        "control_flow_conditionals",
         "integers",
-        "math"
-      ]
-    },
-    {
-      "slug": "allergies",
-      "uuid": "e0d7220f-5d3a-4f10-842e-3d49df714cac",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-        "bitwise_operations",
-        "control_flow_conditionals",
-        "integers",
-        "text_formatting"
-      ]
-    },
-    {
-      "slug": "robot-name",
-      "uuid": "55bc8c2a-1db3-4d26-b7c6-a778b61bf46b",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 2,
-      "topics": [
-        "randomness",
-        "strings",
         "variables"
-      ]
-    },
-    {
-      "slug": "atbash-cipher",
-      "uuid": "89125ff6-f94b-46a4-9a5d-84539674238d",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 2,
-      "topics": [
-        "control_flow_conditionals",
-        "control_flow_loops",
-        "sequences",
-        "transforming"
-      ]
-    },
-    {
-      "slug": "raindrops",
-      "uuid": "9a97c992-3da0-4f6d-b2f6-1f2683417e3b",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-        "control_flow_conditionals",
-        "filtering",
-        "integers"
-      ]
-    },
-    {
-      "slug": "perfect-numbers",
-      "uuid": "30971b02-79fc-40a1-aa70-ada3fec85548",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-        "math",
-        "number_theory"
-      ]
-    },
-    {
-      "slug": "etl",
-      "uuid": "d8f4c530-02f0-44d3-b5b8-858fec4b6a9d",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-        "control_flow_loops",
-        "maps",
-        "transforming"
       ]
     },
     {
@@ -264,56 +237,38 @@
       ]
     },
     {
-      "slug": "phone-number",
-      "uuid": "c211045e-da97-479d-9df4-5d812573e2d0",
+      "slug": "pangram",
+      "uuid": "28aea3bc-0ca0-4af9-868a-02e71c3d996",
       "core": false,
       "unlocked_by": null,
-      "difficulty": 2,
+      "difficulty": 1,
       "topics": [
-        "interfaces",
-        "parsing",
+        "control_flow_loops",
         "strings"
       ]
     },
     {
-      "slug": "grains",
-      "uuid": "d219aab6-11ec-4e0c-b041-f06c8d523946",
+      "slug": "perfect-numbers",
+      "uuid": "30971b02-79fc-40a1-aa70-ada3fec85548",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
       "topics": [
-        "integers",
-        "variables"
+        "math",
+        "number_theory"
       ]
     },
     {
-      "slug": "acronym",
-      "uuid": "a252e137-8a63-4f26-b119-7264f12a257a",
+      "slug": "raindrops",
+      "uuid": "9a97c992-3da0-4f6d-b2f6-1f2683417e3b",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
       "topics": [
-        "strings",
-        "transforming"
+        "control_flow_conditionals",
+        "filtering",
+        "integers"
       ]
-    },
-    {
-      "slug": "armstrong-numbers",
-      "uuid": "059141f0-f28d-4d10-a03a-7852dbfc2d2e",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-        "math"
-      ]
-    },
-    {
-      "slug": "run-length-encoding",
-      "uuid": "9e8f98f0-6fff-4389-a9a2-9ae43edefa21",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 2,
-      "topics": null
     },
     {
       "slug": "trinary",
@@ -323,6 +278,19 @@
       "difficulty": 1,
       "topics": [
         "math"
+      ]
+    },
+    {
+      "slug": "atbash-cipher",
+      "uuid": "89125ff6-f94b-46a4-9a5d-84539674238d",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 2,
+      "topics": [
+        "control_flow_conditionals",
+        "control_flow_loops",
+        "sequences",
+        "transforming"
       ]
     },
     {
@@ -336,6 +304,38 @@
         "strings",
         "transforming"
       ]
+    },
+    {
+      "slug": "phone-number",
+      "uuid": "c211045e-da97-479d-9df4-5d812573e2d0",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 2,
+      "topics": [
+        "interfaces",
+        "parsing",
+        "strings"
+      ]
+    },
+    {
+      "slug": "robot-name",
+      "uuid": "55bc8c2a-1db3-4d26-b7c6-a778b61bf46b",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 2,
+      "topics": [
+        "randomness",
+        "strings",
+        "variables"
+      ]
+    },
+    {
+      "slug": "run-length-encoding",
+      "uuid": "9e8f98f0-6fff-4389-a9a2-9ae43edefa21",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 2,
+      "topics": null
     },
     {
       "slug": "luhn",
