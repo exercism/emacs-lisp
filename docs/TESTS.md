@@ -24,14 +24,14 @@ submission. The above command is a bit unwieldy, so if you like:
 You should be able to simply call `ert-run exercise-test.el` and run the tests
 in batch mode.
 
-### Working on exercises
+## Working on exercises
 Since Emacs is, itself, an elisp interpreter, your working code is always in its
 native execution environment. You can evaluate any form by pressing `C-x e` at
 the end of the form, or a selection with `M-x eval-region` or the whole buffer
 with `M-x eval-buffer`. This can be extremely useful for quickly debugging your
 code.
 
-### Suggestions
+## Suggestions
 Since both your code and tests are valid elisp, it is suggested to work with
 your exercise code in a buffer pane side-by side with its test, like so:
 
