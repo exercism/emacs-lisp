@@ -1,6 +1,10 @@
 {
   "blurb": "We are going to do the `Transform` step of an Extract-Transform-Load.",
   "authors": [],
+  "contributors": [
+    "canweriotnow",
+    "vermiculus"
+  ],
   "files": {
     "solution": [],
     "test": [],

@@ -1,6 +1,11 @@
 {
   "blurb": "Given a word and a list of possible anagrams, select the correct sublist.",
-  "authors": [],
+  "authors": [
+    "canweriotnow"
+  ],
+  "contributors": [
+    "vermiculus"
+  ],
   "files": {
     "solution": [],
     "test": [],
