@@ -14,6 +14,20 @@
     "indent_style": "space",
     "indent_size": 2
   },
+  "files": {
+    "solution": [
+      "%{kebab_slug}.el"
+    ],
+    "test": [
+      "%{kebab_slug}-test.el"
+    ],
+    "example": [
+      "example.el"
+    ],
+    "exemplar": [
+      ".meta/exemplar.el"
+    ]
+  },
   "exercises": {
     "concept": [],
     "practice": [
