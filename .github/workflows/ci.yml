@@ -1,0 +1,28 @@
+name: emacs-lisp / main
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install project dependencies
+        env:
+          EMACS_VERSION: 26.1
+        run: |
+          export EMACS_DIR=$HOME/emacs
+          # Install Emacs 26 from upstream
+          bash -e <(curl -fsSkL 'https://raw.githubusercontent.com/vermiculus/emake.el/d8ab7790f5823547fd4e7aec2218771a3dda0638/build-emacs')
+          pushd . && cd $EMACS_DIR && sudo make install && popd
+
+      - name: Run exercism/emacs-lisp ci (runs tests) for all exercises
+        run: |
+          bash bin/stub-check
+          bash bin/test-examples

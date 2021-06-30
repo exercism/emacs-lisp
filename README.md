@@ -1,6 +1,7 @@
 # elisp
 
-[![Build Status](https://travis-ci.org/exercism/elisp.svg?branch=master)](https://travis-ci.org/exercism/elisp)
+[![Configlet Status](https://github.com/exercism/emacs-lisp/workflows/configlet/badge.svg)]
+[![Exercise Test Status](https://github.com/exercism/emacs-lisp/workflows/emacs-lisp%20%2F%20main/badge.svg)]
 
 Exercism problems in Emacs Lisp.
 
