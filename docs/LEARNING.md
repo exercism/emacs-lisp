@@ -1,3 +1,5 @@
+# Learning
+
 So you've installed Emacs. Now what?
 
 Well, you can start the tutoral by pressing `C-h t`, and that's not a bad place
