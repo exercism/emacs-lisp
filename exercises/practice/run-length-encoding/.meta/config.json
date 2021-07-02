@@ -1,6 +1,9 @@
 {
   "blurb": "Implement run-length encoding and decoding.",
   "authors": [],
+  "contributors": [
+    "benreyn"
+  ],
   "files": {
     "solution": [
       "run-length-encoding.el"

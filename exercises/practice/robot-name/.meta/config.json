@@ -1,6 +1,12 @@
 {
   "blurb": "Manage robot factory settings.",
-  "authors": [],
+  "authors": [
+    "canweriotnow"
+  ],
+  "contributors": [
+    "wasamasa",
+    "yurrriq"
+  ],
   "files": {
     "solution": [
       "robot-name.el"
