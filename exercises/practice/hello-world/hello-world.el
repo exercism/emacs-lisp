@@ -1,9 +1,4 @@
-;;; hello-world.el --- Hello World Exercise (exercism)
-
-;;; Commentary:
-
-;;; Code:
-
+(defun hello ()
+  "Goodbye, Mars!")
 
 (provide 'hello-world)
-;;; hello-world.el ends here
