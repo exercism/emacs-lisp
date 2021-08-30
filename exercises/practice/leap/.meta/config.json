@@ -14,7 +14,7 @@
       "leap-test.el"
     ],
     "example": [
-      "example.el"
+      ".meta/example.el"
     ]
   },
   "source": "JavaRanch Cattle Drive, exercise 3",

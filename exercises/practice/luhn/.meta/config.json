@@ -14,7 +14,7 @@
       "luhn-test.el"
     ],
     "example": [
-      "example.el"
+      ".meta/example.el"
     ]
   },
   "source": "The Luhn Algorithm on Wikipedia",

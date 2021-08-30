@@ -14,7 +14,7 @@
       "anagram-test.el"
     ],
     "example": [
-      "example.el"
+      ".meta/example.el"
     ]
   },
   "source": "Inspired by the Extreme Startup game",

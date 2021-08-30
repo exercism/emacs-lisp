@@ -12,7 +12,7 @@
       "run-length-encoding-test.el"
     ],
     "example": [
-      "example.el"
+      ".meta/example.el"
     ]
   },
   "source": "Wikipedia",

@@ -12,7 +12,7 @@
       "nucleotide-count-test.el"
     ],
     "example": [
-      "example.el"
+      ".meta/example.el"
     ]
   },
   "source": "The Calculating DNA Nucleotides_problem at Rosalind",

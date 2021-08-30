@@ -13,7 +13,7 @@
       "etl-test.el"
     ],
     "example": [
-      "example.el"
+      ".meta/example.el"
     ]
   },
   "source": "The Jumpstart Lab team",

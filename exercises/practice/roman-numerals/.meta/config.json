@@ -14,7 +14,7 @@
       "roman-numerals-test.el"
     ],
     "example": [
-      "example.el"
+      ".meta/example.el"
     ]
   },
   "source": "The Roman Numeral Kata",

@@ -14,7 +14,7 @@
       "crypto-square-test.el"
     ],
     "example": [
-      "example.el"
+      ".meta/example.el"
     ]
   },
   "source": "J Dalbey's Programming Practice problems",

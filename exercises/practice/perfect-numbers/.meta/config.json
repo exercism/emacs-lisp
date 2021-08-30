@@ -14,7 +14,7 @@
       "perfect-numbers-test.el"
     ],
     "example": [
-      "example.el"
+      ".meta/example.el"
     ]
   },
   "source": "Taken from Chapter 2 of Functional Thinking by Neal Ford.",

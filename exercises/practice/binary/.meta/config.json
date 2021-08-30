@@ -11,7 +11,7 @@
       "binary-test.el"
     ],
     "example": [
-      "example.el"
+      ".meta/example.el"
     ]
   },
   "source": "All of Computer Science",

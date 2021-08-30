@@ -16,7 +16,7 @@
       "hamming-test.el"
     ],
     "example": [
-      "example.el"
+      ".meta/example.el"
     ]
   },
   "source": "The Calculating Point Mutations problem at Rosalind",
