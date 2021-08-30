@@ -1,24 +1,23 @@
 #! /usr/bin/env bash
 
-if [[ ! -d "exercises" ]]; then
-    echo "exercises directory not found!"
-    exit 1
+# make sure we are in the right place
+if [[ ! -d exercises ]]; then
+    # can't run this script from wherever we are
+    die "can't run 'test-example' from ${PWD}."
 fi
 
-tar czf exercises.tgz exercises
-pushd $_
-
 err_cnt=0
-for ex in *; do
-    pushd $ex
-    mv example.el "${ex}.el"
-    emacs -batch -l ert -l "${ex}-test.el" -f ert-run-tests-batch-and-exit
+
+pushd exercises/practice > /dev/null
+for exercise in *; do
+    pushd $exercise
+    mv "${exercise}.el" "${exercise}.el.bak"
+    mv .meta/example.el "${exercise}.el"
+    emacs -batch -l ert -l "${exercise}-test.el" -f ert-run-tests-batch-and-exit
+    mv "${exercise}.el.bak" "${exercise}.el"
     let "err_cnt += $?"
     popd
 done
-
-popd
-tar xzf exercises.tgz
-rm $_
+popd > /dev/null
 
 [ $err_cnt -eq 0 ] || exit 1

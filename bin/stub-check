@@ -18,23 +18,19 @@ die () {
 }
 
 # make sure we are in the right place
-#
-# special '##' syntax removes the prefix from $PWD
-if [[ emacs-lisp == ${PWD##*/} ]]; then
-    # make life easier = less string parsing
-    cd exercises
-else
+if [[ ! -d exercises ]]; then
     # can't run this script from wherever we are
     die "can't run 'stub-check' from ${PWD}."
 fi
 
-# loop the directory in 'emacs-lisp/exercises'
+pushd exercises/practice > /dev/null
 for exercise in *; do
     # verify the existence of the stub file
     if [[ -f "${exercise}/${exercise}.el" ]]; then
-        success "$exercise"
+        success "${exercise}"
     else
         # no stub present
         die "${exercise} is is missing its stub file."
     fi
 done
+popd > /dev/null
