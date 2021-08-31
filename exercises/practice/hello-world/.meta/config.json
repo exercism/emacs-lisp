@@ -17,7 +17,7 @@
       "hello-world-test.el"
     ],
     "example": [
-      "example.el"
+      ".meta/example.el"
     ]
   },
   "source": "This is an exercise to introduce users to using Exercism",

@@ -15,7 +15,7 @@
       "robot-name-test.el"
     ],
     "example": [
-      "example.el"
+      ".meta/example.el"
     ]
   },
   "source": "A debugging session with Paul Blackwell at gSchool."

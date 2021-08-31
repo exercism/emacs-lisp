@@ -11,7 +11,7 @@
       "gigasecond-test.el"
     ],
     "example": [
-      "example.el"
+      ".meta/example.el"
     ]
   },
   "source": "Chapter 9 in Chris Pine's online Learn to Program tutorial.",

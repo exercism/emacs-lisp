@@ -15,7 +15,7 @@
       "two-fer-test.el"
     ],
     "example": [
-      "example.el"
+      ".meta/example.el"
     ]
   },
   "source_url": "https://github.com/exercism/problem-specifications/issues/757"

@@ -16,7 +16,7 @@
       "difference-of-squares-test.el"
     ],
     "example": [
-      "example.el"
+      ".meta/example.el"
     ]
   },
   "source": "Problem 6 at Project Euler",

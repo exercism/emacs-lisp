@@ -14,7 +14,7 @@
       "allergies-test.el"
     ],
     "example": [
-      "example.el"
+      ".meta/example.el"
     ]
   },
   "source": "Jumpstart Lab Warm-up",
