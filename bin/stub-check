@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 # handle colors and the unicode symbols '✓' and '✗'
-readonly NORMAL="$(tput sgr0)"
-readonly RED_FAIL="$(tput setaf 1)$(printf '\u2717')"
-readonly GREEN_PASS="$(tput setaf 2)$(printf '\u2713')"
+readonly NORMAL="$(tput -Txterm sgr0)"
+readonly RED_FAIL="$(tput -Txterm setaf 1)$(printf '\u2717')"
+readonly GREEN_PASS="$(tput -Txterm setaf 2)$(printf '\u2713')"
 
 # format the success messages
 success () {
