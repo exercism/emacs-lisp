@@ -2,7 +2,7 @@
 
 ;;; Commentary:
 
-(defun hamming-distance ()
+(defun hamming-distance (strand1 strand2)
 ;;; Code:  
 )
 
