@@ -30,5 +30,8 @@
 (ert-deftest invalid-binary-is-decimal-0 ()
   (should (= 0 (to-decimal "carrot"))))
 
+(ert-deftest invalid-binary-incl-binary-format-is-decimal-0 ()
+  (should (= 0 (to-decimal "10151"))))
+
 (provide 'binary-test)
 ;;; binary-test.el ends here
