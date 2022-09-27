@@ -395,6 +395,21 @@
           "list_operations",
           "strings"
         ]
+      },
+      {
+        "slug": "list-ops",
+        "name": "List Ops",
+        "uuid": "883fdbef-ad97-4f08-8d51-d65bd91fc864",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3,
+        "topics": [
+          "filtering",
+          "functional_programming",
+          "generics",
+          "lists",
+          "loops"
+        ]
       }
     ]
   },

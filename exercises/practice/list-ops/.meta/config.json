@@ -1,0 +1,21 @@
+{
+  "blurb": "Implement basic list operations",
+  "authors": [
+    "fap"
+  ],
+  "contributors": [
+  ],
+  "files": {
+    "solution": [
+      "list-ops.el"
+    ],
+    "test": [
+      "list-ops-test.el"
+    ],
+    "example": [
+      ".meta/example.el"
+    ]
+  },
+  "source_url": "https://github.com/exercism/problem-specifications/tree/main/exercises/list-ops"
+}
+
