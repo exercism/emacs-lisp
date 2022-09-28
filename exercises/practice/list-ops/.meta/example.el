@@ -4,6 +4,8 @@
 
 ;;; Code:
 
+(require 'seq)
+
 (defun list-foldl (fun list accu)
   (if (list-empty-p list)
       accu
@@ -15,7 +17,7 @@
     (funcall fun (car list) (list-foldr fun (cdr list) accu))))
 
 (defun list-empty-p (list)
-  (not (car list)))
+  (zerop (length list)))
 
 (defun list-sum (list)
   (list-foldl '+ list 0))

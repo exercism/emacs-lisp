@@ -35,8 +35,8 @@
 (defun list-map (list fun)
   (error "Delete this S-Expression and write your own implementation."))
 
+
 ;; TODO(FAP): Is it okay to activate lexical scoping? Otherwise the `fun' variables are conflicting
-;; TODO(FAP): We probably can't have more methods to implement than in the problem-description, can we?
 
 (provide 'list-ops)
 ;;; list-ops.el ends here
