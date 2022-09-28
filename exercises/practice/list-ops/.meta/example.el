@@ -4,8 +4,6 @@
 
 ;;; Code:
 
-(require 'seq)
-
 (defun list-foldl (fun list accu)
   (if (list-empty-p list)
       accu
