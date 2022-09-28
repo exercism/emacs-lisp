@@ -5,9 +5,7 @@
 
 ;;; Code:
 
-(load-file "hamming.el")
-
-(declare-function hamming-distance "hamming.el")
+(declare-function hamming-distance "hamming.el" (strand1 strand2))
 
 (ert-deftest empty-strands ()
   (should (= 0 (hamming-distance "" ""))))
