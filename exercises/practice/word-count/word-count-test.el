@@ -60,6 +60,16 @@
                        '(("stop" . 2)
                          ("go" . 3)))))
 
+(ert-deftest with-apostrophes-test ()
+  (should (equal-assoc (word-count "First: don't laugh. Then: don't cry. You're getting it.")
+                       '(("first" . 1)
+                         ("don't" . 2)
+                         ("laugh" . 1)
+                         ("then" . 1)
+                         ("cry" . 1)
+                         ("you're" . 1)
+                         ("getting" . 1)
+                         ("it" . 1)))))
 
 (provide 'word-count)
 ;;; word-count-test.el ends here
