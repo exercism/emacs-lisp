@@ -15,7 +15,7 @@
     (funcall fun (car list) (list-foldr fun (cdr list) accu))))
 
 (defun list-empty-p (list)
-  (zerop (length list)))
+  (null list))
 
 (defun list-sum (list)
   (list-foldl '+ list 0))
