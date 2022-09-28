@@ -7,7 +7,7 @@
 )
 
 (defun allergic-to (score allergen)
-"Check if Allergic to allergen based on SCORE and ALLERGEN."
+"Check if Allergic to allergen based on SCORE and ALLERGEN. Return t if yes else nil."
 ;;; Code:
 )
 
