@@ -3,6 +3,7 @@
 ;;; Commentary:
 
 (defun allergen-list (score)
+"List all allergens with a given SCORE."
 ;;; Code:
 )
 
