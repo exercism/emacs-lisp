@@ -9,7 +9,7 @@ Exercism problems in Emacs Lisp.
 
 ### Contributing Guide
 
-Please see the [contributing guide](https://github.com/exercism/x-api/blob/master/CONTRIBUTING.md#the-exercise-data)
+Please see the [contributing guide](https://exercism.org/contributing)
 This describes how all the language tracks are put together,
 as well as details about the common metadata, and high-level
 information about contributing to existing problems and adding new problems.
@@ -24,7 +24,7 @@ that fail tests.
 
 New exercises or changes to existing ones can be submitted via a pull
 request. You will need a GitHub account and you will need to fork
-[exercism/elips](https://github.com/exercism/elisp) to your account. See GitHub Help if you are unfamiliar
+[exercism/emacs-lisp](https://github.com/exercism/emacs-lisp) to your account. See GitHub Help if you are unfamiliar
 with the process.
 
 
