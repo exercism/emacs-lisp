@@ -5,7 +5,7 @@
 
 ;;; Code:
 
-(load-file "hello-world.el")
+(declare-function hello "hello-world.el")
 
 (ert-deftest hello-world-test ()
   (should (string= (hello) "Hello, World!")))
