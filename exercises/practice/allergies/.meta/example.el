@@ -39,8 +39,8 @@
            (lambda (as) (score-matches as score))
            *allergens-scores*)))
 
-(defun allergic-to-p (score allergen)
-  "Allergic-to predicate based on SCORE and ALLERGEN."
+(defun allergic-to (score allergen)
+  "Check if Allergic to allergen based on SCORE and ALLERGEN."
   (score-matches (cl-assoc allergen *allergens-scores* :test #'string=)
                  score))
 
