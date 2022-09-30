@@ -4,7 +4,7 @@
 
 ;;; Code:
 
-(load-file "armstrong-numbers.el")
+(declare-function armstrong-p "armstrong-numbers.el" (n))
 
 (ert-deftest armstrong-number-5 ()
   "Single digit numbers are Armstrong numbers"
