@@ -2,10 +2,9 @@
 
 ;;; Commentary:
 
+(defun anagrams-for (subject candidates)
 ;;; Code:
-
-(require 'cl-lib)
-
+)
 
 (provide 'anagram)
 ;;; anagram.el ends here
