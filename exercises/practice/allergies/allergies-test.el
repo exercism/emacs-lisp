@@ -5,7 +5,7 @@
 ;;; Code:
 
 (declare-function allergen-list "allergies.el" (score))
-(declare-function allergic-to "allergies.el" (score allergen))
+(declare-function allergic-to-p "allergies.el" (score allergen))
 
 (ert-deftest no-allergies-at-all ()
   (should (equal '() (allergen-list 0))))
