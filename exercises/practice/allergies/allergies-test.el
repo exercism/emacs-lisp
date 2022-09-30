@@ -35,15 +35,15 @@
                  (allergen-list 255))))
 
 (ert-deftest no-allergies-means-not-allergic ()
-  (should-not (allergic-to 0 "peanuts"))
-  (should-not (allergic-to 0 "cats"))
-  (should-not (allergic-to 0 "strawberries")))
+  (should-not (allergic-to-p 0 "peanuts"))
+  (should-not (allergic-to-p 0 "cats"))
+  (should-not (allergic-to-p 0 "strawberries")))
 
 (ert-deftest is-allergic-to-eggs ()
-  (should (allergic-to 1 "eggs")))
+  (should (allergic-to-p 1 "eggs")))
 
 (ert-deftest allergic-to-eggs-and-other-stuff ()
-  (should (allergic-to 5 "eggs")))
+  (should (allergic-to-p 5 "eggs")))
 
 (ert-deftest ignore-non-allergen-score-parts ()
   (should (equal '("eggs" "shellfish" "strawberries" "tomatoes"
