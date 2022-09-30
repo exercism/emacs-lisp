@@ -2,7 +2,7 @@
 
 ;;; Commentary:
 
-(defun hamming-distance (strand1 strand2)
+(defun hamming-distance (dna1 dna2)
 ;;; Code:  
 )
 
