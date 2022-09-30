@@ -5,7 +5,7 @@
 
 ;;; Code:
 
-(declare-function hamming-distance "hamming.el" (strand1 strand2))
+(declare-function hamming-distance "hamming.el" (dna1 dna2))
 
 (ert-deftest empty-strands ()
   (should (= 0 (hamming-distance "" ""))))
