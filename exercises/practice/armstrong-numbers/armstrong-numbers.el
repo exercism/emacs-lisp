@@ -2,7 +2,9 @@
 
 ;;; Commentary:
 
+(defun armstrong-p (n)
 ;;; Code:
+)
 
 (provide 'armstrong-numbers)
 ;;; armstrong-numbers.el ends here
