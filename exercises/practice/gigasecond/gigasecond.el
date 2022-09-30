@@ -7,13 +7,9 @@
 ;; NB: Pay attention to  Emacs' handling of time zones and dst
 ;; in the encode-time and decode-time functions.
 
+(defun from (second minute hour day month year)
 ;;; Code:
-
-
-
-
-
-
+)
 
 (provide 'gigasecond)
 ;;; gigasecond.el ends here
