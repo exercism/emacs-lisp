@@ -4,14 +4,9 @@
 
 ;;; Code:
 
-(require 'cl-lib)
-
-
-
 (defun convert (n)
   "Convert integer N to its raindrops string."
   )
-
 
 
 (provide 'raindrops)
