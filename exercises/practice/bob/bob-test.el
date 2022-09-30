@@ -5,8 +5,7 @@
 
 ;;; Code:
 
-(load-file "bob.el")
-
+(declare-function response-for "bob.el" (phrase))
 
 (ert-deftest responds-to-stating-something ()
   (should (string= "Whatever." (response-for "Tom-ay-to, tom-aaaah-to."))))
