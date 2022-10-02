@@ -3,7 +3,6 @@
 ;;; Commentary:
 
 (defun classify (number)
-  "Do something with NUMBER here."
 ;;; Code:
 )
 
