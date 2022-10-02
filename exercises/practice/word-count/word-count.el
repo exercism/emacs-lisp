@@ -2,8 +2,9 @@
 
 ;;; Commentary:
 
+(defun word-count (sentence)
 ;;; Code:
-
+)
 
 (provide 'word-count)
 ;;; word-count.el ends here
