@@ -2,10 +2,10 @@
 
 ;;; Commentary:
 
-;;; Code:
-
 (defun classify (number)
-  "Do something with NUMBER here.")
+  "Do something with NUMBER here."
+;;; Code:
+)
 
 (provide 'perfect-numbers)
 ;;; perfect-numbers.el ends here
