@@ -2,7 +2,7 @@
 
 ;;; Commentary:
 
-(defun to-rna (strand))
+(defun to-rna (strand)
 ;;; Code:
 )
 
