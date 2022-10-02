@@ -4,7 +4,8 @@
 
 ;;; Code:
 
-(load-file "run-length-encoding.el")
+(declare-function run-length-encode "run-length-encoding.el" (s))
+(declare-function run-length-decode "run-length-encoding.el" (s))
 
 (ert-deftest encode-empty-string ()
   "encode an empty string"
