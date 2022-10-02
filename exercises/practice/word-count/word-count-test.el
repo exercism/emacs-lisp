@@ -4,8 +4,7 @@
 
 ;;; Code:
 
-(load-file "word-count.el")
-
+(declare-function word-count "word-count.el" (sentence))
 
 (defun equal-assoc (a b)
   (let ((strcmp (lambda (a b) (not (string< (car a) (car b))))))
