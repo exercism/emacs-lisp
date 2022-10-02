@@ -4,7 +4,7 @@
 
 ;;; Code:
 
-(load-file "trinary.el")
+(declare-function trinary-to-decimal "trinary.el" (string))
 
 (ert-deftest trinary-1-is-decimal-1 ()
   (should (= 1 (trinary-to-decimal "1"))))
