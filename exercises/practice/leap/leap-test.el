@@ -12,7 +12,7 @@
   (should-not (leap-year-p 1997)))
 
 (ert-deftest non-leap-even-year ()
-  (should-not (leap-year-p 1997)))
+  (should-not (leap-year-p 1998)))
 
 (ert-deftest century ()
   (should-not (leap-year-p 1900)))
