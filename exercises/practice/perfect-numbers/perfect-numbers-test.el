@@ -46,7 +46,7 @@
 (ert-deftest zero-is-rejected ()
   (should
    (equal
-    (should-error (classify -1))
+    (should-error (classify 0))
     '(error . ("Classification is only possible for natural numbers")))))
 
 (ert-deftest negative-integer-is-rejected ()
