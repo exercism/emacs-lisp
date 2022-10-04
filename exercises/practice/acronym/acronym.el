@@ -2,10 +2,9 @@
 
 ;;; Commentary:
 
+(defun acronym (phrase)
 ;;; Code:
-
-(require 'cl-lib)
-
+)
 
 (provide 'acronym)
 ;;; acronym.el ends here

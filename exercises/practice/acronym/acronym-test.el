@@ -4,7 +4,7 @@
 
 ;;; Code
 
-(load-file "acronym.el")
+(declare-function acronym "acronym.el" (phrase))
 
 (ert-deftest basic ()
   (should (equal "PNG" (acronym "Portable Network Graphics"))))

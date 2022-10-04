@@ -4,7 +4,7 @@
 
 ;;; Code:
 
-(load-file "binary.el")
+(declare-function to-decimal "binary.el" (binary-string))
 
 (ert-deftest binary-1-is-decimal-1 ()
   (should (= 1 (to-decimal "1"))))

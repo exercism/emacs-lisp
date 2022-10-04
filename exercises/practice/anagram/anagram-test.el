@@ -4,7 +4,7 @@
 
 ;;; Code:
 
-(load-file "anagram.el")
+(declare-function anagrams-for "anagram.el" (subject candidates))
 
 (ert-deftest no-matches ()
   (should (equal '() (anagrams-for

@@ -5,7 +5,7 @@
 
 ;;; Code:
 
-(load-file "pangram.el")
+(declare-function is-pangram "pangram.el" (phrase))
 
 (ert-deftest sentence-empty ()
   (should (equal nil (is-pangram ""))))

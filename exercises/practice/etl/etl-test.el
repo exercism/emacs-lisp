@@ -4,7 +4,7 @@
 
 ;;; Code:
 
-(load-file "etl.el")
+(declare-function etl "etl.el" (data))
 
 
 (defconst mixed-case-input #s(hash-table

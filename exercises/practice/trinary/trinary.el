@@ -2,10 +2,9 @@
 
 ;;; Commentary:
 
+(defun trinary-to-decimal (string)
 ;;; Code:
-
-(require 'cl-lib)
-
+)
 
 (provide 'trinary)
 ;;; trinary.el ends here

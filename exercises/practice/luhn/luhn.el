@@ -2,10 +2,9 @@
 
 ;;; Commentary:
 
+(defun luhn-p (str)
 ;;; Code:
-
-
-
+)
 
 (provide 'luhn)
 ;;; luhn.el ends here
