@@ -6,6 +6,7 @@
 
 (require 'cl-lib)
 
+(load-file "atbash-cipher.el")
 (declare-function encode "atbash-cipher.el" (plaintext))
 
 (ert-deftest encode-no ()

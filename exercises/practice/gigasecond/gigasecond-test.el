@@ -13,6 +13,7 @@
 
 ;;; Code:
 
+(load-file "gigasecond.el")
 (declare-function from "gigasecond.el" (second minute hour day month year))
 
 (ert-deftest from-lisp-epoch ()

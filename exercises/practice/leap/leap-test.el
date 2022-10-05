@@ -3,6 +3,8 @@
 ;;; Commentary:
 
 ;;; Code:
+
+(load-file "leap.el")
 (declare-function leap-year-p "leap.el" (year))
 
 (ert-deftest vanilla-leap-year ()

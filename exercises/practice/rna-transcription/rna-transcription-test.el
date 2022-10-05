@@ -7,6 +7,7 @@
 
 (require 'cl-lib)
 
+(load-file "rna-transcription.el")
 (declare-function to-rna "rna-transcription.el" (strand))
 
 (ert-deftest transcribes-cytosine-to-guanine ()

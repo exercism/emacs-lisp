@@ -8,6 +8,7 @@
 
 (require 'rx)
 
+(load-file "robot-name.el")
 (declare-function build-robot "robot-name.el")
 (declare-function robot-name "robot-name.el" (robot))
 (declare-function reset-robot "robot-name.el" (robot))

@@ -4,6 +4,7 @@
 
 ;;; Code:
 
+(load-file "roman-numerals.el")
 (declare-function to-roman "roman-numerals.el" (value))
 
 (ert-deftest to-roman-1 ()
