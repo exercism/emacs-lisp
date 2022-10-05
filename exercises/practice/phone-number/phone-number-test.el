@@ -4,6 +4,7 @@
 
 ;;; Code:
 
+(load-file "phone-number.el")
 (declare-function numbers "phone-number.el" (num))
 (declare-function area-code "phone-number.el" (num))
 (declare-function pprint "phone-number.el" (num))

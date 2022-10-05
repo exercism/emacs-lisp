@@ -5,6 +5,7 @@
 
 ;;; Code:
 
+(load-file "bob.el")
 (declare-function response-for "bob.el" (phrase))
 
 (ert-deftest responds-to-stating-something ()

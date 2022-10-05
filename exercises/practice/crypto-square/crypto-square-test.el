@@ -4,6 +4,7 @@
 
 ;;; Code:
 
+(load-file "crypto-square.el")
 (declare-function encipher "crypto-square.el" (plaintext))
 
 (ert-deftest empty-plaintext-results-in-an-empty-ciphertext ()

@@ -4,6 +4,7 @@
 
 ;;; Code:
 
+(load-file "etl.el")
 (declare-function etl "etl.el" (data))
 
 

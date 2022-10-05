@@ -4,6 +4,7 @@
 
 ;;; Code:
 
+(load-file "allergies.el")
 (declare-function allergen-list "allergies.el" (score))
 (declare-function allergic-to-p "allergies.el" (score allergen))
 

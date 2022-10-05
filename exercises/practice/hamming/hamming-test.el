@@ -5,6 +5,7 @@
 
 ;;; Code:
 
+(load-file "hamming.el")
 (declare-function hamming-distance "hamming.el" (dna1 dna2))
 
 (ert-deftest empty-strands ()

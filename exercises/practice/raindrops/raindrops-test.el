@@ -4,6 +4,7 @@
 
 ;;; Code:
 
+(load-file "raindrops.el")
 (declare-function convert "raindrops.el" (n))
 
 (ert-deftest test-1 ()

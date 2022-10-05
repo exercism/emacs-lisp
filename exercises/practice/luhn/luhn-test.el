@@ -6,6 +6,7 @@
 
 (require 'cl-lib)
 
+(load-file "luhn.el")
 (declare-function luhn-p "luhn.el" (str))
 
 (ert-deftest an-empty-string ()

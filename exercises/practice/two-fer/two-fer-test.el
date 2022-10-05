@@ -5,6 +5,7 @@
 
 ;;; Code:
 
+(load-file "two-fer.el")
 (declare-function two-fer "two-fer.el" (&optional name))
 
 (ert-deftest no-name-given ()

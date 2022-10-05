@@ -4,6 +4,7 @@
 
 ;;; Code:
 
+(load-file "perfect-numbers.el")
 (declare-function classify "perfect-numbers.el" (number))
 
 ;;; Perfect Numbers
