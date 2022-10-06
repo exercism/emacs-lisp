@@ -14,8 +14,8 @@ for exercise in *; do
     mv "${exercise}.el" "${exercise}.el.bak"
     mv .meta/example.el "${exercise}.el"
     emacs -batch -l ert -l "${exercise}-test.el" -f ert-run-tests-batch-and-exit
-    mv "${exercise}.el.bak" "${exercise}.el"
     let "err_cnt += $?"
+    mv "${exercise}.el.bak" "${exercise}.el"
     popd
 done
 popd > /dev/null
