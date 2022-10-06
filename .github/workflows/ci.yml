@@ -15,7 +15,7 @@ jobs:
 
       - name: Install project dependencies
         env:
-          EMACS_VERSION: 26.1
+          EMACS_VERSION: 28.1
         run: |
           export EMACS_DIR=$HOME/emacs
           # Install Emacs 26 from upstream
