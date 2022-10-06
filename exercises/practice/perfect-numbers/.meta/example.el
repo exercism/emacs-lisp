@@ -3,27 +3,22 @@
 ;;; Commentary:
 
 ;;; Code:
-(require 'seq)
+(require 'cl-lib)
 
+;; Algorithm from https://www.geeksforgeeks.org/sum-of-all-proper-divisors-of-a-natural-number/
 (defun classify (number)
-  "Classify NUMBER as perfect, abundant, or deficient."
-  (when (< number 1)
-    (error "%s" "Classification is only possible for natural numbers"))
-  (let ((aliquot-sum (calculate-aliquot-sum number)))
-    (cond ((> aliquot-sum number) 'abundant)
-          ((= aliquot-sum number) 'perfect)
-          ((< aliquot-sum number) 'deficient))))
-
-(defun calculate-aliquot-sum (number)
-  "The aliquot sum of NUMBER is the sum of its factors."
-  (let ((factors (seq-filter
-                  (lambda (x) (divides-p x number))
-                  (number-sequence 1 (/ number 2)))))
-    (seq-reduce #'+ factors 0)))
-
-(defun divides-p (factor multiple)
-  "True if FACTOR divides MULTIPLE."
-  (zerop (mod multiple factor)))
+  (unless (> number 0) (error "Classification is only possible for natural numbers"))
+  (let ((sum 1))
+    (cl-loop for i from 2 to (sqrt number)
+             when (zerop (% number i))
+             sum (+ i
+                    (if (= i (/ number i))
+                        (cl-incf sum i)
+                      (cl-incf sum (+ i (/ number i))))))
+    (cond ((= 1 number) 'deficient)
+          ((< sum number) 'deficient)
+          ((= sum number) 'perfect)
+          ((> sum number) 'abundant))))
 
 (provide 'perfect-numbers)
 ;;; perfect-numbers.el ends here
