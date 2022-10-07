@@ -11,16 +11,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: purcell/setup-emacs@bc59543ddfce8078e3208375b71d77cfa0ca4abc
+        with:
+          version: 28.1
 
-      - name: Install project dependencies
-        env:
-          EMACS_VERSION: 28.1
-        run: |
-          export EMACS_DIR=$HOME/emacs
-          # Install Emacs 26 from upstream
-          bash -e <(curl -fsSkL 'https://raw.githubusercontent.com/vermiculus/emake.el/d8ab7790f5823547fd4e7aec2218771a3dda0638/build-emacs')
-          pushd . && cd $EMACS_DIR && sudo make install && popd
+      - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8 # v3.1.0
 
       - name: Run exercism/emacs-lisp ci (runs tests) for all exercises
         run: |
