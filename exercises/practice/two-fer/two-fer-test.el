@@ -1,4 +1,4 @@
-;;; two-fer-test.el --- Tests for Two-fer (exercism)
+;;; two-fer-test.el --- Tests for Two-fer (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 ;; Common test data version: 1.2.0 4fc1acb

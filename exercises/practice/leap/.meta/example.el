@@ -1,4 +1,4 @@
-;;; leap.el --- Leap exercise (exercism)
+;;; leap.el --- Leap exercise (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

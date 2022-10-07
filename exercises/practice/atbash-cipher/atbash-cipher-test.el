@@ -1,4 +1,4 @@
-;;; atbash-cipher-test.el --- Tests for Atbash Cipher (exercism)
+;;; atbash-cipher-test.el --- Tests for Atbash Cipher (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

@@ -1,4 +1,4 @@
-;;; phone-number.el --- phone-number Exercise (exercism)
+;;; phone-number.el --- phone-number Exercise (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

@@ -1,4 +1,4 @@
-;;; two-fer.el --- Two-fer Exercise (exercism)
+;;; two-fer.el --- Two-fer Exercise (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

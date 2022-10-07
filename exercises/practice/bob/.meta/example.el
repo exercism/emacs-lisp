@@ -1,4 +1,4 @@
-;;; bob.el --- Bob exercise (exercism)
+;;; bob.el --- Bob exercise (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

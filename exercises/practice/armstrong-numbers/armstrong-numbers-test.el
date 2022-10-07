@@ -1,4 +1,4 @@
-;;; armstrong-numbers-test.el --- Tests for armstrong-numbers (exercism)
+;;; armstrong-numbers-test.el --- Tests for armstrong-numbers (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

@@ -1,4 +1,4 @@
-;;; binary.el --- Binary exercise (exercism)
+;;; binary.el --- Binary exercise (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

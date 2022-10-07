@@ -1,4 +1,4 @@
-;;; acronym.el --- Acronym (exercism)
+;;; acronym.el --- Acronym (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

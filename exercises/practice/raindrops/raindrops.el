@@ -1,4 +1,4 @@
-;;; raindrops.el --- Raindrops (exercism)
+;;; raindrops.el --- Raindrops (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

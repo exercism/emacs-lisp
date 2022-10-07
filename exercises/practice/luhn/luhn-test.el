@@ -1,4 +1,4 @@
-;;; luhn-test.el --- Tests for luhn (exercism)
+;;; luhn-test.el --- Tests for luhn (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

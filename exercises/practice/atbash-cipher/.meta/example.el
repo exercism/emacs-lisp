@@ -1,4 +1,4 @@
-;;; atbash-cipher.el --- Atbash-Cipher (exercism)
+;;; atbash-cipher.el --- Atbash-Cipher (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 ;;;

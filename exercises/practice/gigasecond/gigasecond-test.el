@@ -1,4 +1,4 @@
-;;; gigasecond-test.el --- ERT tests for gigasecond (exercism)
+;;; gigasecond-test.el --- ERT tests for gigasecond (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 ;;

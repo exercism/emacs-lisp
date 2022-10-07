@@ -1,4 +1,4 @@
-;;; perfect-numbers-test.el --- Tests for perfect-numbers (exercism)
+;;; perfect-numbers-test.el --- Tests for perfect-numbers (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

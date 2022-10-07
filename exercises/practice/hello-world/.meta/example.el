@@ -1,4 +1,4 @@
-;;; hello-world.el --- Hello World Exercise (exercism)
+;;; hello-world.el --- Hello World Exercise (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

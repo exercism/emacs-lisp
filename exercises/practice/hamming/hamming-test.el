@@ -1,4 +1,4 @@
-;;; hamming-test.el --- Tests for hamming (exercism)
+;;; hamming-test.el --- Tests for hamming (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 ;; Common test data version: 2.0.1 f79dfd7

@@ -1,4 +1,4 @@
-;;; roman-numerals-test.el --- Tests for roman-numerals (exercism)
+;;; roman-numerals-test.el --- Tests for roman-numerals (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

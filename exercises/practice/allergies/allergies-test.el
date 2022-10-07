@@ -1,4 +1,4 @@
-;;; allergies-test.el --- Tests for Allergies (exercism)
+;;; allergies-test.el --- Tests for Allergies (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

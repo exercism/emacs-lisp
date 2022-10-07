@@ -1,4 +1,4 @@
-;;; rna-transcription.el -- RNA Transcription (exercism)
+;;; rna-transcription.el -- RNA Transcription (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

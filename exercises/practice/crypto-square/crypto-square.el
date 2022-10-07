@@ -1,4 +1,4 @@
-;;; crypto-square.el --- Crypto Square (exercism)
+;;; crypto-square.el --- Crypto Square (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

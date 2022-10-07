@@ -1,4 +1,4 @@
-;;; trinary.el --- Trinary (exercism)
+;;; trinary.el --- Trinary (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

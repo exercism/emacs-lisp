@@ -1,4 +1,4 @@
-;;; pagram-test.el --- Tests for Pangram (exercism)
+;;; pagram-test.el --- Tests for Pangram (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 ;; Common test data version: 1.3.0 d79e13e
