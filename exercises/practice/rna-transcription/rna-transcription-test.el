@@ -1,4 +1,4 @@
-;;; rna-transcription-test.el --- Tests for RNA Transcription (exercism)
+;;; rna-transcription-test.el --- Tests for RNA Transcription (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

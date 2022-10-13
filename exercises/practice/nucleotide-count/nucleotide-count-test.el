@@ -1,4 +1,4 @@
-;;; nucleotide-count-test.el --- Tests for nucleotide-count (exercism)
+;;; nucleotide-count-test.el --- Tests for nucleotide-count (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

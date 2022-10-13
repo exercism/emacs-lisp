@@ -1,4 +1,4 @@
-;;; difference-of-squares-test.el --- Tests for difference-of-squares (exercism)
+;;; difference-of-squares-test.el --- Tests for difference-of-squares (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

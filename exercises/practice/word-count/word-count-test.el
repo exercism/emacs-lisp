@@ -1,4 +1,4 @@
-;;; word-count-test.el --- Tests for word-count (exercism)
+;;; word-count-test.el --- Tests for word-count (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

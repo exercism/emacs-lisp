@@ -1,4 +1,4 @@
-;;; perfect-numbers.el --- perfect-numbers Exercise (exercism)
+;;; perfect-numbers.el --- perfect-numbers Exercise (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

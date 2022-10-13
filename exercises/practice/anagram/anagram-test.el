@@ -1,4 +1,4 @@
-;;; anagram-test.el --- Tests for Anagram (exercism)
+;;; anagram-test.el --- Tests for Anagram (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

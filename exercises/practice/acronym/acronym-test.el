@@ -1,4 +1,4 @@
-;;; acronym-test.el --- Tests for Acronym (exercism)
+;;; acronym-test.el --- Tests for Acronym (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

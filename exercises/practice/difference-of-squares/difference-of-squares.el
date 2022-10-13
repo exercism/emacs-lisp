@@ -1,4 +1,4 @@
-;;; difference-of-squares.el --- Difference of Squares (exercism)
+;;; difference-of-squares.el --- Difference of Squares (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

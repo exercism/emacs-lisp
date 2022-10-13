@@ -1,4 +1,4 @@
-;;; pangram.el --- Pangram (exercism)
+;;; pangram.el --- Pangram (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

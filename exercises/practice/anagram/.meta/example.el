@@ -1,4 +1,4 @@
-;;; anagram.el --- Anagram (exercism)
+;;; anagram.el --- Anagram (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

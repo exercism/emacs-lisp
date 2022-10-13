@@ -1,4 +1,4 @@
-;;; bob-test.el --- ERT tests for Bob (exercism)
+;;; bob-test.el --- ERT tests for Bob (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 ;; Common test data version: 1.2.0 6dc2014

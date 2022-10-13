@@ -1,4 +1,4 @@
-;;; grains.el --- Grains exercise (exercism)
+;;; grains.el --- Grains exercise (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

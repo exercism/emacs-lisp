@@ -1,4 +1,4 @@
-;;; phone-number-test.el --- Tests for phone-number (exercism)
+;;; phone-number-test.el --- Tests for phone-number (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

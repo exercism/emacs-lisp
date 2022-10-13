@@ -1,4 +1,4 @@
-;;; leap-test.el --- Tests for Leap exercise (exercism)
+;;; leap-test.el --- Tests for Leap exercise (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

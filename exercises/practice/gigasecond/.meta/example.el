@@ -1,4 +1,4 @@
-;;; gigasecond.el --- Gigasecond exercise (exercism)
+;;; gigasecond.el --- Gigasecond exercise (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 ;; Calculate the date one gigasecond (10^9 seconds) from the

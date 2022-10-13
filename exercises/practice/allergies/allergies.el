@@ -1,4 +1,4 @@
-;;; allergies.el --- Allergies Exercise (exercism)
+;;; allergies.el --- Allergies Exercise (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

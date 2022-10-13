@@ -1,4 +1,4 @@
-;;; run-length-encoding.el --- run-length-encoding Exercise (exercism)
+;;; run-length-encoding.el --- run-length-encoding Exercise (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

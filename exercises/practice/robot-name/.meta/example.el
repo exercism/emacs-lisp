@@ -1,4 +1,4 @@
-;;; robot-name.el --- Robot Name (exercism)
+;;; robot-name.el --- Robot Name (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 ;;

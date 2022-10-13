@@ -1,4 +1,4 @@
-;;; armstrong-numbers.el --- armstrong-numbers Exercise (exercism)
+;;; armstrong-numbers.el --- armstrong-numbers Exercise (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

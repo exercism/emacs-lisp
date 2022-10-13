@@ -1,4 +1,4 @@
-;;; hamming.el --- Hamming (exercism)
+;;; hamming.el --- Hamming (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

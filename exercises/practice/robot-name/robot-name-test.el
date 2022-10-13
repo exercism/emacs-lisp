@@ -1,4 +1,4 @@
-;;; robot-name-test.el --- Tests for Robot Name (exercism)
+;;; robot-name-test.el --- Tests for Robot Name (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

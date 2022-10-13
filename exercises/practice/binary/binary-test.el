@@ -1,4 +1,4 @@
-;;; binary-test.el --- Tests for Binary exercise (exercism)
+;;; binary-test.el --- Tests for Binary exercise (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

@@ -1,4 +1,4 @@
-;;; luhn.el --- luhn (exercism)
+;;; luhn.el --- luhn (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

@@ -1,4 +1,4 @@
-;;; raindrops-test.el --- Tests for Raindrops (exercism)
+;;; raindrops-test.el --- Tests for Raindrops (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

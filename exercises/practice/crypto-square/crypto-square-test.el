@@ -1,4 +1,4 @@
-;;; crypto-square-test.el --- Tests for Crypto Square (exercism)
+;;; crypto-square-test.el --- Tests for Crypto Square (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

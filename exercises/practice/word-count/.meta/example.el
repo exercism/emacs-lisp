@@ -1,4 +1,4 @@
-;;; word-count.el --- word-count Exercise (exercism)
+;;; word-count.el --- word-count Exercise (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

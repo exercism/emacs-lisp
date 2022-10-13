@@ -1,4 +1,4 @@
-;;; run-length-encoding-test.el --- Tests for run-length-encoding (exercism)
+;;; run-length-encoding-test.el --- Tests for run-length-encoding (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

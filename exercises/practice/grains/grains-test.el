@@ -1,4 +1,4 @@
-;;; grains-test.el --- Test for Grains (exercism)
+;;; grains-test.el --- Test for Grains (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

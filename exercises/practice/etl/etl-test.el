@@ -1,4 +1,4 @@
-;;; etl-test.el --- Tests for etl (exercism)
+;;; etl-test.el --- Tests for etl (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

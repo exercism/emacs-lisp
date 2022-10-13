@@ -1,4 +1,4 @@
-;;; roman-numerals.el --- roman-numerals Exercise (exercism)
+;;; roman-numerals.el --- roman-numerals Exercise (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

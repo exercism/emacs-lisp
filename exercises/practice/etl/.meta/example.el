@@ -1,4 +1,4 @@
-;;; etl.el --- etl Exercise (exercism)
+;;; etl.el --- etl Exercise (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 
