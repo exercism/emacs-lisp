@@ -112,6 +112,27 @@
 (ert-deftest reverse-list-not-flattened ()
   (should (equal '((4 5 6) () (3) (2) (1)) (list-reverse '((1) (2) (3) () (4 5 6))))))
 
+;; Emacs Lisp track specific:
+
+(ert-deftest sum-empty-list ()
+  (should (equal 0 (list-sum '()))))
+
+
+(ert-deftest sum-elements ()
+  (should (equal 10 (list-sum '(1 2 3 4)))))
+
+
+(ert-deftest empty-p-empty ()
+  (should (equal t (list-empty-p '()))))
+
+
+(ert-deftest empty-p-element ()
+  (should (equal nil (list-empty-p '(1)))))
+
+
+(ert-deftest empty-p-elements ()
+  (should (equal nil (list-empty-p '(1 2 3 4)))))
+
 
 (provide 'list-ops-test)
 ;;; list-ops-test.el ends here
