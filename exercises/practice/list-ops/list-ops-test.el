@@ -5,6 +5,16 @@
 ;;; Code:
 
 (load-file "list-ops.el")
+(declare-function list-append "list-ops.el" (list1 list2))
+(declare-function list-concatenate "list-ops.el" (list1 list2 &rest LISTS))
+(declare-function list-filter "list-ops.el" (list function))
+(declare-function list-length "list-ops.el" (list))
+(declare-function list-map "list-ops.el" (list function))
+(declare-function list-foldl "list-ops.el" (list function init))
+(declare-function list-foldr "list-ops.el" (list function init))
+(declare-function list-reverse "list-ops.el" (list))
+(declare-function list-sum "list-ops.el" (list))
+(declare-function list-empty-p "list-ops.el" (list))
 
 
 (ert-deftest append-empt-lists ()
