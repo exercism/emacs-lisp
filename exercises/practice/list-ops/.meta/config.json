@@ -1,10 +1,9 @@
 {
-  "blurb": "Implement basic list operations",
+  "blurb": "Implement basic list operations.",
   "authors": [
     "fap"
   ],
-  "contributors": [
-  ],
+  "contributors": [],
   "files": {
     "solution": [
       "list-ops.el"
@@ -15,7 +14,5 @@
     "example": [
       ".meta/example.el"
     ]
-  },
-  "source_url": "https://github.com/exercism/problem-specifications/tree/main/exercises/list-ops"
+  }
 }
-
