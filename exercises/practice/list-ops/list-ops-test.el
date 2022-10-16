@@ -1,4 +1,4 @@
-;;; list-ops-test.el --- Tests for List Ops (exercism)
+;;; list-ops-test.el --- Tests for List Ops (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 

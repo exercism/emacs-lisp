@@ -36,7 +36,6 @@
   (error "Delete this S-Expression and write your own implementation."))
 
 
-;; TODO(FAP): Is it okay to activate lexical scoping? Otherwise the `fun' variables are conflicting
 
 (provide 'list-ops)
 ;;; list-ops.el ends here
