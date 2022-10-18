@@ -50,6 +50,18 @@ To install Emacs on Windows head over to the nearest
 [FTP archive mirror](https://ftpmirror.gnu.org/emacs/windows), grab the installer (=emacs-XX.X-installer.exe=), and launch it.
 If you don't want use Emacs without installing it you can grab the file with the pattern =emacs-XX.x.zip=, unpack it and launch `bin\runemacs.exe`.
 
+If you are using [MSYS2](https://www.msys2.org/) you can install the 64bits build of Emacs with
+
+```
+pacman -S mingw-w64-x86_64-emacs
+```
+
+or the 32bits build with
+
+```
+pacman -S mingw-w64-i686-emacs
+```
+
 ### Issues
 YMMV, please let us know in the [issues](https://github.com/exercism/emacs-lisp/issues) or [on Gitter](https://gitter.im/exercism/support) if this section
 needs some love.
