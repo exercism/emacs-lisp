@@ -5,13 +5,14 @@
 So you've installed Emacs. Now what?
 
 Well, you can start the tutoral by pressing `C-h t`, and that's not a bad place
-to start. The tutorial will teach you the basics of editing, searching, and navigation in Emacs.
+to start. The tutorial will teach you the basics of editing, searching, and navigating in Emacs.
 
 If you're completely new to Emacs, it can make sense to grab a starter kit,
 which comes with a set of configurations and packages already set up.
 
 The [Emacs Prelude](http://batsov.com/prelude/) package offers a
 nice set of sensible defaults and packages.
+
 To install Emacs Prelude run the following in a terminal:
 
 ```
@@ -22,6 +23,7 @@ and make sure to check out the [installation guide](https://prelude.emacsredux.c
 
 
 If you are familiar with vim you might be interested in the [Doom Emacs](https://github.com/doomemacs/doomemacs) starter kit, which integrates vim emulation powered by [evil-mode](https://github.com/emacs-evil/evil).
+
 To install Doom Emacs run the following in a terminal:
 
 ```
@@ -35,7 +37,7 @@ and make sure to check the [installation guide](https://github.com/doomemacs/doo
 
 Setting up syntax checking and linting with [Flycheck](https://www.flycheck.org/en/latest/) is recommended.
 
-If you don't already have added the [MELPA](https://melpa.org/) repositories to your Emacs, do this by adding the following to your [init file](https://www.flycheck.org/en/latest/glossary.html#term-init-file)
+If you don't already have added the [MELPA](https://melpa.org/) repository to your Emacs, do this by adding the following to your [init file](https://www.flycheck.org/en/latest/glossary.html#term-init-file)
 
 ```elisp
 (require 'package)
@@ -80,5 +82,4 @@ which is opened the same way.
 ## Emacs Lisp best practices and conventions
 
 The Emacs Manual contains a section on Emacs Lisp [Coding Conventions](https://www.gnu.org/software/emacs/manual/html_node/elisp/Coding-Conventions.html).
-
 There is also a community driven [Style Guide](https://github.com/bbatsov/emacs-lisp-style-guide) maintained on GitHub.
