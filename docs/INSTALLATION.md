@@ -61,7 +61,3 @@ or the 32bits build with
 ```
 pacman -S mingw-w64-i686-emacs
 ```
-
-### Issues
-YMMV, please let us know in the [issues](https://github.com/exercism/emacs-lisp/issues) or [on Gitter](https://gitter.im/exercism/support) if this section
-needs some love.

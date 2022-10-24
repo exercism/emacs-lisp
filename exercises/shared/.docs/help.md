@@ -7,6 +7,4 @@ To get help if you're having trouble, you can use one of the following resources
 - IRC - there are [freenode](https://freenode.net/) channels for `#emacs`, `#prelude`, and many Emacs
   packages, and many helpful folks around. And with emacs, IRC is as close as
   `M-x erc`.
-- [Exercism Support](https://gitter.im/exercism/support) Gitter chat is also a good place to get help from the
-  exercism community.
 - [StackOverflow](http://stackoverflow.com/questions/tagged/elisp) can be used to search for your problem and see if it has been answered already. You can also ask and answer questions.
