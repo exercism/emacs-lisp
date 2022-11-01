@@ -134,5 +134,18 @@
   (should (equal nil (list-empty-p '(1 2 3 4)))))
 
 
+;; Bonus tests with large lists that hit the recursion limit set by `max-lisp-eval-depth'
+
+;; (require 'cl-lib)
+
+;; (ert-deftest large-list-foldl ()
+;;   (let ((list (cl-loop for i upto (1+ max-lisp-eval-depth) collect i)))
+;;     (should (equal 1282401 (list-foldl (lambda (elem accu) (+ elem accu)) list 0)))))
+
+;; (ert-deftest large-list-foldr ()
+;;   (let ((list (cl-loop for i upto (1+ max-lisp-eval-depth) collect i)))
+;;     (should (equal 1282401 (list-foldr (lambda (elem accu) (+ elem accu)) list 0)))))
+
+
 (provide 'list-ops-test)
 ;;; list-ops-test.el ends here
