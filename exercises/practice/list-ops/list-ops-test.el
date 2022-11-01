@@ -140,11 +140,11 @@
 
 ;; (ert-deftest large-list-foldl ()
 ;;   (let ((list (cl-loop for i upto (1+ max-lisp-eval-depth) collect i)))
-;;     (should (equal 1282401 (list-foldl (lambda (elem accu) (+ elem accu)) list 0)))))
+;;     (should (equal (apply '+ list) (list-foldl (lambda (elem accu) (+ elem accu)) list 0)))))
 
 ;; (ert-deftest large-list-foldr ()
 ;;   (let ((list (cl-loop for i upto (1+ max-lisp-eval-depth) collect i)))
-;;     (should (equal 1282401 (list-foldr (lambda (elem accu) (+ elem accu)) list 0)))))
+;;     (should (equal (apply '+ list) (list-foldr (lambda (elem accu) (+ elem accu)) list 0)))))
 
 
 (provide 'list-ops-test)
