@@ -1,0 +1,18 @@
+{
+  "blurb": "Implement basic list operations.",
+  "authors": [
+    "fapdash"
+  ],
+  "contributors": [],
+  "files": {
+    "solution": [
+      "list-ops.el"
+    ],
+    "test": [
+      "list-ops-test.el"
+    ],
+    "example": [
+      ".meta/example.el"
+    ]
+  }
+}
