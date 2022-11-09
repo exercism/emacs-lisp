@@ -93,10 +93,6 @@
   (should (equal 9.0 (list-foldr (lambda (elem accu) (/ elem accu)) '(1 2 3 4) 24.0))))
 
 
-(ert-deftest foldl-multiply-empty-list ()
-  (should (equal 2 (list-foldl (lambda (elem accu) (* elem accu)) '() 2))))
-
-
 (ert-deftest foldr-multiply-empty-list ()
   (should (equal 2 (list-foldr (lambda (elem accu) (* elem accu)) '() 2))))
 
