@@ -29,5 +29,8 @@
   (should (equal "imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn  sseoau "
                  (encipher "If man was meant to stay on the ground, god would have given us roots."))))
 
+(ert-deftest normalization-results-in-empty-plaintext ()
+  (should (equal "" (encipher "... --- ..."))))
+
 (provide 'crypto-square-test)
 ;;; crypto-square-test.el ends here
