@@ -47,9 +47,26 @@
 (ert-deftest word-is-not-own-anagram ()
   (should (equal '()
                  (anagrams-for
-                  "banana"
+                  "BANANA"
+                  '("BANANA")))))
+
+(ert-deftest word-is-not-own-anagram-if-letter-case-is-partially-different ()
+  (should (equal '()
+                 (anagrams-for
+                  "BANANA"
+                  '("Banana")))))
+
+(ert-deftest word-is-not-own-anagram-if-letter-case-is-completely-different ()
+  (should (equal '()
+                 (anagrams-for
+                  "BANANA"
                   '("banana")))))
 
+(ert-deftest words-other-than-themselves-can-be-anagrams ()
+  (should (equal '("Silent")
+                 (anagrams-for
+                  "LISTEN"
+                  '("Listen" "Silent" "LISTEN")))))
 
 (provide 'anagram-test)
 ;;; anagram-test.el ends here

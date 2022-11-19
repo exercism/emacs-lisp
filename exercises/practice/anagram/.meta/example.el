@@ -10,7 +10,7 @@
   "Check that words A and B are anagrams of each other, but not identical."
   (and (equal (cl-sort (split-string-and-unquote (downcase a) "") #'string<)
               (cl-sort (split-string-and-unquote (downcase b) "") #'string<))
-       (not (string= a b))))
+       (not (string= (downcase a) (downcase b)))))
 
 (defun anagrams-for (subject candidates)
   "Find anagrams for SUBJECT from list of CANDIDATES."
