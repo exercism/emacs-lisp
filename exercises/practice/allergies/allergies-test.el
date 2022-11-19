@@ -51,5 +51,8 @@
                    "chocolate" "pollen" "cats")
                  (allergen-list 509))))
 
+(ert-deftest no-allergen-score-parts-without-highest-valid-score ()
+  (should (equal '("eggs") (allergen-list 257))))
+
 (provide 'allergies)
 ;;; allergies-test.el ends here
