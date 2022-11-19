@@ -39,4 +39,12 @@
   "Seven digit number that should not an Armstrong number"
   (should (not (armstrong-p 9926314))))
 
+(ert-deftest armstrong-number-186709961001538790100634132976990 ()
+  "Armstrong number containing seven zeroes that should be an Armstrong number"
+  (should (armstrong-p 186709961001538790100634132976990)))
+
+(ert-deftest armstrong-number-115132219018763992565095597973971522401 ()
+  "The largest and last Armstrong number should be an Armstrong number"
+  (should (armstrong-p 115132219018763992565095597973971522401)))
+
 ;;; armstrong-numbers-test.el ends here
