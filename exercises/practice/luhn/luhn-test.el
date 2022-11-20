@@ -54,6 +54,15 @@
 (ert-deftest input-string-containing-a-punctuation-in-the-middle ()
   (should-error (luhn-p "12_45678!!@45670")))
 
+(ert-deftest invalid-long-number-with-a-remainder-divisble-by-5 ()
+  (should-not (luhn-p "1 2345 6789 1234 5678 9013")))
+
+(ert-deftest very-long-input-is-valid ()
+  (should (luhn-p "9999999999 9999999999 9999999999 9999999999")))
+
+(ert-deftest valid-luhn-with-an-odd-number-of-digits-and-non-zero-first-digit ()
+  (should (luhn-p "109")))
+
 (provide 'luhn-test)
 ;;; luhn-test.el ends here
 
