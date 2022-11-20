@@ -20,7 +20,7 @@
                   ("IV" .   4)
                   ("I"  .   1)))
         (roman nil))
-    (if (> value 3000)
+    (if (> value 3999)
         (error "Value out of range"))
     (while (not (eq value 0))
       (let ((r (caar decode))
