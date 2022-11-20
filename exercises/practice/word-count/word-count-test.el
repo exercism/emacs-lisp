@@ -71,5 +71,10 @@
                          ("getting" . 1)
                          ("it" . 1)))))
 
+(ert-deftest quotation-for-word-with-apostrophe-test ()
+  (should (equal-assoc (word-count "can, can't, 'can't''")
+                       '(("can" . 1)
+                         ("can't" . 2)))))
+
 (provide 'word-count)
 ;;; word-count-test.el ends here
