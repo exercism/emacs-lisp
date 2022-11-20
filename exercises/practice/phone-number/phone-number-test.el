@@ -29,6 +29,14 @@
   (should (equal (numbers "123456789") "0000000000")))
 
 
+(ert-deftest invalid-with-letters ()
+  (should (equal (numbers "523-abc-7890") "0000000000")))
+
+
+(ert-deftest invalid-with-punctuations ()
+  (should (equal (numbers "523-@:!-7890") "0000000000")))
+
+
 (ert-deftest area-code-test ()
   (should (equal (area-code "1234567890") "123")))
 
