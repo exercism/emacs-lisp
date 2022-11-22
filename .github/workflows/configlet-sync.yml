@@ -1,0 +1,36 @@
+name: Configlet Sync
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 1 * *'
+
+jobs:
+  configlet:
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8 # v3.1.0
+
+      - name: Fetch configlet
+        uses: exercism/github-actions/configlet-ci@main
+
+      - name: Configlet Sync
+        id: sync
+        shell: bash {0}
+        run: |
+          echo "SYNC_OUTPUT<<EOF" >> $GITHUB_ENV
+          configlet sync --tests --docs --metadata --filepaths >> $GITHUB_ENV
+          exit_code=$?
+          echo "EOF" >> $GITHUB_ENV
+          exit $exit_code
+
+      - name: Create issue
+        if: ${{ failure() }}
+        uses: JasonEtco/create-an-issue@1a16035489d05041b9af40b970f02e301c52ffba # v2.8.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          filename: .github/configlet-sync-issue.md
+          update_existing: true
