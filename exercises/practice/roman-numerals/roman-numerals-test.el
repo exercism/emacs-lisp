@@ -28,6 +28,9 @@
 (ert-deftest to-roman-9 ()
   (should (equal (to-roman 9) "IX")))
 
+(ert-deftest to-roman-16 ()
+  (should (equal (to-roman 16) "XVI")))
+
 (ert-deftest to-roman-27 ()
   (should (equal (to-roman 27) "XXVII")))
 
@@ -36,6 +39,9 @@
 
 (ert-deftest to-roman-59 ()
   (should (equal (to-roman 59) "LIX")))
+
+(ert-deftest to-roman-66 ()
+  (should (equal (to-roman 66) "LXVI")))
 
 (ert-deftest to-roman-93 ()
   (should (equal (to-roman 93) "XCIII")))
@@ -46,11 +52,17 @@
 (ert-deftest to-roman-163 ()
   (should (equal (to-roman 163) "CLXIII")))
 
+(ert-deftest to-roman-166 ()
+  (should (equal (to-roman 166) "CLXVI")))
+
 (ert-deftest to-roman-402 ()
   (should (equal (to-roman 402) "CDII")))
 
 (ert-deftest to-roman-575 ()
   (should (equal (to-roman 575) "DLXXV")))
+
+(ert-deftest to-roman-666 ()
+  (should (equal (to-roman 666) "DCLXVI")))
 
 (ert-deftest to-roman-911 ()
   (should (equal (to-roman 911) "CMXI")))
@@ -58,8 +70,17 @@
 (ert-deftest to-roman-1024 ()
   (should (equal (to-roman 1024) "MXXIV")))
 
+(ert-deftest to-roman-1666 ()
+  (should (equal (to-roman 1666) "MDCLXVI")))
+
 (ert-deftest to-roman-3000 ()
   (should (equal (to-roman 3000) "MMM")))
+
+(ert-deftest to-roman-3001 ()
+  (should (equal (to-roman 3001) "MMMI")))
+
+(ert-deftest to-roman-3999 ()
+  (should (equal (to-roman 3999) "MMMCMXCIX")))
 
 (provide 'roman-numerals)
 ;;; roman-numerals-test.el ends here

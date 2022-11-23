@@ -65,3 +65,24 @@ description = "1024 is MXXIV"
 
 [bb550038-d4eb-4be2-a9ce-f21961ac3bc6]
 description = "3000 is MMM"
+
+[6d1d82d5-bf3e-48af-9139-87d7165ed509]
+description = "16 is XVI"
+
+[4465ffd5-34dc-44f3-ada5-56f5007b6dad]
+description = "66 is LXVI"
+
+[902ad132-0b4d-40e3-8597-ba5ed611dd8d]
+description = "166 is CLXVI"
+
+[dacb84b9-ea1c-4a61-acbb-ce6b36674906]
+description = "666 is DCLXVI"
+
+[efbe1d6a-9f98-4eb5-82bc-72753e3ac328]
+description = "1666 is MDCLXVI"
+
+[3bc4b41c-c2e6-49d9-9142-420691504336]
+description = "3001 is MMMI"
+
+[4e18e96b-5fbb-43df-a91b-9cb511fe0856]
+description = "3999 is MMMCMXCIX"
