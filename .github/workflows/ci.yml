@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: purcell/setup-emacs@bc59543ddfce8078e3208375b71d77cfa0ca4abc
+      - uses: purcell/setup-emacs@5c5d2aa1953aa17ec6b650f7db36f6465a6bc483
         with:
           version: 28.1
 
