@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "fapdash"
+  ],
+  "files": {
+    "solution": [
+      "sublist.el"
+    ],
+    "test": [
+      "sublist-test.el"
+    ],
+    "example": [
+      ".meta/example.el"
+    ]
+  },
+  "blurb": "Write a function to determine if a list is a sublist of another list."
+}
