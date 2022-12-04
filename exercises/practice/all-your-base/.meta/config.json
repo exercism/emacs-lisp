@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "fapdash"
+  ],
+  "files": {
+    "solution": [
+      "all-your-base.el"
+    ],
+    "test": [
+      "all-your-base-test.el"
+    ],
+    "example": [
+      "example.el"
+    ]
+  },
+  "blurb": "Convert a number, represented as a sequence of digits in one base, to any other base."
+}
