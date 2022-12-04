@@ -13,8 +13,8 @@
          (cl-loop for digit in (reverse list-of-digits)
                   for index from 1
                   with power = 1
-                  collect (* digit power)
                   do (unless (< -1 digit base) (error "All digits must satisfy 0 <= d < input base"))
+                  collect (* digit power)
                   do (setq power (* power base)))))
 
 (defun drop-leading-zeros (sequence)
@@ -29,12 +29,12 @@
   (when (null list-of-digits)
     (cl-return-from rebase '(0)))
   (named-let recur
-      ((q (to-decimal list-of-digits in-base))
+      ((quotient (to-decimal list-of-digits in-base))
        (result '()))
-    (if (= q 0)
+    (if (= quotient 0)
         (progn
           result)
-      (recur (/ q out-base) (push (mod q out-base) result)))))
+      (recur (/ quotient out-base) (push (mod quotient out-base) result)))))
 
 (provide 'all-your-base)
 ;;; all-your-base.el ends here
