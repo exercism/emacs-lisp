@@ -199,7 +199,7 @@
         "prerequisites": [],
         "difficulty": 1,
         "topics": null,
-        "deprecated": true
+        "status": "deprecated"
       },
       {
         "slug": "all-your-base",
