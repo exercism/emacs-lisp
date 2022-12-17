@@ -198,6 +198,16 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
+        "topics": null,
+        "status": "deprecated"
+      },
+      {
+        "slug": "all-your-base",
+        "name": "All Your Base",
+        "uuid": "a101dd85-fe8b-4f3f-bece-bbd899a08ee7",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3,
         "topics": [
           "bitwise_operations",
           "control_flow_conditionals",
