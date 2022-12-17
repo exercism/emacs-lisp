@@ -420,6 +420,23 @@
           "lists",
           "loops"
         ]
+      },
+      {
+        "slug": "sublist",
+        "name": "Sublist",
+        "uuid": "0cabeae4-439c-4003-b532-f303c953a0aa",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2,
+        "topics": [
+          "lists",
+          "cond",
+          "case",
+          "if",
+          "multiple-clause-functions",
+          "pattern-matching",
+          "recursion"
+        ]
       }
     ]
   },
