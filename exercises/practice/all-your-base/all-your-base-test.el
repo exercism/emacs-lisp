@@ -68,7 +68,7 @@
   (should-error (rebase '(1) -2 10)))
 
 
-(ert-deftest input-base-is-negative ()
+(ert-deftest negative-digit ()
   (should-error (rebase '(1 -1 1 0 1 0) 2 10)))
 
 
