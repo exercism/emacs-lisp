@@ -28,6 +28,8 @@
 (ert-deftest invalid-when-9-digits-test ()
   (should (equal (numbers "123456789") "0000000000")))
 
+(ert-deftest invalid-when-more-than-11-digits-test ()
+  (should (equal (numbers "321234567890") "0000000000")))
 
 (ert-deftest invalid-with-letters ()
   (should (equal (numbers "523-abc-7890") "0000000000")))
