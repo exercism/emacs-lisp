@@ -6,37 +6,37 @@
 ;;; Code:
 
 (load-file "pangram.el")
-(declare-function is-pangram "pangram.el" (phrase))
+(declare-function pangramp "pangram.el" (phrase))
 
 (ert-deftest sentence-empty ()
-  (should (equal nil (is-pangram ""))))
+  (should (equal nil (pangramp ""))))
 
 (ert-deftest recognizes-a-perfect-lower-case-pangram ()
-  (should (equal t (is-pangram "abcdefghijklmnopqrstuvwxyz"))))
+  (should (equal t (pangramp "abcdefghijklmnopqrstuvwxyz"))))
 
 (ert-deftest  pangram-with-only-lower-case ()
-  (should (equal t (is-pangram "the quick brown fox jumps over the lazy dog"))))
+  (should (equal t (pangramp "the quick brown fox jumps over the lazy dog"))))
 
 (ert-deftest missing-character-x ()
-  (should (equal nil (is-pangram "a quick movement of the enemy will jeopardize five gunboats"))))
+  (should (equal nil (pangramp "a quick movement of the enemy will jeopardize five gunboats"))))
 
 (ert-deftest missing-another-character-eg-h ()
-  (should (equal nil (is-pangram "five boxing wizards jump quickly at it"))))
+  (should (equal nil (pangramp "five boxing wizards jump quickly at it"))))
 
 (ert-deftest  pangram-with-underscores ()
-  (should (equal t (is-pangram "the_quick_brown_fox_jumps_over_the_lazy_dog"))))
+  (should (equal t (pangramp "the_quick_brown_fox_jumps_over_the_lazy_dog"))))
 
 (ert-deftest  pangram-with-numbers ()
-  (should (equal t (is-pangram "the 1 quick brown fox jumps over the 2 lazy dogs"))))
+  (should (equal t (pangramp "the 1 quick brown fox jumps over the 2 lazy dogs"))))
 
 (ert-deftest  missing-letters-replaced-by-numbers ()
-  (should (equal nil (is-pangram "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"))))
+  (should (equal nil (pangramp "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"))))
 
 (ert-deftest  pangram-with-mixed-case-and-punctuation ()
-  (should (equal t (is-pangram "\"Five quacking Zephyrs jolt my wax bed.\""))))
+  (should (equal t (pangramp "\"Five quacking Zephyrs jolt my wax bed.\""))))
 
 (ert-deftest  a-m-and-A-M-are-26-different-characters-but-not-a-pangram ()
-  (should (equal nil (is-pangram "abcdefghijklm ABCDEFGHIJKLM"))))
+  (should (equal nil (pangramp "abcdefghijklm ABCDEFGHIJKLM"))))
 
 (provide 'pangram-test)
 ;;; pagram-test.el ends here

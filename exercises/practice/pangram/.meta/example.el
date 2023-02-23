@@ -5,7 +5,7 @@
 ;;; Code:
 (require 'cl-lib)
 
-(defun is-pangram (phrase)
+(defun pangramp (phrase)
   "Determine if a given phrase is a pangram."
   (let ((alphabet "abcdefghijklmnopqrstuvwxyz"))
         (cl-every
