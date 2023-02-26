@@ -18,11 +18,6 @@ If the string contains characters that aren't A, C, G, or T then it is invalid a
 For example:
 
 ```text
-"GATTACA" -> '((?A . 3) (?C . 1) (?G . 1) (?T . 2))
+"GATTACA" -> 'A': 3, 'C': 1, 'G': 1, 'T': 2
 "INVALID" -> error
 ```
-
-Hints:
-
-1. The `?A` is the Emacs Lisp way to represent a character. You can find more information in the documentation: [link](https://www.gnu.org/software/emacs/manual/html_node/elisp/Basic-Char-Syntax.html).
-2. The structure mentioned in the correct example is called `Association List`, or `alist`. You can find more information about it in this [link](https://www.gnu.org/software/emacs/manual/html_node/elisp/Association-Lists.html).
