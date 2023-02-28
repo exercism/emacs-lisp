@@ -2,7 +2,7 @@
 
 ;;; Commentary:
 
-(defun is-pangram (phrase)
+(defun pangramp (phrase)
 ;;; Code:
 )
 
