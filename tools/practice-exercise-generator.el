@@ -4,9 +4,6 @@
 
 ;;; Code:
 
-(unless (json-available-p)
-  (error "Emacs needs to be built with JSON support"))
-
 (exercism//install-required-packages)
 
 (require 'mustache)
@@ -24,7 +21,11 @@
 
   (with-temp-buffer
     (exercism//load-canonical-data exercise-slug)
-    (let ((canonical-data (json-parse-buffer)))
+    (goto-char 1)
+    (let* ((json-object-type 'hash-table)
+           (json-key-type 'string)
+           (canonical-data (json-read))
+           (functions (exercism//retrieve-functions canonical-data)))
       ;; TODO(FAP): adjust meta config - currently depends on jq
       (exercism//generate-solution-stubs exercise-slug canonical-data)
       ;; TODO(FAP): generate full test implementations, not just stubs
