@@ -2,15 +2,16 @@
 
 (load-file "{{solution-filename}}.el")
 {{#functions}}
-  (declare-function {{function-name}} "{{solution-filename}}.el" ({{function-parameters}}))
+(declare-function {{function-name}} "{{solution-filename}}.el" ({{function-parameters}}))
 {{/functions}}
 
 
 {{#tests}}
-  (defun {{test-name}} ()
-    (error "Delete this S-Expression and implement the test"))
 
 
+(defun {{test-name}} ()
+  (error "Delete this S-Expression and implement the test"))
 {{/tests}}
+
 
 {{> footer}}
