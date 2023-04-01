@@ -158,7 +158,10 @@
                       " " "-"
                       (gethash "description" elem)))
                     ("uuid" (gethash "uuid" elem))
-                    ("reimplements" (gethash "reimplements" elem)))))
+                    ("reimplements" (gethash "reimplements" elem))
+                    ("input" (json-encode (gethash "input" elem)))
+                    ("expected"
+                     (json-encode (gethash "expected" elem))))))
                cases))))))
        (reimplemented-uuids
         (seq-map (lambda (hash) (gethash "reimplements" hash)) tests))
