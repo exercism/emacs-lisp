@@ -3,12 +3,10 @@
   (package-initialize)
   (unless package-archive-contents
     (add-to-list
-     'package-archives
-     '("gnu" . "https://elpa.gnu.org/packages/")
+     'package-archives '("gnu" . "https://elpa.gnu.org/packages/")
      t)
     (add-to-list
-     'package-archives
-     '("melpa" . "https://melpa.org/packages/")
+     'package-archives '("melpa" . "https://melpa.org/packages/")
      t)
     (package-refresh-contents))
   (dolist (pkg '(mustache ht string-inflection))
