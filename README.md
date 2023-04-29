@@ -34,7 +34,7 @@ It might also be helpful to look at [Being a Good Community Member][being-a-good
 
 <img align="left" width="90" height="85" src="https://github.com/exercism/website-icons/blob/main/exercises/health-statistics.svg">
 
-We 💙 our community and are happy about contributions.  
+We 💙 our community and welcome contributions.  
 <br>
 The following guide is intended to give you an overview about the different ways to help and to point you to the relevant documentation.
 
