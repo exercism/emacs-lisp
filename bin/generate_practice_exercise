@@ -9,6 +9,16 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
+if ! [ -x "$(command -v jq)" ]; then
+    echo "jq is required. Please install jq and make sure it is on the $PATH: https://stedolan.github.io/jq/download/" >&2
+    exit 1
+fi
+
+if ! [ -x "$(command -v emacs)" ]; then
+    echo "Emacs is required. Please install Emacs and make sure it is on the $PATH: https://www.gnu.org/software/emacs/download.html" >&2
+    exit 1
+fi
+
 SLUG="$1"
 exercise_dir="exercises/practice/${SLUG}"
 
