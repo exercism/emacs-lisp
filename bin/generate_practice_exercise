@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+
+# Exit if anything fails.
+set -euo pipefail
+
+# If argument not provided, print usage and exit
+if [ -z "$1" ]; then
+    echo "Usage: bin/generate_practice_exercise <exercise-slug>"
+    exit 1
+fi
+
+if ! [ -x "$(command -v jq)" ]; then
+    echo "jq is required. Please install jq and make sure it is on the $PATH: https://stedolan.github.io/jq/download/" >&2
+    exit 1
+fi
+
+if ! [ -x "$(command -v emacs)" ]; then
+    echo "Emacs is required. Please install Emacs and make sure it is on the $PATH: https://www.gnu.org/software/emacs/download.html" >&2
+    exit 1
+fi
+
+SLUG="$1"
+exercise_dir="exercises/practice/${SLUG}"
+
+download() {
+    file="$1"
+    url="$2"
+    curl --silent --show-error --fail --retry 3 --max-time 3 \
+        --output "$file" "$url"
+}
+
+# build configlet
+echo "Fetching latest version of configlet..."
+./bin/fetch-configlet
+
+# Preparing config.json
+echo "Adding instructions and configuration files..."
+UUID=$(bin/configlet uuid)
+jq --arg slug "$SLUG" --arg uuid "$UUID" \
+    '.exercises.practice += [{slug: $slug, name: "TODO", uuid: $uuid, practices: [], prerequisites: [], difficulty: 5}]' \
+    config.json > config.json.tmp
+# jq always rounds whole numbers, but average_run_time needs to be a float
+sed -i 's/"average_run_time": \([[:digit:]]\+\)$/"average_run_time": 2.0/' config.json.tmp
+mv config.json.tmp config.json
+
+# Create instructions and config files
+./bin/configlet sync --update --yes --docs --filepaths --metadata --exercise "$SLUG"
+
+pushd tools
+emacs -batch -l install-packages.el -l practice-exercise-generator.el --eval "(exercism/generate-practice-exercise \"$SLUG\")"
+popd
+
+echo "All stub files were created. After implementing the solution, tests and configuration, please run:"
+echo "    ./bin/configlet sync --update --tests --exercise ${SLUG}"
+echo "    ./bin/configlet fmt --update --yes --exercise ${SLUG}"
