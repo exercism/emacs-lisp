@@ -437,6 +437,14 @@
           "pattern-matching",
           "recursion"
         ]
+      },
+      {
+        "slug": "darts",
+        "name": "Darts",
+        "uuid": "ca189b4e-713d-4722-b21e-c07d1b975b58",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       }
     ]
   },
