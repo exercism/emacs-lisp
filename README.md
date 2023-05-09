@@ -1,7 +1,7 @@
 # <img src="https://raw.githubusercontent.com/exercism/website-icons/main/tracks/emacs-lisp.svg" width="36px" aria-hidden="true" alt="Emacs Lisp Track Icon"> Exercism Emacs Lisp Track
 
-![Discourse posts](https://img.shields.io/discourse/posts?server=https%3A%2F%2Fforum.exercism.org%2F)
-![Discord](https://img.shields.io/discord/854117591135027261)
+[![Exercism Discourse Forum](https://img.shields.io/discourse/posts?server=https%3A%2F%2Fforum.exercism.org%2F)](https://forum.exercism.org/)
+[![Exercism Discord Invite](https://img.shields.io/discord/854117591135027261)](https://exercism.org/r/discord)
 [![Configlet Status](https://github.com/exercism/emacs-lisp/workflows/Configlet/badge.svg)](https://github.com/exercism/emacs-lisp/workflows/Configlet/badge.svg)
 [![Exercise Test Status](https://github.com/exercism/emacs-lisp/workflows/emacs-lisp%20%2F%20main/badge.svg)](https://github.com/exercism/emacs-lisp/workflows/emacs-lisp%20%2F%20main/badge.svg)
 
