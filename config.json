@@ -445,6 +445,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+      {
+        "slug": "simple-cipher",
+        "name": "TODO",
+        "uuid": "c3cc6d91-b633-44d6-b7e1-04abb33e712c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
       }
     ]
   },
