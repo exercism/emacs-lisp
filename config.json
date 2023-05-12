@@ -439,6 +439,14 @@
         ]
       },
       {
+        "slug": "darts",
+        "name": "Darts",
+        "uuid": "ca189b4e-713d-4722-b21e-c07d1b975b58",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "affine-cipher",
         "name": "TODO",
         "uuid": "7d966a40-3cf7-422a-99b1-c0bf05e151b2",
