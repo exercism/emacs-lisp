@@ -44,10 +44,9 @@
         (char-to-string
          (seq-elt
           alphabet-for-random-letter
-          (mod
-           ;; NOT cryptographically secure!
-           ;; see https://emacs.stackexchange.com/questions/35615/secure-random-numbers
-           (random t) (length alphabet-for-random-letter)))))))))
+          ;; NOT cryptographically secure!
+          ;; see https://emacs.stackexchange.com/questions/35615/secure-random-numbers
+          (random (length alphabet-for-random-letter)))))))))
 
 (provide 'simple-cipher)
 ;;; simple-cipher.el ends here
