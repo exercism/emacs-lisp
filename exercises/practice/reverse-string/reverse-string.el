@@ -6,7 +6,8 @@
 
 
 (defun reverse-string (value)
-  (reverse value))
+  (error
+   "Delete this S-Expression and write your own implementation"))
 
 
 (provide 'reverse-string)
