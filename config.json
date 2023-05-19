@@ -453,6 +453,22 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
+      },
+      {
+        "slug": "simple-cipher",
+        "name": "Simple Cipher",
+        "uuid": "c3cc6d91-b633-44d6-b7e1-04abb33e712c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "affine-cipher",
+        "name": "Affine Cipher",
+        "uuid": "7d966a40-3cf7-422a-99b1-c0bf05e151b2",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
       }
     ]
   },
