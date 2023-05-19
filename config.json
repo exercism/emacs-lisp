@@ -447,6 +447,14 @@
         "difficulty": 1
       },
       {
+        "slug": "rotational-cipher",
+        "name": "Rotational Cipher",
+        "uuid": "4faa2bae-ecda-4c16-9f6d-148793117995",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "simple-cipher",
         "name": "Simple Cipher",
         "uuid": "c3cc6d91-b633-44d6-b7e1-04abb33e712c",
