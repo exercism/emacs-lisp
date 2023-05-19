@@ -469,6 +469,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 4
+      },
+      {
+        "slug": "rail-fence-cipher",
+        "name": "Rail Fence Cipher",
+        "uuid": "bcd4671e-4fb9-4abb-af98-315fc83daa52",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
       }
     ]
   },
