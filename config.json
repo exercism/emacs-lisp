@@ -503,6 +503,14 @@
         "difficulty": 1
       },
       {
+        "slug": "binary-search",
+        "name": "Binary Search",
+        "uuid": "fb36c27f-0ad5-42d1-90c0-6718f01e61a4",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "flatten-array",
         "name": "Flatten Array",
         "uuid": "66f266a8-9c5c-4aad-8a27-92810b288a2b",

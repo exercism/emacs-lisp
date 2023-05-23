@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "fapdash"
+  ],
+  "files": {
+    "solution": [
+      "binary-search.el"
+    ],
+    "test": [
+      "binary-search-test.el"
+    ],
+    "example": [
+      ".meta/example.el"
+    ]
+  },
+  "blurb": "Implement a binary search algorithm.",
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Binary_search_algorithm"
+}
