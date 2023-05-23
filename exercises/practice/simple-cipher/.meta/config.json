@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "fapdash"
+  ],
+  "files": {
+    "solution": [
+      "simple-cipher.el"
+    ],
+    "test": [
+      "simple-cipher-test.el"
+    ],
+    "example": [
+      ".meta/example.el"
+    ]
+  },
+  "blurb": "Implement a simple shift cipher like Caesar and a more secure substitution cipher.",
+  "source": "Substitution Cipher at Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Substitution_cipher"
+}

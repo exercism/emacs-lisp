@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "fapdash"
+  ],
+  "files": {
+    "solution": [
+      "rail-fence-cipher.el"
+    ],
+    "test": [
+      "rail-fence-cipher-test.el"
+    ],
+    "example": [
+      ".meta/example.el"
+    ]
+  },
+  "blurb": "Implement encoding and decoding for the rail fence cipher.",
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Transposition_cipher#Rail_Fence_cipher"
+}
