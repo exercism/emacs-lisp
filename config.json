@@ -102,6 +102,17 @@
         ]
       },
       {
+        "slug": "collatz-conjecture",
+        "name": "Collatz Conjecture",
+        "uuid": "1eadc0d0-2086-4ab4-a53c-386933bf30f8",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2,
+        "topics": [
+          "math"
+        ]
+      },
+      {
         "slug": "darts",
         "name": "Darts",
         "uuid": "ca189b4e-713d-4722-b21e-c07d1b975b58",
