@@ -377,6 +377,17 @@
         ]
       },
       {
+        "slug": "triangle",
+        "name": "Triangle",
+        "uuid": "df52be2e-8709-4da5-a8c2-03a2fd137993",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2,
+        "topics": [
+          "control_flow_conditionals"
+        ]
+      },
+      {
         "slug": "trinary",
         "name": "Trinary",
         "uuid": "c5239cf6-c5a3-4d81-a4d9-504c292ff11e",
