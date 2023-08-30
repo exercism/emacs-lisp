@@ -453,11 +453,6 @@
       "icon": "homoiconic"
     },
     {
-      "title": "Dynamic",
-      "content": "Emacs is a dynamic system and you change its behavior by evaluating Emacs Lisp straight from a buffer.",
-      "icon": "interactive"
-    },
-    {
       "title": "Macros",
       "content": "It's easy to customize the language with Emacs Lisp's macro system.",
       "icon": "powerful"
