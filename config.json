@@ -19,18 +19,10 @@
     "average_run_time": 2
   },
   "files": {
-    "solution": [
-      "%{kebab_slug}.el"
-    ],
-    "test": [
-      "%{kebab_slug}-test.el"
-    ],
-    "example": [
-      "example.el"
-    ],
-    "exemplar": [
-      ".meta/exemplar.el"
-    ]
+    "solution": ["%{kebab_slug}.el"],
+    "test": ["%{kebab_slug}-test.el"],
+    "example": ["example.el"],
+    "exemplar": [".meta/exemplar.el"]
   },
   "exercises": {
     "concept": [],
@@ -42,9 +34,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "strings"
-        ]
+        "topics": ["strings"]
       },
       {
         "slug": "two-fer",
@@ -53,9 +43,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "strings"
-        ]
+        "topics": ["strings"]
       },
       {
         "slug": "leap",
@@ -64,12 +52,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "control_flow_conditionals",
-          "equality",
-          "integers",
-          "logic"
-        ]
+        "topics": ["control_flow_conditionals", "equality", "integers", "logic"]
       },
       {
         "slug": "anagram",
@@ -78,11 +61,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2,
-        "topics": [
-          "equality",
-          "filtering",
-          "strings"
-        ]
+        "topics": ["equality", "filtering", "strings"]
       },
       {
         "slug": "roman-numerals",
@@ -121,11 +100,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "control_flow_conditionals",
-          "strings",
-          "transforming"
-        ]
+        "topics": ["control_flow_conditionals", "strings", "transforming"]
       },
       {
         "slug": "bob",
@@ -134,11 +109,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "control_flow_conditionals",
-          "parsing",
-          "strings"
-        ]
+        "topics": ["control_flow_conditionals", "parsing", "strings"]
       },
       {
         "slug": "word-count",
@@ -161,10 +132,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "strings",
-          "transforming"
-        ]
+        "topics": ["strings", "transforming"]
       },
       {
         "slug": "allergies",
@@ -187,9 +155,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "math"
-        ]
+        "topics": ["math"]
       },
       {
         "slug": "binary",
@@ -236,11 +202,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "control_flow_loops",
-          "maps",
-          "transforming"
-        ]
+        "topics": ["control_flow_loops", "maps", "transforming"]
       },
       {
         "slug": "gigasecond",
@@ -249,13 +211,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "date",
-          "integers",
-          "time",
-          "transforming",
-          "variables"
-        ]
+        "topics": ["date", "integers", "time", "transforming", "variables"]
       },
       {
         "slug": "grains",
@@ -264,10 +220,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "integers",
-          "variables"
-        ]
+        "topics": ["integers", "variables"]
       },
       {
         "slug": "nucleotide-count",
@@ -276,12 +229,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "control_flow_loops",
-          "maps",
-          "sorting",
-          "strings"
-        ]
+        "topics": ["control_flow_loops", "maps", "sorting", "strings"]
       },
       {
         "slug": "pangram",
@@ -290,10 +238,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "control_flow_loops",
-          "strings"
-        ]
+        "topics": ["control_flow_loops", "strings"]
       },
       {
         "slug": "perfect-numbers",
@@ -302,10 +247,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "math",
-          "number_theory"
-        ]
+        "topics": ["math", "number_theory"]
       },
       {
         "slug": "raindrops",
@@ -314,11 +256,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "control_flow_conditionals",
-          "filtering",
-          "integers"
-        ]
+        "topics": ["control_flow_conditionals", "filtering", "integers"]
       },
       {
         "slug": "trinary",
@@ -327,9 +265,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": [
-          "math"
-        ]
+        "topics": ["math"]
       },
       {
         "slug": "atbash-cipher",
@@ -352,11 +288,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2,
-        "topics": [
-          "cryptograpy",
-          "strings",
-          "transforming"
-        ]
+        "topics": ["cryptograpy", "strings", "transforming"]
       },
       {
         "slug": "phone-number",
@@ -365,11 +297,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2,
-        "topics": [
-          "interfaces",
-          "parsing",
-          "strings"
-        ]
+        "topics": ["interfaces", "parsing", "strings"]
       },
       {
         "slug": "robot-name",
@@ -378,11 +306,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2,
-        "topics": [
-          "randomness",
-          "strings",
-          "variables"
-        ]
+        "topics": ["randomness", "strings", "variables"]
       },
       {
         "slug": "run-length-encoding",
@@ -400,11 +324,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 3,
-        "topics": [
-          "checksums",
-          "list_operations",
-          "strings"
-        ]
+        "topics": ["checksums", "list_operations", "strings"]
       },
       {
         "slug": "list-ops",
@@ -521,7 +441,38 @@
     ]
   },
   "concepts": [],
-  "key_features": [],
+  "key_features": [
+    {
+      "title": "Simple syntax",
+      "content": "Emacs Lisp's syntax is simple, expressive and easy to learn.",
+      "icon": "easy"
+    },
+    {
+      "title": "S-expressions",
+      "content": "Both source code and data are expressed using nested lists.",
+      "icon": "homoiconic"
+    },
+    {
+      "title": "Macros",
+      "content": "It's easy to customize the language with Emacs Lisp's macro system.",
+      "icon": "powerful"
+    },
+    {
+      "title": "Multi-paradigm",
+      "content": "Emacs Lisp support imperative and functional programming styles.",
+      "icon": "multi-paradigm"
+    },
+    {
+      "title": "Scripting",
+      "content": "Emacs Lisp can be used as scripting language by using Emacs' batch mode.",
+      "icon": "embeddable"
+    },
+    {
+      "title": "Well Documented",
+      "content": "Emacs Lisp is well documented right inside the editor.",
+      "icon": "documentation"
+    }
+  ],
   "tags": [
     "paradigm/functional",
     "typing/dynamic",
