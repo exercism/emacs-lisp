@@ -8,7 +8,7 @@ on:
 
 jobs:
   ci:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
       - uses: purcell/setup-emacs@ac5a5667ef01c598f55e66e0b0abdad5d825daf8
