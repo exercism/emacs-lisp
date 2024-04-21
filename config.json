@@ -19,13 +19,20 @@
     "average_run_time": 2
   },
   "files": {
-    "solution": ["%{kebab_slug}.el"],
-    "test": ["%{kebab_slug}-test.el"],
-    "example": [".meta/example.el"],
-    "exemplar": [".meta/exemplar.el"]
+    "solution": [
+      "%{kebab_slug}.el"
+    ],
+    "test": [
+      "%{kebab_slug}-test.el"
+    ],
+    "example": [
+      ".meta/example.el"
+    ],
+    "exemplar": [
+      ".meta/exemplar.el"
+    ]
   },
   "exercises": {
-    "concept": [],
     "practice": [
       {
         "slug": "hello-world",
@@ -34,7 +41,9 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["strings"]
+        "topics": [
+          "strings"
+        ]
       },
       {
         "slug": "two-fer",
@@ -43,7 +52,9 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["strings"]
+        "topics": [
+          "strings"
+        ]
       },
       {
         "slug": "leap",
@@ -52,7 +63,12 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["control_flow_conditionals", "equality", "integers", "logic"]
+        "topics": [
+          "control_flow_conditionals",
+          "equality",
+          "integers",
+          "logic"
+        ]
       },
       {
         "slug": "anagram",
@@ -61,7 +77,19 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2,
-        "topics": ["equality", "filtering", "strings"]
+        "topics": [
+          "equality",
+          "filtering",
+          "strings"
+        ]
+      },
+      {
+        "slug": "resistor-color-duo",
+        "name": "Resistor Color Duo",
+        "uuid": "1c55189e-2c58-48b4-92f1-9a05a9b9c6d6",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
       },
       {
         "slug": "roman-numerals",
@@ -100,7 +128,11 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["control_flow_conditionals", "strings", "transforming"]
+        "topics": [
+          "control_flow_conditionals",
+          "strings",
+          "transforming"
+        ]
       },
       {
         "slug": "bob",
@@ -109,7 +141,11 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["control_flow_conditionals", "parsing", "strings"]
+        "topics": [
+          "control_flow_conditionals",
+          "parsing",
+          "strings"
+        ]
       },
       {
         "slug": "word-count",
@@ -132,7 +168,10 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["strings", "transforming"]
+        "topics": [
+          "strings",
+          "transforming"
+        ]
       },
       {
         "slug": "allergies",
@@ -155,7 +194,9 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["math"]
+        "topics": [
+          "math"
+        ]
       },
       {
         "slug": "binary",
@@ -164,7 +205,6 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": null,
         "status": "deprecated"
       },
       {
@@ -202,7 +242,11 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["control_flow_loops", "maps", "transforming"]
+        "topics": [
+          "control_flow_loops",
+          "maps",
+          "transforming"
+        ]
       },
       {
         "slug": "gigasecond",
@@ -211,7 +255,13 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["date", "integers", "time", "transforming", "variables"]
+        "topics": [
+          "date",
+          "integers",
+          "time",
+          "transforming",
+          "variables"
+        ]
       },
       {
         "slug": "grains",
@@ -220,7 +270,10 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["integers", "variables"]
+        "topics": [
+          "integers",
+          "variables"
+        ]
       },
       {
         "slug": "nucleotide-count",
@@ -229,7 +282,12 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["control_flow_loops", "maps", "sorting", "strings"]
+        "topics": [
+          "control_flow_loops",
+          "maps",
+          "sorting",
+          "strings"
+        ]
       },
       {
         "slug": "pangram",
@@ -238,7 +296,10 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["control_flow_loops", "strings"]
+        "topics": [
+          "control_flow_loops",
+          "strings"
+        ]
       },
       {
         "slug": "perfect-numbers",
@@ -247,7 +308,10 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["math", "number_theory"]
+        "topics": [
+          "math",
+          "number_theory"
+        ]
       },
       {
         "slug": "raindrops",
@@ -256,7 +320,11 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["control_flow_conditionals", "filtering", "integers"]
+        "topics": [
+          "control_flow_conditionals",
+          "filtering",
+          "integers"
+        ]
       },
       {
         "slug": "trinary",
@@ -265,7 +333,9 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": ["math"]
+        "topics": [
+          "math"
+        ]
       },
       {
         "slug": "atbash-cipher",
@@ -288,7 +358,11 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2,
-        "topics": ["cryptograpy", "strings", "transforming"]
+        "topics": [
+          "cryptograpy",
+          "strings",
+          "transforming"
+        ]
       },
       {
         "slug": "phone-number",
@@ -297,7 +371,11 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2,
-        "topics": ["interfaces", "parsing", "strings"]
+        "topics": [
+          "interfaces",
+          "parsing",
+          "strings"
+        ]
       },
       {
         "slug": "robot-name",
@@ -306,7 +384,11 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2,
-        "topics": ["randomness", "strings", "variables"]
+        "topics": [
+          "randomness",
+          "strings",
+          "variables"
+        ]
       },
       {
         "slug": "run-length-encoding",
@@ -314,8 +396,7 @@
         "uuid": "9e8f98f0-6fff-4389-a9a2-9ae43edefa21",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 2,
-        "topics": null
+        "difficulty": 2
       },
       {
         "slug": "luhn",
@@ -324,7 +405,11 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 3,
-        "topics": ["checksums", "list_operations", "strings"]
+        "topics": [
+          "checksums",
+          "list_operations",
+          "strings"
+        ]
       },
       {
         "slug": "list-ops",
@@ -452,7 +537,6 @@
       }
     ]
   },
-  "concepts": [],
   "key_features": [
     {
       "title": "Simple syntax",
@@ -486,14 +570,14 @@
     }
   ],
   "tags": [
+    "execution_mode/interpreted",
     "paradigm/functional",
+    "platform/linux",
+    "platform/mac",
+    "platform/windows",
+    "runtime/language_specific",
     "typing/dynamic",
     "typing/strong",
-    "execution_mode/interpreted",
-    "platform/windows",
-    "platform/mac",
-    "platform/linux",
-    "runtime/language_specific",
     "used_for/scripts"
   ]
 }
