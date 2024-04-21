@@ -10,7 +10,7 @@
       "resistor-color-duo-test.el"
     ],
     "example": [
-      "example.el"
+      ".meta/example.el"
     ]
   },
   "blurb": "Convert color codes, as used on resistors, to a numeric value.",
