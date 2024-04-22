@@ -2,15 +2,16 @@
 
 ;;; Commentary:
 
-(defun allergen-list (score)
-"List all allergens with a given SCORE."
 ;;; Code:
-)
+
+
+(defun allergen-list (score)
+ (error "Delete this S-Expression and write your own implementation"))
+
 
 (defun allergic-to-p (score allergen)
-"Check if Allergic to allergen based on SCORE and ALLERGEN."
-;;; Code:
-)
+ (error "Delete this S-Expression and write your own implementation"))
+
 
 (provide 'allergies)
 ;;; allergies.el ends here
