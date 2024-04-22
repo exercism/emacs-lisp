@@ -4,83 +4,118 @@
 
 ;;; Code:
 
+
 (load-file "roman-numerals.el")
 (declare-function to-roman "roman-numerals.el" (value))
 
-(ert-deftest to-roman-1 ()
-  (should (equal (to-roman 1) "I")))
 
-(ert-deftest to-roman-2 ()
-  (should (equal (to-roman 2) "II")))
+(ert-deftest 1-is-I ()
+  (should (string= "I" (to-roman 1))))
 
-(ert-deftest to-roman-3 ()
-  (should (equal (to-roman 3) "III")))
 
-(ert-deftest to-roman-4 ()
-  (should (equal (to-roman 4) "IV")))
+(ert-deftest 2-is-II ()
+  (should (string= "II" (to-roman 2))))
 
-(ert-deftest to-roman-5 ()
-  (should (equal (to-roman 5) "V")))
 
-(ert-deftest to-roman-6 ()
-  (should (equal (to-roman 6) "VI")))
+(ert-deftest 3-is-III ()
+  (should (string= "III" (to-roman 3))))
 
-(ert-deftest to-roman-9 ()
-  (should (equal (to-roman 9) "IX")))
 
-(ert-deftest to-roman-16 ()
-  (should (equal (to-roman 16) "XVI")))
+(ert-deftest 4-is-IV ()
+  (should (string= "IV" (to-roman 4))))
 
-(ert-deftest to-roman-27 ()
-  (should (equal (to-roman 27) "XXVII")))
 
-(ert-deftest to-roman-48 ()
-  (should (equal (to-roman 48) "XLVIII")))
+(ert-deftest 5-is-V ()
+  (should (string= "V" (to-roman 5))))
 
-(ert-deftest to-roman-59 ()
-  (should (equal (to-roman 59) "LIX")))
 
-(ert-deftest to-roman-66 ()
-  (should (equal (to-roman 66) "LXVI")))
+(ert-deftest 6-is-VI ()
+  (should (string= "VI" (to-roman 6))))
 
-(ert-deftest to-roman-93 ()
-  (should (equal (to-roman 93) "XCIII")))
 
-(ert-deftest to-roman-141 ()
-  (should (equal (to-roman 141) "CXLI")))
+(ert-deftest 9-is-IX ()
+  (should (string= "IX" (to-roman 9))))
 
-(ert-deftest to-roman-163 ()
-  (should (equal (to-roman 163) "CLXIII")))
 
-(ert-deftest to-roman-166 ()
-  (should (equal (to-roman 166) "CLXVI")))
+(ert-deftest 16-is-XVI ()
+  (should (string= "XVI" (to-roman 16))))
 
-(ert-deftest to-roman-402 ()
-  (should (equal (to-roman 402) "CDII")))
 
-(ert-deftest to-roman-575 ()
-  (should (equal (to-roman 575) "DLXXV")))
+(ert-deftest 27-is-XXVII ()
+  (should (string= "XXVII" (to-roman 27))))
 
-(ert-deftest to-roman-666 ()
-  (should (equal (to-roman 666) "DCLXVI")))
 
-(ert-deftest to-roman-911 ()
-  (should (equal (to-roman 911) "CMXI")))
+(ert-deftest 48-is-XLVIII ()
+  (should (string= "XLVIII" (to-roman 48))))
 
-(ert-deftest to-roman-1024 ()
-  (should (equal (to-roman 1024) "MXXIV")))
 
-(ert-deftest to-roman-1666 ()
-  (should (equal (to-roman 1666) "MDCLXVI")))
+(ert-deftest 49-is-XLIX ()
+  (should (string= "XLIX" (to-roman 49))))
 
-(ert-deftest to-roman-3000 ()
-  (should (equal (to-roman 3000) "MMM")))
 
-(ert-deftest to-roman-3001 ()
-  (should (equal (to-roman 3001) "MMMI")))
+(ert-deftest 59-is-LIX ()
+  (should (string= "LIX" (to-roman 59))))
 
-(ert-deftest to-roman-3999 ()
-  (should (equal (to-roman 3999) "MMMCMXCIX")))
 
-(provide 'roman-numerals)
+(ert-deftest 66-is-LXVI ()
+  (should (string= "LXVI" (to-roman 66))))
+
+
+(ert-deftest 93-is-XCIII ()
+  (should (string= "XCIII" (to-roman 93))))
+
+
+(ert-deftest 141-is-CXLI ()
+  (should (string= "CXLI" (to-roman 141))))
+
+
+(ert-deftest 163-is-CLXIII ()
+  (should (string= "CLXIII" (to-roman 163))))
+
+
+(ert-deftest 166-is-CLXVI ()
+  (should (string= (to-roman 166) "CLXVI")))
+
+
+(ert-deftest 402-is-CDII ()
+  (should (string= "CDII" (to-roman 402))))
+
+
+(ert-deftest 575-is-DLXXV ()
+  (should (string= "DLXXV" (to-roman 575))))
+
+
+(ert-deftest 666-is-DCLXVI ()
+  (should (string= "DCLXVI" (to-roman 666))))
+
+
+(ert-deftest 911-is-CMXI ()
+  (should (string= "CMXI" (to-roman 911))))
+
+
+(ert-deftest 1024-is-MXXIV ()
+  (should (string= "MXXIV" (to-roman 1024))))
+
+
+(ert-deftest 1666-is-MDCLXVI ()
+  (should (string= "MDCLXVI" (to-roman 1666))))
+
+
+(ert-deftest 3000-is-MMM ()
+  (should (string= "MMM" (to-roman 3000))))
+
+
+(ert-deftest 3001-is-MMMI ()
+  (should (string= "MMMI" (to-roman 3001))))
+
+
+(ert-deftest 3888-is-MMMDCCCLXXXVIII ()
+  (should (string= "MMMDCCCLXXXVIII" (to-roman 3888))))
+
+
+(ert-deftest 3999-is-MMMCMXCIX ()
+  (should (string= "MMMCMXCIX" (to-roman 3999 ))))
+
+
+(provide 'roman-numerals-test)
 ;;; roman-numerals-test.el ends here
