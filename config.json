@@ -40,7 +40,7 @@
         "uuid": "c4fdc935-885b-44bd-84e4-fae4a09e8c39",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
+        "difficulty": 2,
         "topics": [
           "strings"
         ]
@@ -51,7 +51,7 @@
         "uuid": "36e5dc3a-2122-484a-ae82-beb7b813e2cd",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
+        "difficulty": 2,
         "topics": [
           "strings"
         ]
@@ -62,7 +62,7 @@
         "uuid": "84eaff19-cb25-46af-a34e-1379e692e57b",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
+        "difficulty": 2,
         "topics": [
           "control_flow_conditionals",
           "equality",
@@ -76,7 +76,7 @@
         "uuid": "d8906a7e-9d7e-4e8e-aff0-da877291d8dc",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 2,
+        "difficulty": 5,
         "topics": [
           "equality",
           "filtering",
@@ -97,7 +97,7 @@
         "uuid": "c4875bc5-e295-4782-99c7-cb3370ac8e08",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
+        "difficulty": 2,
         "topics": [
           "control_flow_conditionals",
           "control_flow_loops",
@@ -112,7 +112,7 @@
         "uuid": "2bfb508e-7ceb-4ae1-8316-1e2daf771807",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
+        "difficulty": 2,
         "topics": [
           "control_flow_conditionals",
           "control_flow_loops",
@@ -127,7 +127,7 @@
         "uuid": "7b6767b9-2efc-414d-83f7-def9c371d63d",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
+        "difficulty": 2,
         "topics": [
           "control_flow_conditionals",
           "strings",
@@ -140,7 +140,7 @@
         "uuid": "c02c7392-9478-4cfd-81eb-0cb8ebe78fe5",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
+        "difficulty": 2,
         "topics": [
           "control_flow_conditionals",
           "parsing",
@@ -153,7 +153,7 @@
         "uuid": "1a3c64b1-8447-451f-985d-f7bd6d42bdb6",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 2,
+        "difficulty": 5,
         "topics": [
           "control_flow_conditionals",
           "control_flow_loops",
@@ -167,7 +167,7 @@
         "uuid": "a252e137-8a63-4f26-b119-7264f12a257a",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
+        "difficulty": 2,
         "topics": [
           "strings",
           "transforming"
@@ -179,7 +179,7 @@
         "uuid": "e0d7220f-5d3a-4f10-842e-3d49df714cac",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
+        "difficulty": 2,
         "topics": [
           "bitwise_operations",
           "control_flow_conditionals",
@@ -193,7 +193,7 @@
         "uuid": "059141f0-f28d-4d10-a03a-7852dbfc2d2e",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
+        "difficulty": 2,
         "topics": [
           "math"
         ]
@@ -204,7 +204,7 @@
         "uuid": "7307e13e-7a18-4654-8df4-96951d4dccc6",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
+        "difficulty": 2,
         "status": "deprecated"
       },
       {
@@ -213,7 +213,7 @@
         "uuid": "a101dd85-fe8b-4f3f-bece-bbd899a08ee7",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3,
+        "difficulty": 5,
         "topics": [
           "bitwise_operations",
           "control_flow_conditionals",
@@ -227,7 +227,7 @@
         "uuid": "7b421b14-c33c-41a6-9e7e-4f9b6fbe6fcc",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
+        "difficulty": 2,
         "topics": [
           "control_flow_loops",
           "floating_point_numbers",
@@ -241,7 +241,7 @@
         "uuid": "d8f4c530-02f0-44d3-b5b8-858fec4b6a9d",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
+        "difficulty": 5,
         "topics": [
           "control_flow_loops",
           "maps",
@@ -254,7 +254,7 @@
         "uuid": "e9e27a75-143a-439f-98d0-a604724a7af2",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
+        "difficulty": 2,
         "topics": [
           "date",
           "integers",
@@ -269,7 +269,7 @@
         "uuid": "d219aab6-11ec-4e0c-b041-f06c8d523946",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
+        "difficulty": 2,
         "topics": [
           "integers",
           "variables"
@@ -281,7 +281,7 @@
         "uuid": "aaff28dd-718b-48d4-b507-a0b9b01bb6ad",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
+        "difficulty": 5,
         "topics": [
           "control_flow_loops",
           "maps",
@@ -295,7 +295,7 @@
         "uuid": "42222c98-e8d2-41bd-9d95-2ace63864359",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
+        "difficulty": 2,
         "topics": [
           "control_flow_loops",
           "strings"
@@ -307,7 +307,7 @@
         "uuid": "30971b02-79fc-40a1-aa70-ada3fec85548",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
+        "difficulty": 2,
         "topics": [
           "math",
           "number_theory"
@@ -319,7 +319,7 @@
         "uuid": "9a97c992-3da0-4f6d-b2f6-1f2683417e3b",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
+        "difficulty": 2,
         "topics": [
           "control_flow_conditionals",
           "filtering",
@@ -332,7 +332,7 @@
         "uuid": "c5239cf6-c5a3-4d81-a4d9-504c292ff11e",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
+        "difficulty": 2,
         "topics": [
           "math"
         ]
@@ -343,7 +343,7 @@
         "uuid": "89125ff6-f94b-46a4-9a5d-84539674238d",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 2,
+        "difficulty": 5,
         "topics": [
           "control_flow_conditionals",
           "control_flow_loops",
@@ -357,7 +357,7 @@
         "uuid": "884cd761-e764-4c1e-8240-bb4454b43ea9",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 2,
+        "difficulty": 5,
         "topics": [
           "cryptograpy",
           "strings",
@@ -383,7 +383,7 @@
         "uuid": "55bc8c2a-1db3-4d26-b7c6-a778b61bf46b",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 2,
+        "difficulty": 5,
         "topics": [
           "randomness",
           "strings",
@@ -396,7 +396,7 @@
         "uuid": "9e8f98f0-6fff-4389-a9a2-9ae43edefa21",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 2
+        "difficulty": 5
       },
       {
         "slug": "luhn",
@@ -404,7 +404,7 @@
         "uuid": "bb10d7e4-6006-4dfd-81ae-45062a0ec999",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3,
+        "difficulty": 5,
         "topics": [
           "checksums",
           "list_operations",
@@ -417,7 +417,7 @@
         "uuid": "883fdbef-ad97-4f08-8d51-d65bd91fc864",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3,
+        "difficulty": 2,
         "topics": [
           "filtering",
           "functional_programming",
@@ -449,7 +449,7 @@
         "uuid": "ca189b4e-713d-4722-b21e-c07d1b975b58",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1
+        "difficulty": 2
       },
       {
         "slug": "rotational-cipher",
@@ -473,7 +473,7 @@
         "uuid": "7d966a40-3cf7-422a-99b1-c0bf05e151b2",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 5
       },
       {
         "slug": "rail-fence-cipher",
@@ -481,7 +481,7 @@
         "uuid": "bcd4671e-4fb9-4abb-af98-315fc83daa52",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 5
       },
       {
         "slug": "matching-brackets",
@@ -489,7 +489,7 @@
         "uuid": "c000a3e1-3488-41ba-9d4c-6f06a96bc892",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3
+        "difficulty": 2
       },
       {
         "slug": "queen-attack",
@@ -505,7 +505,7 @@
         "uuid": "59c6319b-2799-4e4c-bef1-e28626878446",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1
+        "difficulty": 2
       },
       {
         "slug": "binary-search",
@@ -513,7 +513,7 @@
         "uuid": "fb36c27f-0ad5-42d1-90c0-6718f01e61a4",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3
+        "difficulty": 2
       },
       {
         "slug": "flatten-array",
@@ -521,7 +521,7 @@
         "uuid": "66f266a8-9c5c-4aad-8a27-92810b288a2b",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 6
+        "difficulty": 5
       },
       {
         "slug": "scrabble-score",
