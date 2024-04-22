@@ -10,75 +10,75 @@
 
 
 (ert-deftest the-sound-for-1-is-1 ()
-  (should (string= "1" (convert 1))))
+  (should (string= (convert 1) "1")))
 
 
 (ert-deftest the-sound-for-3-is-Pling ()
-  (should (string= "Pling" (convert 3))))
+  (should (string= (convert 3) "Pling")))
 
 
 (ert-deftest the-sound-for-5-is-Plang ()
-  (should (string= "Plang" (convert 5))))
+  (should (string= (convert 5) "Plang")))
 
 
 (ert-deftest the-sound-for-7-is-Plong ()
-  (should (string= "Plong" (convert 7))))
+  (should (string= (convert 7) "Plong")))
 
 
 (ert-deftest the-sound-for-6-is-Pling ()
-  (should (string= "Pling" (convert 6))))
+  (should (string= (convert 6) "Pling" )))
 
 
 (ert-deftest the-sound-for-8-is-8 ()
-  (should (string= "8" (convert 8))))
+  (should (string= (convert 8) "8")))
 
 
 (ert-deftest the-sound-for-9-is-Pling ()
-  (should (string= "Pling" (convert 9))))
+  (should (string= (convert 9) "Pling" )))
 
 
 (ert-deftest the-sound-for-10-is-Plang ()
-  (should (string= "Plang" (convert 10))))
+  (should (string= (convert 10) "Plang")))
 
 
 (ert-deftest the-sound-for-14-is-Plong ()
-  (should (string= "Plong" (convert 14))))
+  (should (string= (convert 14) "Plong")))
 
 
 (ert-deftest the-sound-for-15-is-PlingPlong ()
-  (should (string= "PlingPlang" (convert 15))))
+  (should (string= (convert 15) "PlingPlang")))
 
 
 (ert-deftest the-sound-for-21-is-PlingPlong ()
-  (should (string= "PlingPlong" (convert 21))))
+  (should (string= (convert 21) "PlingPlong")))
 
 
 (ert-deftest the-sound-for-25-is-Plang ()
-  (should (string= "Plang" (convert 25))))
+  (should (string= (convert 25) "Plang")))
 
 
 (ert-deftest the-sound-for-27-is-Pling ()
-  (should (string= "Pling" (convert 27))))
+  (should (string= (convert 27) "Pling")))
 
 
 (ert-deftest the-sound-for-35-is-PlangPlong ()
-  (should (string= "PlangPlong" (convert 35))))
+  (should (string= (convert 35) "PlangPlong")))
 
 
 (ert-deftest the-sound-for-49-is-Plong ()
-  (should (string= "Plong" (convert 49))))
+  (should (string= (convert 49) "Plong")))
 
 
 (ert-deftest the-sound-for-52-is-52 ()
-  (should (string= "52" (convert 52))))
+  (should (string= (convert 52) "52")))
 
 
 (ert-deftest the-sound-for-105-is-PlingPlangPlong ()
-  (should (string= "PlingPlangPlong" (convert 105))))
+  (should (string= (convert 105) "PlingPlangPlong")))
 
 
 (ert-deftest the-sound-for-3125-is-Plang ()
-  (should (string= "Plang" (convert 3125))))
+  (should (string= (convert 3125) "Plang")))
 
 
 (provide 'raindrops-test)
