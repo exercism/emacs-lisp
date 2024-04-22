@@ -31,7 +31,7 @@
 
 (ert-deftest very-long-abbreviation ()
   (should (string= "ROTFLSHTMDCOALM"
-                 (acronym "Rolling On The Floor Laughing So Hard That My Dogs Came Over And Licked Me"))))
+                   (acronym "Rolling On The Floor Laughing So Hard That My Dogs Came Over And Licked Me"))))
 
 
 (ert-deftest consecutive-delimiters ()
