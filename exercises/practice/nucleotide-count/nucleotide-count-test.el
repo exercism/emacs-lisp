@@ -13,23 +13,23 @@
 
 
 (ert-deftest empty-dna-strand-has-no-nucleotides-test ()
-  (should (equal '((?A . 0) (?C . 0) (?G . 0) (?T . 0))
-                 (sort-pairs (nucleotide-count "") #'<))))
+  (should (equal (sort-pairs (nucleotide-count "") #'<)
+                 '((?A . 0) (?C . 0) (?G . 0) (?T . 0)))))
 
 
 (ert-deftest repetitive-sequence-has-only-guanine-test ()
-  (should (equal '((?A . 0) (?C . 0) (?G . 8) (?T . 0))
-                 (sort-pairs (nucleotide-count "GGGGGGGG") #'<))))
+  (should (equal (sort-pairs (nucleotide-count "GGGGGGGG") #'<)
+                 '((?A . 0) (?C . 0) (?G . 8) (?T . 0)))))
 
 
 (ert-deftest count-all-nucleotides-test ()
-  (should (equal '((?A . 20) (?C . 12) (?G . 17) (?T . 21))
-                  (sort-pairs (nucleotide-count "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC") #'<))))
+  (should (equal (sort-pairs (nucleotide-count "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC") #'<)
+                 '((?A . 20) (?C . 12) (?G . 17) (?T . 21)))))
 
 
 (ert-deftest invalid-nucleotide-test ()
   (should-error (nucleotide-count "AGGTCCXGA")))
 
 
-(provide 'nucleotide-count-test)
+(provide 'nucleotide-count)
 ;;; nucleotide-count-test.el ends here
