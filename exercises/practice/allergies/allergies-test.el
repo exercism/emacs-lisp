@@ -171,49 +171,60 @@
 
 
 (ert-deftest list-when-no-allergies-at-all ()
-  (should (equal '() (allergen-list 0))))
+  (should (equal (allergen-list 0) '())))
 
 
 (ert-deftest list-when-allergic-to-just-eggs ()
-  (should (equal '("eggs") (allergen-list 1))))
+  (should (equal (allergen-list 1) '("eggs"))))
 
 
 (ert-deftest list-when-allergic-to-just-peanuts ()
-  (should (equal '("peanuts") (allergen-list 2))))
+  (should (equal (allergen-list 2) '("peanuts"))))
 
 
 (ert-deftest list-when-allergic-to-just-strawberries ()
-  (should (equal '("strawberries") (allergen-list 8))))
+  (should (equal (allergen-list 8) '("strawberries"))))
 
 
 (ert-deftest list-when-allergic-to-eggs-and-peanuts ()
-  (should (equal '("eggs" "peanuts") (allergen-list 3))))
+  (should (equal (allergen-list 3) '("eggs" "peanuts"))))
 
 
 (ert-deftest list-when-allergic-to-more-than-eggs-but-not-peanuts ()
-  (should (equal '("eggs" "shellfish") (allergen-list 5))))
+  (should (equal (allergen-list 5) '("eggs" "shellfish"))))
 
 
 (ert-deftest list-when-allergic-to-lots-of-stuff ()
-  (should (equal '("strawberries" "tomatoes" "chocolate" "pollen" "cats")
-                 (allergen-list 248))))
+  (should (equal (allergen-list 248)
+                 '("strawberries" "tomatoes" "chocolate" "pollen" "cats"))))
 
 
 (ert-deftest list-when-allergic-to-everything ()
-  (should (equal '("eggs" "peanuts" "shellfish" "strawberries" "tomatoes"
-                   "chocolate" "pollen" "cats")
-                 (allergen-list 255))))
+  (should (equal (allergen-list 255)
+                 '("eggs"
+                   "peanuts"
+                   "shellfish"
+                   "strawberries"
+                   "tomatoes"
+                   "chocolate"
+                   "pollen"
+                   "cats"))))
 
 
 (ert-deftest ignore-non-allergen-score-parts ()
-  (should (equal '("eggs" "shellfish" "strawberries" "tomatoes"
-                   "chocolate" "pollen" "cats")
-                 (allergen-list 509))))
+  (should (equal (allergen-list 509)
+                 '("eggs" 
+                   "shellfish"
+                   "strawberries"
+                   "tomatoes"
+                   "chocolate"
+                   "pollen"
+                   "cats"))))
 
 
 (ert-deftest list-when-no-allergen-score-parts-without-highest-valid-score ()
-  (should (equal '("eggs") (allergen-list 257))))
+  (should (equal (allergen-list 257) '("eggs"))))
 
 
-(provide 'allergies)
+(provide 'allergies-tests)
 ;;; allergies-test.el ends here
