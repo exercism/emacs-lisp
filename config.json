@@ -437,6 +437,18 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 6
+      },
+      {
+        "slug": "scrabble-score",
+        "name": "Scrabble Score",
+        "uuid": "fb45c509-d83d-4f71-a8ef-f218c5426838",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3,
+        "topics": [
+          "lists",
+          "strings"
+        ]
       }
     ]
   },
