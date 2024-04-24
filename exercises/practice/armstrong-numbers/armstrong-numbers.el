@@ -2,9 +2,12 @@
 
 ;;; Commentary:
 
-(defun armstrong-p (n)
 ;;; Code:
-)
+
+
+(defun armstrong-p (n)
+ (error "Delete this S-Expression and write your own implementation"))
+
 
 (provide 'armstrong-numbers)
 ;;; armstrong-numbers.el ends here
