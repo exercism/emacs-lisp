@@ -2,10 +2,12 @@
 
 ;;; Commentary:
 
-(defun convert (n)
-  "Convert integer N to its raindrops string."
 ;;; Code:
-)
+
+
+(defun convert (n)
+  (error "Delete this S-Expression and write your own implementation"))
+
 
 (provide 'raindrops)
 ;;; raindrops.el ends here
