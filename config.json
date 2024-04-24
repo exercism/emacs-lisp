@@ -21,7 +21,7 @@
   "files": {
     "solution": ["%{kebab_slug}.el"],
     "test": ["%{kebab_slug}-test.el"],
-    "example": ["example.el"],
+    "example": [".meta/example.el"],
     "exemplar": [".meta/exemplar.el"]
   },
   "exercises": {
