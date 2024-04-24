@@ -2,9 +2,11 @@
 
 ;;; Commentary:
 
-(defun acronym (phrase)
 ;;; Code:
-)
+
+
+(defun acronym (phrase)
+ (error "Delete this S-Expression and write your own implementation"))
 
 (provide 'acronym)
 ;;; acronym.el ends here
