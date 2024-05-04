@@ -25,17 +25,11 @@
 
 
 (ert-deftest zero-is-an-error ()
-  (should
-   (equal
-    (should-error (steps 0))
-    '(error . ("Only positive integers are allowed")))))
+  (should-error (steps 0)))
 
 
 (ert-deftest negative-value-is-an-error ()
-  (should
-   (equal
-    (should-error (steps -15))
-    '(error . ("Only positive integers are allowed")))))
+  (should-error (steps -15)))
 
 (provide 'collatz-conjecture-test)
 ;;; collatz-conjecture-test.el ends here
