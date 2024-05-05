@@ -17,11 +17,11 @@
 
 
 (ert-deftest word-with-one-duplicated-character ()
-  (should (not (isogramp "eleven"))))
+  (should-not (isogramp "eleven")))
 
 
 (ert-deftest word-with-one-duplicated-character-from-the-end-of-the-alphabet ()
-  (should (not (isogramp "zzyzx"))))
+  (should-not (isogramp "zzyzx")))
 
 
 (ert-deftest longest-reported-english-isogram ()
@@ -29,11 +29,11 @@
 
 
 (ert-deftest word-with-duplicated-character-in-mixed-case ()
-  (should (not (isogramp "Alphabet"))))
+  (should-not (isogramp "Alphabet")))
 
 
 (ert-deftest word-with-duplicated-character-in-mixed-case-lowercase-first ()
-  (should (not (isogramp "alphAbet"))))
+  (should-not (isogramp "alphAbet")))
 
 
 (ert-deftest hypothetical-isogrammic-word-with-hyphen ()
@@ -41,7 +41,7 @@
 
 
 (ert-deftest hypothetical-word-with-duplicated-character-following-hyphen ()
-  (should (not (isogramp "thumbscrew-jappingly"))))
+  (should-not (isogramp "thumbscrew-jappingly")))
 
 
 (ert-deftest isogram-with-duplicated-hyphen ()
@@ -53,15 +53,15 @@
 
 
 (ert-deftest duplicated-character-in-the-middle ()
-  (should (not (isogramp "accentor"))))
+  (should-not (isogramp "accentor")))
 
 
 (ert-deftest same-first-and-last-characters ()
-  (should (not (isogramp "angola"))))
+  (should-not (isogramp "angola")))
 
 
 (ert-deftest word-with-duplicated-character-and-with-two-hyphens ()
-  (should (not (isogramp "up-to-date"))))
+  (should-not (isogramp "up-to-date")))
 
 
 (provide 'isogram-test)
