@@ -196,6 +196,18 @@
         ]
       },
       {
+        "slug": "isogram",
+        "name": "Isogram",
+        "uuid": "63fc7e59-2448-487b-9b66-06c72ab8d6b0",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2,
+        "topics": [
+          "control_flow_loops",
+          "strings"
+        ]
+      },
+      {
         "slug": "leap",
         "name": "Leap",
         "uuid": "84eaff19-cb25-46af-a34e-1379e692e57b",
