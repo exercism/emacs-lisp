@@ -208,6 +208,17 @@
         ]
       },
       {
+        "slug": "kindergarten-garden",
+        "name": "Kindergarten Garden",
+        "uuid": "798056fc-11df-4705-b783-6eee56e6a1e2",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2,
+        "topics": [
+          "strings"
+        ]
+      },
+      {
         "slug": "leap",
         "name": "Leap",
         "uuid": "84eaff19-cb25-46af-a34e-1379e692e57b",
