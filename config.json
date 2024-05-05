@@ -421,6 +421,18 @@
         ]
       },
       {
+        "slug": "largest-series-product",
+        "name": "Largest Series Product",
+        "uuid": "91b2ba1a-8995-4c5c-9682-1ef462cbcbf5",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4,
+        "topics": [
+          "control_flow_loops",
+          "strings"
+        ]
+      },
+      {
         "slug": "affine-cipher",
         "name": "Affine Cipher",
         "uuid": "7d966a40-3cf7-422a-99b1-c0bf05e151b2",
