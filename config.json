@@ -607,6 +607,14 @@
           "filtering",
           "strings"
         ]
+      },
+      {
+        "slug": "isbn-verifier",
+        "name": "Isbn Verifier",
+        "uuid": "b0cbc3b5-1d6c-40b8-bdd1-5ba9089024aa",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
       }
     ]
   },
