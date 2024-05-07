@@ -1,15 +1,14 @@
-;;; gigasecond.el --- Gigasecond exercise (exercism)  -*- lexical-binding: t; -*-
+;;; gigasecond.el --- Gigasecond (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
-;; Calculate the date one gigasecond (10^9 seconds) from the
-;; given date.
-;;
-;; NB: Pay attention to  Emacs' handling of time zones and dst
-;; in the encode-time and decode-time functions.
 
-(defun from (second minute hour day month year)
 ;;; Code:
-)
+
+
+(defun add (second minute hour day month year)
+  (error "Delete this S-Expression and write your own implementation"))
+
 
 (provide 'gigasecond)
 ;;; gigasecond.el ends here
+

@@ -1,4 +1,4 @@
-;;; gigasecond.el --- Gigasecond exercise (exercism)  -*- lexical-binding: t; -*-
+;;; gigasecond.el --- Gigasecond (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 ;; Calculate the date one gigasecond (10^9 seconds) from the
@@ -9,7 +9,7 @@
 
 ;;; Code:
 
-(defun from (second minute hour day month year)
+(defun add (second minute hour day month year)
   "Calculate gigasecond from date given.
 Params are  SECOND, MINUTE, HOUR, DAY, MONTH, and YEAR."
   (let ((gigasecond (seconds-to-time (expt 10 9)))
@@ -17,9 +17,6 @@ Params are  SECOND, MINUTE, HOUR, DAY, MONTH, and YEAR."
     (set-time-zone-rule t)
     (let ((end-date (decode-time (time-add start-date gigasecond))))
       (butlast end-date (- (length end-date) 6)))))
-
-
-
 
 
 (provide 'gigasecond)
