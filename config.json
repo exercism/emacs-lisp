@@ -588,6 +588,17 @@
         ]
       },
       {
+        "slug": "pythagorean-triplet",
+        "name": "Pythagorean Triplet",
+        "uuid": "f33d976d-5189-4fcb-b0ac-42879a1067bf",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5,
+        "topics": [
+          "math"
+        ]
+      },
+      {
         "slug": "rail-fence-cipher",
         "name": "Rail Fence Cipher",
         "uuid": "bcd4671e-4fb9-4abb-af98-315fc83daa52",
