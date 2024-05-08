@@ -29,11 +29,24 @@
 
 
 (ert-deftest several-matching-triplets ()
-  (should (equal '((40 399 401) (56 390 394) (105 360 375) (120 350 370) (140 336 364) (168 315 357) (210 280 350) (240 252 348)) (triplets-with-sum 840))))
+  (should (equal '((40 399 401)
+                   (56 390 394)
+                   (105 360 375)
+                   (120 350 370)
+                   (140 336 364)
+                   (168 315 357)
+                   (210 280 350)
+                   (240 252 348))
+                 (triplets-with-sum 840))))
 
 
 (ert-deftest triplets-for-large-number ()
-  (should (equal '((1200 14375 14425) (1875 14000 14125) (5000 12000 13000) (6000 11250 12750) (7500 10000 12500)) (triplets-with-sum 30000))))
+  (should (equal '((1200 14375 14425)
+                   (1875 14000 14125)
+                   (5000 12000 13000)
+                   (6000 11250 12750)
+                   (7500 10000 12500))
+                 (triplets-with-sum 30000))))
 
 
 (provide 'pythagorean-triplet-test)
