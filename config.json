@@ -455,6 +455,17 @@
         ]
       },
       {
+        "slug": "prime-factors",
+        "name": "Prime Factors",
+        "uuid": "cb79cb42-7efe-49fe-98c4-68dbdc32f2a3",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3,
+        "topics": [
+          "math"
+        ]
+      },
+      {
         "slug": "largest-series-product",
         "name": "Largest Series Product",
         "uuid": "91b2ba1a-8995-4c5c-9682-1ef462cbcbf5",
