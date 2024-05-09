@@ -29,7 +29,15 @@
 
 
 (ert-deftest slices-of-a-long-series ()
-  (should (equal '("91849" "18493" "84939" "49390" "93904" "39042" "90424" "04243") (slices "918493904243" 5))))
+  (should (equal '("91849"
+                   "18493"
+                   "84939"
+                   "49390"
+                   "93904"
+                   "39042"
+                   "90424"
+                   "04243")
+                 (slices "918493904243" 5))))
 
 
 (ert-deftest slice-length-is-too-large ()

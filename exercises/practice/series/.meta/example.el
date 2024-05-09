@@ -13,8 +13,8 @@
     ((= slice-length 0) (error "slice length cannot be zero"))
     ((< slice-length 0) (error "slice length cannot be negative"))
     (t (mapcar (lambda (start)
-                 (substring series start (+ start slice-length)))
-         (number-sequence 0 (- (length series) slice-length))))))
+                       (substring series start (+ start slice-length)))
+               (number-sequence 0 (- (length series) slice-length))))))
 
 
 (provide 'series)
