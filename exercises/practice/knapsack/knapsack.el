@@ -5,7 +5,7 @@
 ;;; Code:
 
 
-(defun knapsack (capacity weights values)
+(defun maximum-value (maximum-weight items)
   (error "Delete this S-Expression and write your own implementation"))
 
 

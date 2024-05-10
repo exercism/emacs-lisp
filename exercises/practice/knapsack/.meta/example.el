@@ -6,17 +6,16 @@
 
 (require 'cl-lib)
 
-(defun knapsack (capacity weights values)
-  (let ((table (make-vector (1+ capacity) 0)))
-    (cl-loop while weights
-      for weight = (car weights)
-      for value = (car values)
-      do (setq weights (cdr weights))
-      do (setq values (cdr values))
-      do (cl-loop for index from capacity downto weight
-           do (aset table index (max (aref table index)
-                                     (+ value (aref table (- index weight)))))))
-    (aref table capacity)))
+(defun maximum-value (maximum-weight items)
+  (let ((table (make-vector (1+ maximum-weight) 0)))
+    (dolist (item items)
+      (let ((weight (alist-get :weight item))
+            (value (alist-get :value item)))
+        (cl-loop for index from maximum-weight downto weight
+          for new-value = (+ value (aref table (- index weight)))
+          do (when (> new-value (aref table index))
+               (aset table index new-value)))))
+    (aref table maximum-weight)))
 
 (provide 'knapsack)
 ;;; knapsack.el ends here

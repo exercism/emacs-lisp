@@ -4,40 +4,69 @@
 
 ;;; Code:
 
+
 (load-file "knapsack.el")
-(declare-function knapsack "knapsack.el" (capacity weights values))
+(declare-function maximum-value "knapsack.el" (maximum-weight items))
 
 
 (ert-deftest no-items ()
-  (should (= 0 (knapsack 100 '() '()))))
+  (should (= 0 (maximum-value 100 '()))))
 
 
 (ert-deftest one-item-too-heavy ()
-  (should (= 0 (knapsack 10 '(100) '(1)))))
+  (should (= 0 (maximum-value 10 '(((:weight . 100) (:value . 1)))))))
 
 
 (ert-deftest five-items-cannot-be-greedy-by-weight ()
-  (should (= 21 (knapsack 10 '(2 2 2 2 10) '(5 5 5 5 21)))))
+  (should (= 21 (maximum-value 10 '(((:weight . 2) (:value . 5))
+                                    ((:weight . 2) (:value . 5))
+                                    ((:weight . 2) (:value . 5))
+                                    ((:weight . 2) (:value . 5))
+                                    ((:weight . 10) (:value . 21)))))))
 
 
 (ert-deftest five-items-cannot-be-greedy-by-value ()
-  (should (= 80 (knapsack 10 '(2 2 2 2 10) '(20 20 20 20 50)))))
+  (should (= 80 (maximum-value 10 '(((:weight . 2) (:value . 20))
+                                    ((:weight . 2) (:value . 20))
+                                    ((:weight . 2) (:value . 20))
+                                    ((:weight . 2) (:value . 20))
+                                    ((:weight . 10) (:value . 50)))))))
 
 
 (ert-deftest example-knapsack ()
-  (should (= 90 (knapsack 10 '(5 4 6 4) '(10 40 30 50)))))
+  (should (= 90 (maximum-value 10 '(((:weight . 5) (:value . 10))
+                                    ((:weight . 4) (:value . 40))
+                                    ((:weight . 6) (:value . 30))
+                                    ((:weight . 4) (:value . 50)))))))
 
 
 (ert-deftest 8-items ()
-  (should (= 900 (knapsack 104
-                           '(25 35 45 5 25 3 2 2)
-                           '(350 400 450 20 70 8 5 5)))))
+  (should (= 900 (maximum-value 104 '(((:weight . 25) (:value . 350))
+                                      ((:weight . 35) (:value . 400))
+                                      ((:weight . 45) (:value . 450))
+                                      ((:weight . 5) (:value . 20))
+                                      ((:weight . 25) (:value . 70))
+                                      ((:weight . 3) (:value . 8))
+                                      ((:weight . 2) (:value . 5))
+                                      ((:weight . 2) (:value . 5)))))))
 
 
 (ert-deftest 15-items ()
-  (should (= 1458 (knapsack 750
-                            '(70 73 77 80 82 87 90 94 98 106 110 113 115 118 120)
-                            '(135 139 149 150 156 163 173 184 192 201 210 214 221 229 240)))))
+  (should (= 1458 (maximum-value 750 '(((:weight . 70) (:value . 135))
+                                       ((:weight . 73) (:value . 139))
+                                       ((:weight . 77) (:value . 149))
+                                       ((:weight . 80) (:value . 150))
+                                       ((:weight . 82) (:value . 156))
+                                       ((:weight . 87) (:value . 163))
+                                       ((:weight . 90) (:value . 173))
+                                       ((:weight . 94) (:value . 184))
+                                       ((:weight . 98) (:value . 192))
+                                       ((:weight . 106) (:value . 201))
+                                       ((:weight . 110) (:value . 210))
+                                       ((:weight . 113) (:value . 214))
+                                       ((:weight . 115) (:value . 221))
+                                       ((:weight . 118) (:value . 229))
+                                       ((:weight . 120) (:value . 240)))))))
 
 
 (provide 'knapsack-test)

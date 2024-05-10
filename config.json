@@ -666,7 +666,10 @@
         "uuid": "41029de7-58a6-431b-9f82-6d4603604fb3",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1
+        "difficulty": 7,
+        "topics": [
+          "control_flow_loops"
+        ]
       }
     ]
   },
