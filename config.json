@@ -477,6 +477,18 @@
         ]
       },
       {
+        "slug": "sieve",
+        "name": "Sieve",
+        "uuid": "21172aa9-a155-493c-ad9f-ab4884596488",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3,
+        "topics": [
+          "control_flow_loops",
+          "math"
+        ]
+      },
+      {
         "slug": "largest-series-product",
         "name": "Largest Series Product",
         "uuid": "91b2ba1a-8995-4c5c-9682-1ef462cbcbf5",
@@ -659,14 +671,6 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
-      },
-      {
-        "slug": "sieve",
-        "name": "Sieve",
-        "uuid": "21172aa9-a155-493c-ad9f-ab4884596488",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 1
       }
     ]
   },
