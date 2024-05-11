@@ -466,6 +466,17 @@
         ]
       },
       {
+        "slug": "protein-translation",
+        "name": "Protein Translation",
+        "uuid": "3201c23c-e2eb-4e1a-8a44-b56acac572f5",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3,
+        "topics": [
+          "strings"
+        ]
+      },
+      {
         "slug": "series",
         "name": "Series",
         "uuid": "2e10ca92-6232-418e-b9ea-506ac1eba195",
