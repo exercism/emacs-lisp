@@ -512,6 +512,17 @@
         ]
       },
       {
+        "slug": "nth-prime",
+        "name": "Nth Prime",
+        "uuid": "4dfd9ac8-d0e8-4db5-a68c-75e8647b19c4",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4,
+        "topics": [
+          "math"
+        ]
+      },
+      {
         "slug": "affine-cipher",
         "name": "Affine Cipher",
         "uuid": "7d966a40-3cf7-422a-99b1-c0bf05e151b2",
