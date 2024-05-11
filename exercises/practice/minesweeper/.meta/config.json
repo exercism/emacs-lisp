@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "keiravillekode"
+  ],
+  "files": {
+    "solution": [
+      "minesweeper.el"
+    ],
+    "test": [
+      "minesweeper-test.el"
+    ],
+    "example": [
+      ".meta/example.el"
+    ]
+  },
+  "blurb": "Add the numbers to a minesweeper board."
+}
