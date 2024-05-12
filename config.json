@@ -244,7 +244,7 @@
           "functional_programming",
           "generics",
           "lists",
-          "loops"
+          "control_flow_loops"
         ]
       },
       {
@@ -635,6 +635,17 @@
           "checksums",
           "list_operations",
           "strings"
+        ]
+      },
+      {
+        "slug": "minesweeper",
+        "name": "Minesweeper",
+        "uuid": "58e8c0ba-6a1c-4285-bea3-4809a6987da0",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5,
+        "topics": [
+          "control_flow_loops"
         ]
       },
       {
