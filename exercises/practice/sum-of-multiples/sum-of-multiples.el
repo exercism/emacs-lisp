@@ -4,18 +4,10 @@
 
 ;;; Code:
 
-(require 'cl-lib)
 
 (defun sum (factors limit)
-  (let* ((set (make-hash-table))
-         (total 0))
-    (dolist (factor factors)
-      (cl-loop for multiple from factor below limit by factor
-        do (puthash multiple t set)))
-    (maphash (lambda (key value) (setq total (+ total key)))
-      set)
-    total))
+ (error "Delete this S-Expression and write your own implementation"))
+
 
 (provide 'sum-of-multiples)
 ;;; sum-of-multiples.el ends here
-
