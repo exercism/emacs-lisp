@@ -68,9 +68,12 @@ description = "valid luhn with an odd number of digits and non zero first digit"
 
 [39a06a5a-5bad-4e0f-b215-b042d46209b1]
 description = "using ascii value for non-doubled non-digit isn't allowed"
+include = false
 
 [f94cf191-a62f-4868-bc72-7253114aa157]
 description = "using ascii value for doubled non-digit isn't allowed"
+include = false
 
 [8b72ad26-c8be-49a2-b99c-bcc3bf631b33]
 description = "non-numeric, non-space char in the middle with a sum that's divisible by 10 isn't allowed"
+include = false

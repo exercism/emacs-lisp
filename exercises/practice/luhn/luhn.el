@@ -1,10 +1,14 @@
-;;; luhn.el --- Luhn exercise (exercism)  -*- lexical-binding: t; -*-
+;;; luhn.el --- Luhn (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 
-(defun luhn-p (str)
 ;;; Code:
-)
+
+
+(defun luhn-p (str)
+  (error "Delete this S-Expression and write your own implementation"))
+
 
 (provide 'luhn)
 ;;; luhn.el ends here
+
