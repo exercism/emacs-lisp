@@ -1,10 +1,13 @@
-;;; bob.el --- Bob exercise (exercism)  -*- lexical-binding: t; -*-
+;;; bob.el --- Bob (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 
-(defun response-for (phrase)
 ;;; Code:
-)  
+
+
+(defun response-for (phrase)
+ (error "Delete this S-Expression and write your own implementation"))
+
 
 (provide 'bob)
 ;;; bob.el ends here
