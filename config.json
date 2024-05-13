@@ -625,6 +625,18 @@
         "difficulty": 5
       },
       {
+        "slug": "game-of-life",
+        "name": "Conway's Game of Life",
+        "uuid": "4e8130a9-bdde-46c5-bb50-e780c3af8670",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5,
+        "topics": [
+          "control_flow_loops",
+          "lists"
+        ]
+      },
+      {
         "slug": "luhn",
         "name": "Luhn",
         "uuid": "bb10d7e4-6006-4dfd-81ae-45062a0ec999",
