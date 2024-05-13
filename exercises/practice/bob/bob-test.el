@@ -33,19 +33,19 @@
 
 (ert-deftest responds-to-talking-forcefully ()
   (should
-   (string= "Whatever." (response-for "Let's go make out behind the gym!"))))
+   (string= "Whatever." (response-for "Hi there!"))))
 
 (ert-deftest responds-to-using-acronyms-in-regular-speech ()
   (should
-   (string= "Whatever." (response-for "It's OK if you don't want to go to the DMV."))))
+   (string= "Whatever." (response-for "It's OK if you don't want to go work for NASA."))))
 
 (ert-deftest responds-to-forceful-question ()
   (should
-   (string= "Calm down, I know what I'm doing!" (response-for "WHAT THE HELL WERE YOU THINKING?"))))
+   (string= "Calm down, I know what I'm doing!" (response-for "WHAT'S GOING ON?"))))
 
 (ert-deftest responds-to-shouting-numbers ()
   (should
-   (string= "Whoa, chill out!" (response-for "1, 2, 3, GO!"))))
+   (string= "Whoa, chill out!" (response-for "1, 2, 3 GO!"))))
 
 (ert-deftest responds-to-only-numbers ()
   (should
@@ -61,7 +61,7 @@
 
 (ert-deftest responds-to-shouting-with-no-exclamation-mark ()
   (should
-   (string= "Whoa, chill out!" (response-for "I HATE YOU"))))
+   (string= "Whoa, chill out!" (response-for "I HATE THE DENTIST"))))
 
 (ert-deftest responds-to-statement-containing-question-mark ()
   (should
