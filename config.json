@@ -460,7 +460,8 @@
         "difficulty": 2,
         "topics": [
           "math"
-        ]
+        ],
+        "status": "deprecated"
       },
       {
         "slug": "two-fer",
