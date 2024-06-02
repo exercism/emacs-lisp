@@ -567,6 +567,17 @@
         ]
       },
       {
+        "slug": "pascals-triangle",
+        "name": "Pascal's Triangle",
+        "uuid": "cc71a6d5-efb2-4054-bf72-102b3e96e0bc",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4,
+        "topics": [
+          "math"
+        ]
+      },
+      {
         "slug": "affine-cipher",
         "name": "Affine Cipher",
         "uuid": "7d966a40-3cf7-422a-99b1-c0bf05e151b2",
