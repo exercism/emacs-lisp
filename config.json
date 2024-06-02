@@ -732,6 +732,14 @@
         "difficulty": 5
       },
       {
+        "slug": "spiral-matrix",
+        "name": "Spiral Matrix",
+        "uuid": "4ce2b869-140a-4d5d-90dd-6fc717ef7696",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "word-count",
         "name": "Word Count",
         "uuid": "1a3c64b1-8447-451f-985d-f7bd6d42bdb6",
