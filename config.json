@@ -806,6 +806,14 @@
         "topics": [
           "control_flow_loops"
         ]
+      },
+      {
+        "slug": "pig-latin",
+        "name": "Pig Latin",
+        "uuid": "3bee6827-8766-4d4d-9d0f-3facc3bfd3f4",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
       }
     ]
   },
