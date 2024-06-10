@@ -5,8 +5,7 @@
 ;;; Code:
 
 
-;;; (load-file "pig-latin.el")
-(load-file ".meta/example.el")
+(load-file "pig-latin.el")
 (declare-function translate "pig-latin.el" (phrase))
 
 
