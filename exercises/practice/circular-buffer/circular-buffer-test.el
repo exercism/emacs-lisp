@@ -5,6 +5,8 @@
 ;;; Code:
 
 
+(require 'eieio)
+
 (load-file "circular-buffer.el")
 
 (defun create-test-buffer (capacity)
