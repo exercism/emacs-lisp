@@ -15,7 +15,8 @@
 
 (ert-deftest reading-empty-buffer-should-fail ()
   (let ((buf (create-test-buffer 1)))
-    (should-error (read-buff buf) :type 'error)))
+    (should (equal (should-error (read-buff buf))
+                   '(error . ("buffer is empty"))))))
 
 
 (ert-deftest can-read-an-item-just-written ()
@@ -28,7 +29,8 @@
   (let ((buf (create-test-buffer 1)))
     (write buf 1)
     (should (equal (read-buff buf) 1))
-    (should-error (read-buff buf) :type 'error)))
+    (should (equal (should-error (read-buff buf))
+                   '(error . ("buffer is empty"))))))
 
 
 (ert-deftest items-are-read-in-the-order-they-are-written ()
@@ -42,7 +44,8 @@
 (ert-deftest full-buffer-cant-be-written-to ()
   (let ((buf (create-test-buffer 1)))
     (write buf 1)
-    (should-error (write buf 2) :type 'error)))
+    (should (equal (should-error (write buf 2))
+                   '(error . ("buffer is full"))))))
 
 
 (ert-deftest a-read-frees-up-capacity-for-another-write ()
@@ -67,7 +70,8 @@
   (let ((buf (create-test-buffer 1)))
     (write buf 1)
     (clear buf)
-    (should-error (read-buff buf) :type 'error)))
+    (should (equal (should-error (read-buff buf))
+                   '(error . ("buffer is empty"))))))
 
 
 (ert-deftest clear-frees-up-capacity-for-another-write ()
@@ -124,7 +128,8 @@
     (overwrite buf 4)
     (should (equal (read-buff buf) 3))
     (should (equal (read-buff buf) 4))
-    (should-error (read-buff buf) :type 'error)))
+    (should (equal (should-error (read-buff buf))
+                   '(error . ("buffer is empty"))))))
 
 
 (provide 'circular-buffer-test)
