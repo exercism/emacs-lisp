@@ -12,6 +12,10 @@
   "Encode PLAINTEXT to atbash-cipher encoding."
   (to-string (group (to-cipher-seq plaintext))))
 
+(defun decode (ciphertext)
+  "Decode CIPHERTEXT from atbash-cipher encoding."
+  (to-string (cleanup-ciphered-seq (cl-map 'list #'encipher ciphertext))))
+
 (defun to-string (seq)
   "Convert SEQ of characters to a string."
   (cl-concatenate 'string seq))
