@@ -6,6 +6,11 @@
 
 (require 'eieio)
 
+(define-error 'account-closed "account not open")
+(define-error 'account-open "account already open")
+(define-error 'account-overdraw "amount must be less than balance")
+(define-error 'account-negative-transaction "amount must be greater than 0")
+
 (defclass bank-account ()
   ((open
     :initarg :open
@@ -42,15 +47,15 @@
 
 (cl-defmethod check-open ((account bank-account))
   (unless (oref account open)
-    (error "account not open")))
+    (signal 'account-closed nil)))
 
 (cl-defmethod check-positive ((account bank-account) amount)
   (unless (> amount 0)
-    (error "amount must be greater than 0")))
+    (signal 'account-negative-transaction nil)))
 
 (cl-defmethod open-account ((account bank-account))
   (if (oref account open)
-      (error "account already open")
+      (signal 'account-open nil)
     (oset account open t)
     (oset account funds 0)
     (bank-account--semaphore-post (oref account lock))))
@@ -72,7 +77,7 @@
   (check-open account)
   (check-positive account amount)
   (if (> amount (oref account funds))
-      (error "amount must be less than balance")
+      (signal 'account-overdraw nil)
     (bank-account--semaphore-wait (oref account lock))
     (oset account funds (- (oref account funds) amount))
     (bank-account--semaphore-post (oref account lock))))
@@ -87,4 +92,3 @@
 
 (provide 'bank-account)
 ;;; bank-account.el ends here
-

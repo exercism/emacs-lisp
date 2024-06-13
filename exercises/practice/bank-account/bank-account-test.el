@@ -62,43 +62,37 @@
   (let ((account (make-new-bank-account)))
     (open-account account)
     (close-account account)
-    (should (equal (should-error (balance account))
-                   '(error . ("account not open"))))))
+    (should-error (balance account) :type 'account-closed)))
 
 
 (ert-deftest cannot-deposit-into-closed-account ()
   (let ((account (make-new-bank-account)))
     (open-account account)
     (close-account account)
-    (should (equal (should-error (deposit account 50))
-                   '(error . ("account not open"))))))
+    (should-error (deposit account 50) :type 'account-closed)))
 
 
 (ert-deftest cannot-deposit-into-unopened-account ()
   (let ((account (make-new-bank-account)))
-    (should (equal (should-error (deposit account 50))
-                   '(error . ("account not open"))))))
+    (should-error (deposit account 50) :type 'account-closed)))
 
 
 (ert-deftest cannot-withdraw-from-closed-account ()
   (let ((account (make-new-bank-account)))
     (open-account account)
     (close-account account)
-    (should (equal (should-error (withdraw account 50))
-                   '(error . ("account not open"))))))
+    (should-error (withdraw account 50) :type 'account-closed)))
 
 
 (ert-deftest cannot-close-an-account-that-was-not-opened ()
   (let ((account (make-new-bank-account)))
-    (should (equal (should-error (close-account account))
-                   '(error . ("account not open"))))))
+    (should-error (close-account account) :type 'account-closed)))
 
 
 (ert-deftest cannot-open-an-already-opened-account ()
   (let ((account (make-new-bank-account)))
     (open-account account)
-    (should (equal (should-error (open-account account))
-                   '(error . ("account already open"))))))
+    (should-error (open-account account) :type 'account-open)))
 
 
 (ert-deftest reopened-account-does-not-retain-balance ()
@@ -114,23 +108,20 @@
   (let ((account (make-new-bank-account)))
     (open-account account)
     (deposit account 25)
-    (should (equal (should-error (withdraw account 50))
-                   '(error . ("amount must be less than balance"))))))
+    (should-error (withdraw account 50) :type 'account-overdraw)))
 
 
 (ert-deftest cannot-withdraw-negative ()
   (let ((account (make-new-bank-account)))
     (open-account account)
     (deposit account 100)
-    (should (equal (should-error (withdraw account -50))
-                   '(error . ("amount must be greater than 0"))))))
+    (should-error (withdraw account -50) :type 'account-negative-transaction)))
 
 
 (ert-deftest cannot-deposit-negative ()
   (let ((account (make-new-bank-account)))
     (open-account account)
-    (should (equal (should-error (deposit account -50))
-                   '(error . ("amount must be greater than 0"))))))
+    (should-error (deposit account -50) :type 'account-negative-transaction)))
 
 
 (ert-deftest can-handle-concurrent-transactions ()
@@ -149,4 +140,3 @@
 
 (provide 'bank-account-test)
 ;;; bank-account-test.el ends here
-
