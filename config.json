@@ -822,6 +822,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
+      },
+      {
+        "slug": "circular-buffer",
+        "name": "Circular Buffer",
+        "uuid": "d2eaa3fa-42b3-4287-9b87-714a73ac0c65",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
       }
     ]
   },
