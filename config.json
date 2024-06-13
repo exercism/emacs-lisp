@@ -824,6 +824,14 @@
         "difficulty": 5
       },
       {
+        "slug": "circular-buffer",
+        "name": "Circular Buffer",
+        "uuid": "d2eaa3fa-42b3-4287-9b87-714a73ac0c65",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "bank-account",
         "name": "Bank Account",
         "uuid": "edc5fa4b-35b3-4313-b4c3-16153708f0ac",
