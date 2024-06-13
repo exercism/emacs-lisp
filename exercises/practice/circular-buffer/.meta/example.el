@@ -5,6 +5,10 @@
 ;;; Code:
 
 
+(define-error 'empty-buffer-error "buffer is empty")
+
+(define-error 'full-buffer-error "buffer is full")
+
 (defclass circular-buffer ()
   ((capacity :initarg :capacity :initform 10)
    (buf-modulus :initform 20)
@@ -12,6 +16,7 @@
    (front :initform 0)
    (back :initform 0))
   :documentation "Circular buffer class")
+
 
 (cl-defmethod initialize-instance :after ((buf circular-buffer) &rest _)
   (with-slots (capacity buf-modulus data) buf
@@ -45,7 +50,7 @@
 (cl-defmethod read-buff ((buf circular-buffer))
   (with-slots (front data capacity) buf
     (if (buf-empty-p buf)
-        (error "buffer is empty")
+        (signal 'empty-buffer-error nil)
       (let ((v (aref data (mod front capacity))))
         (advance-front buf)
         v))))
@@ -53,7 +58,7 @@
 (cl-defmethod write ((buf circular-buffer) v)
   (with-slots (back data capacity) buf
     (if (buf-full-p buf)
-        (error "buffer is full")
+        (signal 'full-buffer-error nil)
       (progn
         (aset data (mod back capacity) v)
         (advance-back buf)))))

@@ -816,6 +816,14 @@
         "difficulty": 5
       },
       {
+        "slug": "food-chain",
+        "name": "Food Chain",
+        "uuid": "ac1c0246-0fed-46e7-819a-0b013b2b4585",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "circular-buffer",
         "name": "Circular Buffer",
         "uuid": "d2eaa3fa-42b3-4287-9b87-714a73ac0c65",

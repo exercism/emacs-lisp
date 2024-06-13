@@ -5,6 +5,12 @@
 ;;; Code:
 
 
+(define-error 'empty-buffer-error
+              (error "Delete this S-Expression and write your own implementation"))
+
+(define-error 'full-buffer-error
+              (error "Delete this S-Expression and write your own implementation"))
+
 (defclass circular-buffer ()
   (error "Delete this S-Expression and write your own implementation"))
 
