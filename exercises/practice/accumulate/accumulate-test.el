@@ -5,8 +5,7 @@
 ;;; Code:
 
 
-;;; (load-file "accumulate.el")
-(load-file ".meta/example.el")
+(load-file "accumulate.el")
 (declare-function accumulate "accumulate.el" (lst op))
 
 
