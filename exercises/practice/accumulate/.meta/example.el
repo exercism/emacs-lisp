@@ -5,7 +5,7 @@
 ;;; Code:
 
 
-(defun accumulate (accumulator lst)
+(defun accumulate (lst op)
   (cond
    ((null lst) lst)
    (t (cons (funcall op (car lst)) (accumulate (cdr lst) op)))))

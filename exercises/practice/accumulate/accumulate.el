@@ -5,7 +5,7 @@
 ;;; Code:
 
 
-(defun accumulate (accumulator lst)
+(defun accumulate (lst op)
   (error "Delete this S-Expression and write your own implementation"))
 
 
