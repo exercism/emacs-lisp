@@ -854,6 +854,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
+      },
+      {
+        "slug": "grade-school",
+        "name": "Grade School",
+        "uuid": "e5ab14bd-9eeb-4c63-8143-55e1e56b4ac1",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
       }
     ]
   },
