@@ -18,7 +18,7 @@
 
 (ert-deftest add-a-student ()
   (let ((test-school (make-school)))
-    (should (equal (add test-school "Aimee" 2) t))))
+    (should (add test-school "Aimee" 2))))
 
 
 (ert-deftest student-is-added-to-the-roster ()
@@ -29,9 +29,9 @@
 
 (ert-deftest adding-multiple-students-in-the-same-grade-in-the-roster ()
   (let ((test-school (make-school)))
-    (should (equal (add test-school "Blair" 2) t))
-    (should (equal (add test-school "James" 2) t))
-    (should (equal (add test-school "Paul" 2) t))))
+    (should (add test-school "Blair" 2))
+    (should (add test-school "James" 2))
+    (should (add test-school "Paul" 2))))
 
 
 (ert-deftest multiple-students-in-the-same-grade-are-added-to-the-roster ()
@@ -44,10 +44,10 @@
 
 (ert-deftest cannot-add-student-to-same-grade-in-the-roster-more-than-once ()
   (let ((test-school (make-school)))
-    (should (equal (add test-school "Blair" 2) t))
-    (should (equal (add test-school "James" 2) t))
-    (should (equal (add test-school "James" 2) nil))
-    (should (equal (add test-school "Paul" 2) t))))
+    (should (add test-school "Blair" 2))
+    (should (add test-school "James" 2))
+    (should-not (add test-school "James" 2))
+    (should (add test-school "Paul" 2))))
 
 
 (ert-deftest student-not-added-to-same-grade-in-the-roster-more-than-once ()
@@ -61,8 +61,8 @@
 
 (ert-deftest adding-students-in-multiple-grades ()
   (let ((test-school (make-school)))
-    (should (equal (add test-school "Chelsea" 3) t))
-    (should (equal (add test-school "Loagan" 7) t))))
+    (should (add test-school "Chelsea" 3))
+    (should (add test-school "Loagan" 7))))
 
 
 (ert-deftest students-in-multiple-grades-are-added-to-the-roster ()
@@ -74,10 +74,10 @@
 
 (ert-deftest cannot-add-same-student-to-multiple-grades-in-the-roster ()
   (let ((test-school (make-school)))
-    (should (equal (add test-school "Blair" 2) t))
-    (should (equal (add test-school "James" 2) t))
-    (should (equal (add test-school "James" 3) nil))
-    (should (equal (add test-school "Paul" 3) t))))
+    (should (add test-school "Blair" 2))
+    (should (add test-school "James" 2))
+    (should-not (add test-school "James" 3))
+    (should (add test-school "Paul" 3))))
 
 
 (ert-deftest student-not-added-to-multiple-grades-in-the-roster ()

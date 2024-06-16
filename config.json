@@ -840,6 +840,22 @@
         "difficulty": 8
       },
       {
+        "slug": "yacht",
+        "name": "Yacht",
+        "uuid": "5d06fd6e-2ca7-425d-a3dd-892cb3f7bf65",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "accumulate",
+        "name": "Accumulate",
+        "uuid": "093463bf-e8df-4dd9-b6e3-b5ec007cb781",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "grade-school",
         "name": "Grade School",
         "uuid": "e5ab14bd-9eeb-4c63-8143-55e1e56b4ac1",

@@ -7,5 +7,11 @@
   ;;; Code:
 )
 
+(defun decode (plaintext)
+  "Decode atbash-cipher encoding to PLAINTEXT."
+  ;;; Code:
+)
+
+
 (provide 'atbash-cipher)
 ;;; atbash-cipher.el ends here
