@@ -90,5 +90,13 @@
                  '("Silent"))))
 
 
+(ert-deftest test-handles-case-of-greek-letters ()
+  (should (equal (anagrams-for "ΑΒΓ" '("ΒΓΑ" "ΒΓΔ" "γβα" "αβγ"))
+                 '("ΒΓΑ" "γβα"))))
+
+(ert-deftest different-characters-may-have-the-same-bytes ()
+  (should (equal (anagrams-for "a⬂" '("€a"))
+                 '())))
+
 (provide 'anagram-test)
 ;;; anagram-test.el ends here
