@@ -12,7 +12,7 @@ pushd exercises/practice > /dev/null
 for exercise in *; do
     pushd $exercise
     mv "${exercise}.el" "${exercise}.el.bak"
-    mv .meta/example.el "${exercise}.el"
+    cp .meta/example.el "${exercise}.el"
     emacs -batch -l ert -l "${exercise}-test.el" -f ert-run-tests-batch-and-exit
     let "err_cnt += $?"
     mv "${exercise}.el.bak" "${exercise}.el"
