@@ -10,7 +10,7 @@
 (declare-function scalenep "triangle.el" (sides))
 
 
-(ert-deftest all-sides-are-equal ()
+(ert-deftest all-sides-are-equal-1 ()
   (should (equilateralp '(2 2 2))))
 
 
@@ -18,7 +18,7 @@
   (should-not (equilateralp '(2 3 2))))
 
 
-(ert-deftest no-sides-are-equal ()
+(ert-deftest no-sides-are-equal-1 ()
   (should-not (equilateralp '(5 4 6))))
 
 
@@ -26,7 +26,7 @@
   (should-not (equilateralp '(0 0 0))))
 
 
-(ert-deftest sides-may-be-floats ()
+(ert-deftest sides-may-be-floats-1 ()
   (should (equilateralp '(0.5 0.5 0.5))))
 
 
@@ -46,7 +46,7 @@
   (should (isoscelesp '(4 4 4))))
 
 
-(ert-deftest no-sides-are-equal ()
+(ert-deftest no-sides-are-equal-2 ()
   (should-not (isoscelesp '(2 3 4))))
 
 
@@ -62,15 +62,15 @@
   (should-not (isoscelesp '(3 1 1))))
 
 
-(ert-deftest sides-may-be-floats ()
+(ert-deftest sides-may-be-floats-2 ()
   (should (isoscelesp '(0.5 0.4 0.5))))
 
 
-(ert-deftest no-sides-are-equal ()
+(ert-deftest no-sides-are-equal-3 ()
   (should (scalenep '(5 4 6))))
 
 
-(ert-deftest all-sides-are-equal ()
+(ert-deftest all-sides-are-equal-2 ()
   (should-not (scalenep '(4 4 4))))
 
 
@@ -90,7 +90,7 @@
   (should-not (scalenep '(7 3 2))))
 
 
-(ert-deftest sides-may-be-floats ()
+(ert-deftest sides-may-be-floats-3 ()
   (should (scalenep '(0.5 0.4 0.6))))
 
 (provide 'triangle-test)

@@ -9,7 +9,7 @@
 This repo holds all the instructions, tests, code, & support files for Emacs Lisp _exercises_ currently under development or implemented & available for students.
 If you haven't already, you can check out and study the live language track [here][exercism-emacs-lisp-track].
 
-🌟 &nbsp;&nbsp;The test runner is currently running Emacs 28.2
+🌟 &nbsp;&nbsp;The test runner is currently running Emacs 29.3
 
 Currently the Emacs Lisp track doesn't feature a syllabus, so it only contains practice exercises. Practice exercises are open-ended problems that allow you to build and test your knowledge of a programming language. You can find the practice exercises referenced in the [config.json][config-json] and the files in the [`exercises/practice`][emacs-lisp-exercises-practice-dir] directory. The practice exercises are shared between tracks. You can find the canonical problem description in the [problem specifications repository][problem-specifications-repository].
 
