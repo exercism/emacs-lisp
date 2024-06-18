@@ -5,7 +5,7 @@
 ;;; Code:
 
 
-(defun meetup (month year dow schedule)
+(defun meetup (year month dayofweek schedule)
   (error "Delete this S-Expression and write your own implementation"))
 
 
