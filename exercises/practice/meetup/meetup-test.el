@@ -12,8 +12,10 @@
 (ert-deftest when-teenth-monday-is-the-13th-the-first-day-of-the-teenth-week ()
   (should (equal (meetup 2013 5 :monday :teenth) '(2013 5 13))))
 
+
 (ert-deftest when-teenth-monday-is-the-19th-the-last-day-of-the-teenth-week ()
   (should (equal (meetup 2013 8 :monday :teenth) '(2013 8 19))))
+
 
 (ert-deftest when-teenth-monday-is-some-day-in-the-middle-of-the-teenth-week ()
   (should (equal (meetup 2013 9 :monday :teenth) '(2013 9 16))))
