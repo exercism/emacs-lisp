@@ -4,6 +4,8 @@
 
 ;;; Code:
 
+(defun make-school ()
+  (error "Delete this S-Expression and write your own implementation"))
 
 (defun roster (school)
   (error "Delete this S-Expression and write your own implementation"))
