@@ -20,4 +20,3 @@
 
 (provide 'zebra-puzzle-test)
 ;;; zebra-puzzle-test.el ends here
-
