@@ -28,9 +28,6 @@
 (defun grade (school grade)
   (gethash grade (school-roster school)))
 
-(defun set-grade (school grade newval)
-  (puthash grade (sort newval #'string<) (school-roster school)))
-
 
 (provide 'grade-school)
 ;;; grade-school.el ends here

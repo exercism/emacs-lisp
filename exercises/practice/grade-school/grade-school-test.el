@@ -6,9 +6,10 @@
 
 
 (load-file "grade-school.el")
-(declare-function roster "grade-school.el" (students))
-(declare-function add "grade-school.el" (students))
-(declare-function grade "grade-school.el" (desired-grade students))
+(declare-function make-school "grade-school.el")
+(declare-function roster "grade-school.el" (school))
+(declare-function add "grade-school.el" (school name grade))
+(declare-function grade "grade-school.el" (school grade))
 
 
 (ert-deftest roster-is-empty-when-no-student-is-added ()

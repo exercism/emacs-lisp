@@ -864,6 +864,14 @@
         "difficulty": 5
       },
       {
+        "slug": "meetup",
+        "name": "Meetup",
+        "uuid": "80000759-8ca8-4ff8-a88f-34c4244ac6c5",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "two-bucket",
         "name": "Two Bucket",
         "uuid": "2eb39d6e-52de-4822-8cd1-ef789c1f5e22",
