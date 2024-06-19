@@ -11,16 +11,10 @@
 
 
 (ert-deftest resident-who-drinks-water ()
-  ;; Function under test: drinks-water
-  ;; Input: {}
-  ;; Expected: "Norwegian"
   (should (string= (drinks-water) "Norwegian")))
 
 
 (ert-deftest resident-who-owns-zebra ()
-  ;; Function under test: owns-zebra
-  ;; Input: {}
-  ;; Expected: "Japanese"
   (should (string= (owns-zebra) "Japanese")))
 
 
