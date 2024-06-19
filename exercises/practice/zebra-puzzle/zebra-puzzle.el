@@ -8,6 +8,7 @@
 (defun drinks-water ()
   (error "Delete this S-Expression and write your own implementation"))
 
+
 (defun owns-zebra ()
   (error "Delete this S-Expression and write your own implementation"))
 
