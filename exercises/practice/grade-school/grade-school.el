@@ -4,14 +4,16 @@
 
 ;;; Code:
 
-
-(defun roster (students)
+(defun make-school ()
   (error "Delete this S-Expression and write your own implementation"))
 
-(defun add (students)
+(defun roster (school)
   (error "Delete this S-Expression and write your own implementation"))
 
-(defun grade (desired-grade students)
+(defun add (school name grade)
+  (error "Delete this S-Expression and write your own implementation"))
+
+(defun grade (school grade)
   (error "Delete this S-Expression and write your own implementation"))
 
 
