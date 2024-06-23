@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "kmarker1101"
+  ],
+  "files": {
+    "solution": [
+      "zebra-puzzle.el"
+    ],
+    "test": [
+      "zebra-puzzle-test.el"
+    ],
+    "example": [
+      ".meta/example.el"
+    ]
+  },
+  "blurb": "Solve the zebra puzzle.",
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Zebra_Puzzle"
+}
