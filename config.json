@@ -359,14 +359,6 @@
         "difficulty": 2
       },
       {
-        "slug": "reverse-string",
-        "name": "Reverse String",
-        "uuid": "59c6319b-2799-4e4c-bef1-e28626878446",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 4
-      },
-      {
         "slug": "roman-numerals",
         "name": "Roman Numerals",
         "uuid": "c4875bc5-e295-4782-99c7-cb3370ac8e08",
@@ -496,7 +488,7 @@
         "uuid": "cb79cb42-7efe-49fe-98c4-68dbdc32f2a3",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3,
+        "difficulty": 2,
         "topics": [
           "math"
         ]
@@ -507,7 +499,7 @@
         "uuid": "3201c23c-e2eb-4e1a-8a44-b56acac572f5",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3,
+        "difficulty": 2,
         "topics": [
           "strings"
         ]
@@ -518,7 +510,7 @@
         "uuid": "e55f5562-9126-4cc7-9f9e-a3cbdfd292b4",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3
+        "difficulty": 2
       },
       {
         "slug": "series",
@@ -526,7 +518,7 @@
         "uuid": "2e10ca92-6232-418e-b9ea-506ac1eba195",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3,
+        "difficulty": 2,
         "topics": [
           "strings"
         ]
@@ -537,11 +529,27 @@
         "uuid": "21172aa9-a155-493c-ad9f-ab4884596488",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3,
+        "difficulty": 2,
         "topics": [
           "control_flow_loops",
           "math"
         ]
+      },
+      {
+        "slug": "accumulate",
+        "name": "Accumulate",
+        "uuid": "093463bf-e8df-4dd9-b6e3-b5ec007cb781",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "reverse-string",
+        "name": "Reverse String",
+        "uuid": "59c6319b-2799-4e4c-bef1-e28626878446",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
       },
       {
         "slug": "diamond",
@@ -549,7 +557,7 @@
         "uuid": "312bff7d-34f4-4ade-bbd3-479bce9bff58",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 5
       },
       {
         "slug": "largest-series-product",
@@ -557,7 +565,7 @@
         "uuid": "91b2ba1a-8995-4c5c-9682-1ef462cbcbf5",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4,
+        "difficulty": 5,
         "topics": [
           "control_flow_loops",
           "strings"
@@ -569,7 +577,7 @@
         "uuid": "4dfd9ac8-d0e8-4db5-a68c-75e8647b19c4",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4,
+        "difficulty": 5,
         "topics": [
           "math"
         ]
@@ -580,7 +588,7 @@
         "uuid": "cc71a6d5-efb2-4054-bf72-102b3e96e0bc",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4,
+        "difficulty": 5,
         "topics": [
           "math"
         ]
@@ -794,18 +802,7 @@
         "uuid": "02d23d01-c4c6-4fd1-9e0b-f6a457c402ed",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 6
-      },
-      {
-        "slug": "knapsack",
-        "name": "Knapsack",
-        "uuid": "41029de7-58a6-431b-9f82-6d4603604fb3",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 7,
-        "topics": [
-          "control_flow_loops"
-        ]
+        "difficulty": 5
       },
       {
         "slug": "pig-latin",
@@ -832,28 +829,12 @@
         "difficulty": 5
       },
       {
-        "slug": "bank-account",
-        "name": "Bank Account",
-        "uuid": "edc5fa4b-35b3-4313-b4c3-16153708f0ac",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 8
-      },
-      {
         "slug": "yacht",
         "name": "Yacht",
         "uuid": "5d06fd6e-2ca7-425d-a3dd-892cb3f7bf65",
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
-      },
-      {
-        "slug": "accumulate",
-        "name": "Accumulate",
-        "uuid": "093463bf-e8df-4dd9-b6e3-b5ec007cb781",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 2
       },
       {
         "slug": "grade-school",
@@ -877,7 +858,7 @@
         "uuid": "2eb39d6e-52de-4822-8cd1-ef789c1f5e22",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 6
+        "difficulty": 5
       },
       {
         "slug": "zebra-puzzle",
@@ -886,6 +867,25 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
+      },
+      {
+        "slug": "knapsack",
+        "name": "Knapsack",
+        "uuid": "41029de7-58a6-431b-9f82-6d4603604fb3",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 8,
+        "topics": [
+          "control_flow_loops"
+        ]
+      },
+      {
+        "slug": "bank-account",
+        "name": "Bank Account",
+        "uuid": "edc5fa4b-35b3-4313-b4c3-16153708f0ac",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 8
       }
     ]
   },
