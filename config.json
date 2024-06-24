@@ -880,6 +880,14 @@
         "difficulty": 6
       },
       {
+        "slug": "zebra-puzzle",
+        "name": "Zebra Puzzle",
+        "uuid": "bd7c4195-2d89-436b-918f-24224a95610d",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "parallel-letter-frequency",
         "name": "Parallel Letter Frequency",
         "uuid": "3daf3903-1eb0-49b9-827a-76e6b7ca25fb",
