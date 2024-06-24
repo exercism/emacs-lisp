@@ -1,5 +1,7 @@
 {
-  "authors": ["kmarker1101"],
+  "authors": [
+    "kmarker1101"
+  ],
   "files": {
     "solution": [
       "parallel-letter-frequency.el"
