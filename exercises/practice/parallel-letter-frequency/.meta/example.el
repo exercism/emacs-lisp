@@ -91,6 +91,5 @@
         (sleep-for 0.1))
       final-result)))
 
-
 (provide 'parallel-letter-frequency)
 ;;; parallel-letter-frequency.el ends here
