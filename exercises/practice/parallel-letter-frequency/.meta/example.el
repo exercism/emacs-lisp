@@ -7,8 +7,9 @@
 (require 'cl-lib)
 
 (defun clean-text (text)
-  "Clean up the text by removing spaces, tabs, numbers and converting to lowercase."
-  (downcase (replace-regexp-in-string "[^[:alpha:]]" "" text)))
+  "Clean up the text by removing numbers, punctuation, and whitespace, but keeping alphabetic characters (including Unicode) and converting to lowercase."
+  (let ((cleaned-text (replace-regexp-in-string "[^[:alpha:]]" "" text)))
+    (downcase cleaned-text)))
 
 (defun combine-frequencies (freqs-list)
   "Combine a list of frequency hash tables into a single hash table."
