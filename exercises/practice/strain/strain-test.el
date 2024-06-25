@@ -43,6 +43,7 @@
                        '("apple" "zebra" "banana" "zombies" "cherimoya" "zealot"))
                  '("zebra" "zombies" "zealot"))))
 
+
 (ert-deftest keeps-lists ()
   (should (equal (keep (lambda (x) (contains x 5))
                        '((1 2 3) (5 5 5) (5 1 2) (2 1 2) (1 5 2) (2 2 1) (1 2 5)))
@@ -51,6 +52,7 @@
 
 (ert-deftest discard-on-empty-list-returns-empty-list ()
   (should (equal (discard (lambda (x) t) '()) '())))
+
 
 (ert-deftest discards-everything ()
   (should (equal (discard (lambda (x) t) '(1 3 5)) '())))
