@@ -888,6 +888,14 @@
         "difficulty": 5
       },
       {
+        "slug": "strain",
+        "name": "Strain",
+        "uuid": "daff70f7-504a-4ba5-89a5-1a2860dcd98e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "parallel-letter-frequency",
         "name": "Parallel Letter Frequency",
         "uuid": "3daf3903-1eb0-49b9-827a-76e6b7ca25fb",

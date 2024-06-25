@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "kmarker1101"
+  ],
+  "files": {
+    "solution": [
+      "strain.el"
+    ],
+    "test": [
+      "strain-test.el"
+    ],
+    "example": [
+      ".meta/example.el"
+    ]
+  },
+  "blurb": "Implement the `keep` and `discard` operation on collections.",
+  "source": "Conversation with James Edward Gray II",
+  "source_url": "http://graysoftinc.com/"
+}
