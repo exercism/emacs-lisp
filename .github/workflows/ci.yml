@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: purcell/setup-emacs@c851e5408f2d2f657fa80375bbe3fb35029aa488
         with:
-          version: 29.3
+          version: 29.4
 
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.0.0
 
