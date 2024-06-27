@@ -8,12 +8,10 @@
 
 
 (defun clean-text (text)
-  "Clean TEXT by removing numbers, punctuation, and whitespace, keeping only alphabetic characters and converting to lowercase."
   (downcase (replace-regexp-in-string "[^[:alpha:]]" "" text)))
 
 
 (defun combine-frequencies (freqs-list)
-  "Combine a list of frequency hash tables in FREQU-list into a single hash table."
   (let ((combined-freqs (make-hash-table :test 'equal)))
     (dolist (freqs freqs-list)
       (maphash (lambda (key value)
@@ -22,18 +20,27 @@
     combined-freqs))
 
 
+(defun deserialize-hash-table (str)
+    (let ((hash-table (make-hash-table :test 'equal)))
+    (unless (string= str "")
+      (dolist (item (split-string str ","))
+        (let ((pair (split-string item ":")))
+          (puthash (string-to-char (nth 0 pair))
+                   (string-to-number (nth 1 pair))
+                   hash-table))))
+    hash-table))
+
+
 (defun calculate-frequencies (texts)
-  "Calculate letter frequencies for each string in TEXTS using processes."
-  (let ((cleaned-texts (mapcar #'clean-text texts)))
+    (let ((cleaned-texts (mapcar #'clean-text texts)))
     (if (cl-every #'string-empty-p cleaned-texts)
-        (make-hash-table :test 'equal)  ;; Return empty hash table if all cleaned texts are empty
+        (make-hash-table :test 'equal)
       (let* ((num-processes (min (length cleaned-texts) (max 1 (string-to-number (shell-command-to-string "nproc")))))
              (texts-per-process (ceiling (/ (float (length cleaned-texts)) num-processes)))
              (results (make-hash-table :test 'equal))
              (pending num-processes)
              (final-result (make-hash-table :test 'equal))
              (processes nil))
-        ;; Create processes
         (dotimes (i num-processes)
           (let* ((start-index (* i texts-per-process))
                  (end-index (min (* (1+ i) texts-per-process) (length cleaned-texts)))
@@ -58,7 +65,6 @@
                                                (when (= pending 0)
                                                  (setq final-result (combine-frequencies (list results))))))))))
                 (push process processes)))))
-        ;; Wait for all processes to finish
         (while (> pending 0)
           (sleep-for 0.1))
         final-result))))

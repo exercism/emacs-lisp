@@ -10,7 +10,6 @@
 
 
 (defun hash-table-contains (expected actual)
-  "Check that ACTUAL hash table contains all key/value pairs in EXPECTED hash table."
   (let ((result t))
     (maphash (lambda (key value)
                (unless (equal (gethash key actual) value)
