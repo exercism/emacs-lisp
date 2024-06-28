@@ -6,7 +6,7 @@
 
 
 (load-file "say.el")
-(declare-function say "say.el" (number))
+(declare-function say (number))
 
 
 (ert-deftest zero ()
