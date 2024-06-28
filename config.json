@@ -894,6 +894,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
+      },
+      {
+        "slug": "proverb",
+        "name": "Proverb",
+        "uuid": "e946ec2a-749a-4018-877b-25c42d4ee5b0",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
       }
     ]
   },
