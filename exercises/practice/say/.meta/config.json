@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "kmarker1101"
+  ],
+  "files": {
+    "solution": [
+      "say.el"
+    ],
+    "test": [
+      "say-test.el"
+    ],
+    "example": [
+      ".meta/example.el"
+    ]
+  },
+  "blurb": "Given a number from 0 to 999,999,999,999, spell out that number in English.",
+  "source": "A variation on the JavaRanch CattleDrive, Assignment 4",
+  "source_url": "https://coderanch.com/wiki/718804"
+}
