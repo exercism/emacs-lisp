@@ -2,6 +2,10 @@
   "authors": [
     "kmarker1101"
   ],
+  "contributors": [
+    "fapdash",
+    "BNAndras"
+  ],
   "files": {
     "solution": [
       "parallel-letter-frequency.el"
