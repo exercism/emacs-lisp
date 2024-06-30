@@ -52,7 +52,7 @@
                      (process (make-process
                                :name (format "letter-freq-process-%d" i)
                                :buffer (generate-new-buffer (format " *letter-freq-process-%d*" i))
-                               :command (list "emacs" "--batch" "-l" "parallel-letter-frequency-subprocess.el" "--eval" command)
+                               :command (list "emacs" "--batch" "-l" "parallel-letter-frequency.el" "--eval" command)
                                :sentinel (lambda (proc _event)
                                            (when (eq (process-status proc) 'exit)
                                              (with-current-buffer (process-buffer proc)
@@ -67,6 +67,26 @@
         (while (> pending 0)
           (sleep-for 0.1))
         final-result))))
+
+(defun calculate-frequencies-in-subprocess (texts)
+  (princ
+   (let ((freqs (make-hash-table :test 'equal)))
+     (dolist (text texts)
+       (let ((text-freqs (make-hash-table :test 'equal)))
+         (dolist (char (string-to-list text))
+           (when (string-match-p "[[:alpha:]]" (char-to-string char))
+             (puthash
+              char (1+ (gethash char text-freqs 0)) text-freqs)))
+         (maphash
+          (lambda (key value)
+            (puthash key (+ value (gethash key freqs 0)) freqs))
+          text-freqs)))
+     (let (result)
+       (maphash
+        (lambda (key value)
+          (push (format "%c:%d" key value) result))
+        freqs)
+       (string-join (reverse result) ",")))))
 
 
 (provide 'parallel-letter-frequency)
