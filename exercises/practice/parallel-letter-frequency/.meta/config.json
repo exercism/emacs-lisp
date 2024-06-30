@@ -4,13 +4,15 @@
   ],
   "files": {
     "solution": [
-      "parallel-letter-frequency.el"
+      "parallel-letter-frequency.el",
+      "parallel-letter-frequency-subprocess.el"
     ],
     "test": [
       "parallel-letter-frequency-test.el"
     ],
     "example": [
-      ".meta/example.el"
+      ".meta/example.el",
+      ".meta/example-parallel-letter-frequency-subprocess.el"
     ]
   },
   "blurb": "Count the frequency of letters in texts using parallel computation."
