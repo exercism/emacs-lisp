@@ -23,7 +23,7 @@
 (defvar houses-by-number nil)
 
 (cl-defstruct house
-  number color owner pet drink smokes)
+  number color owner pet drink hobby)
 
 (setq all-houses
       (cl-loop for n in '(1 2 3 4 5)
@@ -31,8 +31,8 @@
                                append (cl-loop for o in '(Englishman Spaniard Ukrainian Norwegian Japanese)
                                                append (cl-loop for p in '(dog snails fox horse zebra)
                                                                append (cl-loop for d in '(coffee tea milk orange-juice water)
-                                                                               append (cl-loop for s in '(Old-Gold Kools Chesterfields Lucky-Strike Parliaments)
-                                                                                               collect (make-house :number n :color c :owner o :pet p :drink d :smokes s))))))))
+                                                                               append (cl-loop for e in '(dancing painting reading football chess)
+                                                                                               collect (make-house :number n :color c :owner o :pet p :drink d :hobby e))))))))
 
 (setq house-constraints
       (list
@@ -44,18 +44,18 @@
 		     (equal (house-color h) 'green)))
        (lambda (h) (equal (equal (house-owner h) 'Ukrainian)
 		     (equal (house-drink h) 'tea)))
-       (lambda (h) (equal (equal (house-smokes h) 'Old-Gold)
+       (lambda (h) (equal (equal (house-hobby h) 'dancing)
 		     (equal (house-pet h) 'snails)))
-       (lambda (h) (equal (equal (house-smokes h) 'Kools)
+       (lambda (h) (equal (equal (house-hobby h) 'painting)
 		     (equal (house-color h) 'yellow)))
        (lambda (h) (equal (equal (house-drink h) 'milk)
 		     (= (house-number h) 3)))
        (lambda (h) (equal (equal (house-owner h) 'Norwegian)
 		     (= (house-number h) 1)))
-       (lambda (h) (equal (equal (house-smokes h) 'Lucky-Strike)
+       (lambda (h) (equal (equal (house-hobby h) 'football)
 		     (equal (house-drink h) 'orange-juice)))
        (lambda (h) (equal (equal (house-owner h) 'Japanese)
-		     (equal (house-smokes h) 'Parliaments)))
+		     (equal (house-hobby h) 'chess)))
        (lambda (h) (equal (= (house-number h) 2)
 		     (equal (house-color h) 'blue)))
        (lambda (h) (if (equal (house-color h) 'green)
@@ -86,12 +86,12 @@
              (= (house-number h1) (1+ (house-number h2)))
            t))
        (lambda (h1 h2)
-         (if (and (equal (house-smokes h1) 'Chesterfields)
+         (if (and (equal (house-hobby h1) 'reading)
                   (equal (house-pet h2) 'fox))
              (next-door? h1 h2)
            t))
        (lambda (h1 h2)
-         (if (and (equal (house-smokes h1) 'Kools)
+         (if (and (equal (house-hobby h1) 'painting)
                   (equal (house-pet h2) 'horse))
              (next-door? h1 h2)
            t))))
@@ -117,7 +117,7 @@
            (equal (house-owner h1) (house-owner h2))
            (equal (house-pet h1) (house-pet h2))
            (equal (house-drink h1) (house-drink h2))
-           (equal (house-smokes h1) (house-smokes h2)))))
+           (equal (house-hobby h1) (house-hobby h2)))))
 
 (defun extends? (street h)
   "Check if a house, H, can be added to a STREET."
