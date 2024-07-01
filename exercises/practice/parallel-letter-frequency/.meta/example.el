@@ -19,18 +19,6 @@
                freqs))
     combined-freqs))
 
-
-(defun deserialize-hash-table (str)
-    (let ((hash-table (make-hash-table :test 'equal)))
-    (unless (string= str "")
-      (dolist (item (split-string str ","))
-        (let ((pair (split-string item ":")))
-          (puthash (string-to-char (nth 0 pair))
-                   (string-to-number (nth 1 pair))
-                   hash-table))))
-    hash-table))
-
-
 (defun calculate-frequencies (texts)
     (let ((cleaned-texts (mapcar #'clean-text texts)))
     (if (cl-every #'string-empty-p cleaned-texts)
@@ -56,7 +44,7 @@
                                :sentinel (lambda (proc _event)
                                            (when (eq (process-status proc) 'exit)
                                              (with-current-buffer (process-buffer proc)
-                                               (let ((result (deserialize-hash-table (buffer-string))))
+                                               (let ((result (read (buffer-string))))
                                                  (maphash (lambda (key value)
                                                             (puthash key (+ value (gethash key results 0)) results))
                                                           result))
@@ -69,24 +57,18 @@
         final-result))))
 
 (defun calculate-frequencies-in-subprocess (texts)
-  (princ
-   (let ((freqs (make-hash-table :test 'equal)))
-     (dolist (text texts)
-       (let ((text-freqs (make-hash-table :test 'equal)))
-         (dolist (char (string-to-list text))
-           (when (string-match-p "[[:alpha:]]" (char-to-string char))
-             (puthash
-              char (1+ (gethash char text-freqs 0)) text-freqs)))
-         (maphash
-          (lambda (key value)
-            (puthash key (+ value (gethash key freqs 0)) freqs))
-          text-freqs)))
-     (let (result)
-       (maphash
-        (lambda (key value)
-          (push (format "%c:%d" key value) result))
-        freqs)
-       (string-join (reverse result) ",")))))
+  (let ((freqs (make-hash-table :test 'equal)))
+    (dolist (text texts)
+      (let ((text-freqs (make-hash-table :test 'equal)))
+        (dolist (char (string-to-list text))
+          (when (string-match-p "[[:alpha:]]" (char-to-string char))
+            (puthash
+             char (1+ (gethash char text-freqs 0)) text-freqs)))
+        (maphash
+         (lambda (key value)
+           (puthash key (+ value (gethash key freqs 0)) freqs))
+         text-freqs)))
+    (prin1 freqs)))
 
 
 (provide 'parallel-letter-frequency)
