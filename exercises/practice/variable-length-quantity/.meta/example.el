@@ -5,37 +5,34 @@
 ;;; Code:
 
 
-(define-error 'incomplete "incomplete sequence")
-
-
-(defun encode (numbers)
-  "Encode a list of numbers into VLQ format."
+(defun encode (hex-numbers)
+  "Encode a list of hexadecimal numbers into VLQ format, returning a list of hexadecimal values."
   (let ((encode-single (lambda (number)
-                         (let ((byte-string (list (logand number 127)))) ; Initialize with the least significant byte
+                         (let ((byte-string (list (logand number #x7F)))) ; Initialize with the least significant byte
                            (setq number (lsh number -7)) ; Shift right before the loop
                            (while (> number 0)
-                             (push (logior (logand number 127) 128) byte-string)
+                             (push (logior (logand number #x7F) #x80) byte-string)
                              (setq number (lsh number -7)))
                            byte-string))))
-    (apply #'append (mapcar encode-single numbers))))
+    (apply #'append (mapcar encode-single hex-numbers))))
 
 
-(defun decode (byte-string)
-  "Decode a byte string from VLQ format into numbers."
+(defun decode (hex-values)
+  "Decode a list of hexadecimal values from VLQ format into hexadecimal numbers."
   (let ((values '())
         (number 0)
         (incomplete t))
-    (dolist (byte byte-string)
+    (dolist (byte hex-values)
       (setq number (lsh number 7))
-      (setq number (logior number (logand byte 127)))
-      (if (= (logand byte 128) 0)
+      (setq number (logior number (logand byte #x7F)))
+      (if (= (logand byte #x80) 0)
           (progn
             (setq values (cons number values))
             (setq number 0)
             (setq incomplete nil))
         (setq incomplete t)))
     (if incomplete
-        (signal 'incomplete 'nil)
+        (error "imcomplete sequence")
       (reverse values))))
 
 

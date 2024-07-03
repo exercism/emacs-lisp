@@ -5,10 +5,6 @@
 ;;; Code:
 
 
-(define-error 'incomplete
-              (error "Delete this S-Expression and write your own implementation"))
-
-
 (defun encode (integers)
   (error "Delete this S-Expression and write your own implementation"))
 
