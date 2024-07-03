@@ -13,20 +13,9 @@ for exercise in *; do
     pushd $exercise
     mv "${exercise}.el" "${exercise}.el.bak"
     cp .meta/example.el "${exercise}.el"
-    files=()
-    pushd .meta
-    for file in example-*.el; do
-        if [[ -e "$file" ]]; then
-            mv "../${file#example-}" "../${file#example-}.bak"
-            cp "$file" "../${file#example-}"
-            files+=("${file#example-}")
-        fi
-    done
-    popd
     emacs -batch -l ert -l "${exercise}-test.el" -f ert-run-tests-batch-and-exit
     let "err_cnt += $?"
     mv "${exercise}.el.bak" "${exercise}.el"
-    for file in "${files[@]}"; do mv "${file}.bak" "${file}"; done;
     popd
 done
 popd > /dev/null
