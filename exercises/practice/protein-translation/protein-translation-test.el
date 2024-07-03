@@ -139,6 +139,11 @@
             (proteins "UGGUGUUAUUAAUGGUUU"))))
 
 
+(ert-deftest sequence-of-two-non-stop-codons-does-not-translate-to-a-stop-codon ()
+  (should (equal '("Methionine" "Methionine")
+            (proteins "AUGAUG"))))
+
+
 (ert-deftest unknown-amino-acids-not-part-of-a-codon-cant-translate ()
   (should-error (proteins "XYZ")))
 
