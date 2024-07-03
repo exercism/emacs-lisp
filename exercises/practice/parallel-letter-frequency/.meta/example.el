@@ -19,6 +19,7 @@
                freqs))
     combined-freqs))
 
+
 (defun calculate-frequencies (texts)
     (let ((cleaned-texts (mapcar #'clean-text texts)))
     (if (cl-every #'string-empty-p cleaned-texts)
@@ -55,6 +56,7 @@
         (while (> pending 0)
           (sleep-for 0.1))
         final-result))))
+
 
 (defun calculate-frequencies-in-subprocess (texts)
   (let ((freqs (make-hash-table :test 'equal)))
