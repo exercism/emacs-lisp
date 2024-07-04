@@ -103,11 +103,11 @@
 
 
 (ert-deftest incomplete-sequence-causes-error ()
-  (should-error (decode '(255))))
+  (should-error (decode '(#xFF))))
 
 
 (ert-deftest incomplete-sequence-causes-error-even-if-value-is-zero ()
-  (should-error (decode '(128))))
+  (should-error (decode '(#x80))))
 
 
 (ert-deftest multiple-values ()

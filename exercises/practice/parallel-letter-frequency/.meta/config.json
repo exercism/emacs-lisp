@@ -1,0 +1,21 @@
+{
+  "authors": [
+    "kmarker1101"
+  ],
+  "contributors": [
+    "fapdash",
+    "BNAndras"
+  ],
+  "files": {
+    "solution": [
+      "parallel-letter-frequency.el"
+    ],
+    "test": [
+      "parallel-letter-frequency-test.el"
+    ],
+    "example": [
+      ".meta/example.el"
+    ]
+  },
+  "blurb": "Count the frequency of letters in texts using parallel computation."
+}
