@@ -171,7 +171,7 @@ Each hash-table has the keys:
                       ("test-name"
                        (string-inflection-kebab-case-function
                         (replace-regexp-in-string
-                         "," ""
+                         "[^[:alpha:]-]" ""
                          (replace-regexp-in-string
                           "[ |_]" "-" (gethash "description" elem)))))
                       ("uuid" (gethash "uuid" elem))
