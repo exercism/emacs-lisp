@@ -5,7 +5,7 @@
 ;;; Code:
 
 
-(defun create-dll ()
+(defun dll-create ()
   (error "Delete this S-Expression and write your own implementation"))
 
 

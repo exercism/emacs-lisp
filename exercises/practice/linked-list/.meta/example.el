@@ -16,7 +16,7 @@
   head tail)
 
 
-(defun create-dll ()
+(defun dll-create ()
   (make-dll :head nil :tail nil))
 
 
