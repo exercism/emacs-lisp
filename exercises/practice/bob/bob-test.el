@@ -89,7 +89,7 @@
 
 (ert-deftest responds-to-multiple-line-question ()
   (should
-   (string= "Whatever." (response-for "\nDoes this cryogenic chamber make\n me look fat?"))))
+   (string= "Sure." (response-for "\nDoes this cryogenic chamber make\n me look fat?"))))
 
 (ert-deftest responds-to-starting-with-whitespace ()
   (should
