@@ -10,29 +10,29 @@
 
 
 (ert-deftest finds-a-value-in-an-array-with-one-element ()
-  (should (= (find-binary [6] 6) 0)))
+  (should (equal (find-binary [6] 6) 0)))
 
 
 (ert-deftest finds-a-value-in-the-middle-of-an-array ()
-  (should (= (find-binary [1 3 4 6 8 9 11] 6) 3)))
+  (should (equal (find-binary [1 3 4 6 8 9 11] 6) 3)))
 
 
 (ert-deftest finds-a-value-at-the-beginning-of-an-array ()
-  (should (= (find-binary [1 3 4 6 8 9 11] 1) 0)))
+  (should (equal (find-binary [1 3 4 6 8 9 11] 1) 0)))
 
 
 (ert-deftest finds-a-value-at-the-end-of-an-array ()
-  (should (= (find-binary [1 3 4 6 8 9 11] 11) 6)))
+  (should (equal (find-binary [1 3 4 6 8 9 11] 11) 6)))
 
 
 (ert-deftest finds-a-value-in-an-array-of-odd-length ()
   (should
-   (= (find-binary [1 3 5 8 13 21 34 55 89 144 233 377 634] 144) 9)))
+   (equal (find-binary [1 3 5 8 13 21 34 55 89 144 233 377 634] 144) 9)))
 
 
 (ert-deftest finds-a-value-in-an-array-of-even-length ()
   (should
-   (= (find-binary [1 3 5 8 13 21 34 55 89 144 233 377] 21) 5)))
+   (equal (find-binary [1 3 5 8 13 21 34 55 89 144 233 377] 21) 5)))
 
 
 (ert-deftest identifies-that-a-value-is-not-included-in-the-array ()
