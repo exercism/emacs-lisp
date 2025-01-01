@@ -49,6 +49,10 @@
    (should (string= (translate "qat") "atqay")))
 
 
+(ert-deftest word-beginning-with-consonant-and-vowel-containing-qu ()
+   (should (string= (translate "liquid") "iquidlay")))
+
+
 (ert-deftest word-beginning-with-ch ()
   (should (string= (translate "chair") "airchay")))
 
