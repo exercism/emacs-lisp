@@ -481,7 +481,7 @@
       },
       {
         "slug": "two-fer",
-        "name": "Two Fer",
+        "name": "Two-Fer",
         "uuid": "36e5dc3a-2122-484a-ae82-beb7b813e2cd",
         "practices": [],
         "prerequisites": [],
@@ -782,7 +782,7 @@
       },
       {
         "slug": "isbn-verifier",
-        "name": "Isbn Verifier",
+        "name": "ISBN Verifier",
         "uuid": "b0cbc3b5-1d6c-40b8-bdd1-5ba9089024aa",
         "practices": [],
         "prerequisites": [],
