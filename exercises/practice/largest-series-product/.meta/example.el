@@ -10,7 +10,7 @@
   (when (< span 0)
     (error "span must not be negative"))
   (when (> span (length digits))
-    (error "span must be smaller than string length"))
+    (error "span must not exceed string length"))
   (unless (cl-every 'cl-digit-char-p (cl-coerce digits 'list))
     (error "digits input must only contain digits"))
   (let ((largest 0))
