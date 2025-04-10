@@ -5,7 +5,7 @@
 ;;; Code:
 
 
-(defun recite (end-verse start-verse)
+(defun recite (start-verse end-verse)
   (error "Delete this S-Expression and write your own implementation"))
 
 
