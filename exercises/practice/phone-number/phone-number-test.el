@@ -10,15 +10,15 @@
 (declare-function pprint "phone-number.el" (num))
 
 (ert-deftest cleans-number-test ()
-  (should (equal (numbers "(123) 456-7890") "1234567890")))
+  (should (equal (numbers "(223) 456-7890") "2234567890")))
 
 
 (ert-deftest cleans-numbers-with-dots-test ()
-  (should (equal (numbers "123.456.7890") "1234567890")))
+  (should (equal (numbers "223.456.7890") "2234567890")))
 
 
 (ert-deftest valid-when-11-digits-and-first-is-1-test ()
-  (should (equal (numbers "11234567890") "1234567890")))
+  (should (equal (numbers "12234567890") "2234567890")))
 
 
 (ert-deftest invalid-when-11-digits-test ()
@@ -40,15 +40,15 @@
 
 
 (ert-deftest area-code-test ()
-  (should (equal (area-code "1234567890") "123")))
+  (should (equal (area-code "2234567890") "223")))
 
 
 (ert-deftest pprint-test ()
-  (should (equal (pprint "1234567890") "(123) 456-7890")))
+  (should (equal (pprint "2234567890") "(223) 456-7890")))
 
 
 (ert-deftest pprint-full-us-phone-number-test ()
-  (should (equal (pprint "11234567890") "(123) 456-7890")))
+  (should (equal (pprint "12234567890") "(223) 456-7890")))
 
 
 (provide 'phone-number)
