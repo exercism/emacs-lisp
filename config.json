@@ -288,19 +288,6 @@
         ]
       },
       {
-        "slug": "phone-number",
-        "name": "Phone Number",
-        "uuid": "c211045e-da97-479d-9df4-5d812573e2d0",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 2,
-        "topics": [
-          "interfaces",
-          "parsing",
-          "strings"
-        ]
-      },
-      {
         "slug": "queen-attack",
         "name": "Queen Attack",
         "uuid": "bfa1d997-f0bd-432b-aa29-7018607d772d",
@@ -942,6 +929,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
+      },
+      {
+        "slug": "phone-number",
+        "name": "Phone Number",
+        "uuid": "e123577a-aaf8-4552-98f1-2ef94a7195f7",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       }
     ]
   },
