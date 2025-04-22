@@ -49,5 +49,21 @@
   (should (string= (label '("blue" "green" "yellow" "orange"))
                    "650 kiloohms")))
 
+(ert-deftest orange-and-orange-and-red ()
+  (should (string= (label '("orange" "orange" "red"))
+                   "3.3 kiloohms")))
+
+(ert-deftest orange-and-orange-and-green ()
+  (should (string= (label '("orange" "orange" "green"))
+                   "3.3 megaohms")))
+
+(ert-deftest white-and-white-and-violet ()
+  (should (string= (label '("white" "white" "violet"))
+                   "990 megaohms")))
+
+(ert-deftest white-and-white-and-grey ()
+  (should (string= (label '("white" "white" "grey"))
+                   "9.9 gigaohms")))
+
 (provide 'resistor-color-trio-test)
 ;;; resistor-color-trio-test.el ends here
