@@ -288,6 +288,14 @@
         ]
       },
       {
+        "slug": "phone-number",
+        "name": "Phone Number",
+        "uuid": "c211045e-da97-479d-9df4-5d812573e2d0",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "queen-attack",
         "name": "Queen Attack",
         "uuid": "bfa1d997-f0bd-432b-aa29-7018607d772d",
@@ -926,14 +934,6 @@
         "slug": "resistor-color-trio",
         "name": "Resistor Color Trio",
         "uuid": "e63a974b-1d30-4323-8059-98d131d52f6e",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 2
-      },
-      {
-        "slug": "phone-number",
-        "name": "Phone Number",
-        "uuid": "c211045e-da97-479d-9df4-5d812573e2d0",
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
