@@ -25,15 +25,16 @@
          (value (+ (* (cdr (assoc color-1 band-values)) 10)
                    (cdr (assoc color-2 band-values))))
          (resistance (* value (expt 10 (cdr (assoc color-3 band-values))))))
-    (cond
-     ((< resistance 1000)
-      (format "%d ohms" resistance))
-     ((< resistance 1000000)
-      (format "%d kiloohms" (/ resistance 1000)))
-     ((< resistance 1000000000)
-      (format "%d megaohms" (/ resistance 1000000)))
-     (t
-      (format "%d gigaohms" (/ resistance 1000000000))))))
+    (string-replace ".0" ""
+      (cond
+       ((< resistance 1000)
+        (format "%d ohms" resistance))
+       ((< resistance 1000000)
+        (format "%.1f kiloohms" (/ resistance 1000.0)))
+       ((< resistance 1000000000)
+        (format "%.1f megaohms" (/ resistance 1000000.0)))
+       (t
+        (format "%.1f gigaohms" (/ resistance 1000000000.0)))))))
 
 
 (provide 'resistor-color-trio)
