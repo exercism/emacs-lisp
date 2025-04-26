@@ -2,6 +2,16 @@
 
 ;;; Commentary:
 
+(define-error 'short-phone-num-error "must not be fewer than 10 digits")
+(define-error 'long-phone-num-error "must not be greater than 11 digits")
+(define-error 'letters-in-phone-num-error "letters not permitted")
+(define-error 'punctuations-in-phone-num-error "punctuations not permitted")
+(define-error 'country-code-error "country code must be 1")
+(define-error 'area-code-starting-with-0-error "area code cannot start with zero")
+(define-error 'area-code-starting-with-1-error "area code cannot start with one")
+(define-error 'exchange-code-starting-with-0-error "exchange code cannot start with zero")
+(define-error 'exchange-code-starting-with-1-error "exchange code cannot start with one")
+
 (defun char-digit-p (x)
   (<= ?0 x ?9))
 
@@ -42,30 +52,30 @@
   "Converts a num string into a string of digits."
   (cond
    ((cl-find-if #'char-alphabetic-p num)
-    (error "letters not permitted"))
+    (signal 'letters-in-phone-num-error num))
    ((cl-find-if #'char-punctuation-p num)
-    (error "punctuations not permitted")))
+    (signal 'punctuations-in-phone-num-error num)))
   (let* ((digits (string-remove num (negate #'char-digit-p)))
          (n (length digits)))
     (cond
-     ((< n 10) (error "must not be fewer than 10 digits"))
-     ((> n 11) (error "must not be greater than 11 digits")))
+     ((< n 10) (signal 'short-phone-num-error num))
+     ((> n 11) (signal 'long-phone-num-error num)))
     (if (= n 11)
         (if (= (aref digits 0) ?1)
             (setf digits (substring digits 1))
-          (error "11 digits must start with 1")))
+          (signal 'country-code-error num)))
     (let ((y (aref digits 0)))
       (cond
        ((= y ?0)
-        (error "area code cannot start with zero"))
+        (signal 'area-code-starting-with-0-error num))
        ((= y ?1)
-        (error "area code cannot start with one"))))
+        (signal 'area-code-starting-with-1-error num)))
     (let ((y (aref digits 3)))
       (cond
        ((= y ?0)
-        (error "exchange code cannot start with zero"))
+        (signal 'exchange-code-starting-with-0-error num))
        ((= y ?1)
-        (error "exchange code cannot start with one"))))
+        (signal 'exchange-code-starting-with-1-error num)))))
     digits))
     
 (defun area-code (num)
