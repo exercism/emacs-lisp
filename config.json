@@ -293,12 +293,7 @@
         "uuid": "c211045e-da97-479d-9df4-5d812573e2d0",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 2,
-        "topics": [
-          "interfaces",
-          "parsing",
-          "strings"
-        ]
+        "difficulty": 2
       },
       {
         "slug": "queen-attack",
