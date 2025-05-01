@@ -25,7 +25,7 @@
 (ert-deftest 8-character-plaintext-results-in-3-chunks-the-last-one-with-a-trailing-space ()
   (should (equal "clu hlt io " (encipher "Chill out."))))
 
-(ert-deftest 54-character-plaintext-results-in-7-chunks-the-last-two-with-trailing-spaces ()
+(ert-deftest 54-character-plaintext-results-in-8-chunks-the-last-two-with-trailing-spaces ()
   (should (equal "imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn  sseoau "
                  (encipher "If man was meant to stay on the ground, god would have given us roots."))))
 
