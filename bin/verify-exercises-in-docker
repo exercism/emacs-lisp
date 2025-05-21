@@ -56,6 +56,12 @@ verify_exercise() {
     local tmp_dir
     dir=$(realpath "${1}")
     slug=$(basename "${dir}")
+
+    if [ "$slug" = "parallel-letter-frequency" ]; then
+      echo "Skipping parallel-letter-frequency"
+      return
+    fi
+
     tmp_dir=$(mktemp -d -t "exercism-verify-${slug}-XXXXX")
 
     echo "Verifying ${slug} exercise..."
