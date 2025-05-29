@@ -35,6 +35,25 @@
   "exercises": {
     "practice": [
       {
+        "slug": "hello-world",
+        "name": "Hello World",
+        "uuid": "c4fdc935-885b-44bd-84e4-fae4a09e8c39",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": [
+          "strings"
+        ]
+      },
+      {
+        "slug": "accumulate",
+        "name": "Accumulate",
+        "uuid": "093463bf-e8df-4dd9-b6e3-b5ec007cb781",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "acronym",
         "name": "Acronym",
         "uuid": "a252e137-8a63-4f26-b119-7264f12a257a",
@@ -193,17 +212,6 @@
         ]
       },
       {
-        "slug": "hello-world",
-        "name": "Hello World",
-        "uuid": "c4fdc935-885b-44bd-84e4-fae4a09e8c39",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 2,
-        "topics": [
-          "strings"
-        ]
-      },
-      {
         "slug": "isogram",
         "name": "Isogram",
         "uuid": "63fc7e59-2448-487b-9b66-06c72ab8d6b0",
@@ -256,14 +264,6 @@
         ]
       },
       {
-        "slug": "matching-brackets",
-        "name": "Matching Brackets",
-        "uuid": "c000a3e1-3488-41ba-9d4c-6f06a96bc892",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 2
-      },
-      {
         "slug": "pangram",
         "name": "Pangram",
         "uuid": "42222c98-e8d2-41bd-9d95-2ace63864359",
@@ -296,33 +296,20 @@
         "difficulty": 2
       },
       {
+        "slug": "proverb",
+        "name": "Proverb",
+        "uuid": "e946ec2a-749a-4018-877b-25c42d4ee5b0",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "queen-attack",
         "name": "Queen Attack",
         "uuid": "bfa1d997-f0bd-432b-aa29-7018607d772d",
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
-      },
-      {
-        "slug": "robot-simulator",
-        "name": "Robot Simulator",
-        "uuid": "575a40bd-2ff9-4623-ae98-c8d9b9f279a8",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 2
-      },
-      {
-        "slug": "rna-transcription",
-        "name": "RNA Transcription",
-        "uuid": "7b6767b9-2efc-414d-83f7-def9c371d63d",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 2,
-        "topics": [
-          "control_flow_conditionals",
-          "strings",
-          "transforming"
-        ]
       },
       {
         "slug": "raindrops",
@@ -354,12 +341,33 @@
         "difficulty": 2
       },
       {
-        "slug": "reverse-string",
-        "name": "Reverse String",
-        "uuid": "59c6319b-2799-4e4c-bef1-e28626878446",
+        "slug": "resistor-color-trio",
+        "name": "Resistor Color Trio",
+        "uuid": "e63a974b-1d30-4323-8059-98d131d52f6e",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 4
+        "difficulty": 2
+      },
+      {
+        "slug": "rna-transcription",
+        "name": "RNA Transcription",
+        "uuid": "7b6767b9-2efc-414d-83f7-def9c371d63d",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2,
+        "topics": [
+          "control_flow_conditionals",
+          "strings",
+          "transforming"
+        ]
+      },
+      {
+        "slug": "robot-simulator",
+        "name": "Robot Simulator",
+        "uuid": "575a40bd-2ff9-4623-ae98-c8d9b9f279a8",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
       },
       {
         "slug": "roman-numerals",
@@ -397,14 +405,6 @@
         ]
       },
       {
-        "slug": "simple-cipher",
-        "name": "Simple Cipher",
-        "uuid": "c3cc6d91-b633-44d6-b7e1-04abb33e712c",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 2
-      },
-      {
         "slug": "space-age",
         "name": "Space Age",
         "uuid": "183eb493-2141-4823-8fe6-0f01ecbcb27a",
@@ -422,6 +422,14 @@
         "topics": [
           "math"
         ]
+      },
+      {
+        "slug": "strain",
+        "name": "Strain",
+        "uuid": "daff70f7-504a-4ba5-89a5-1a2860dcd98e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
       },
       {
         "slug": "sublist",
@@ -559,6 +567,14 @@
         ]
       },
       {
+        "slug": "matching-brackets",
+        "name": "Matching Brackets",
+        "uuid": "c000a3e1-3488-41ba-9d4c-6f06a96bc892",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
         "slug": "nth-prime",
         "name": "Nth Prime",
         "uuid": "4dfd9ac8-d0e8-4db5-a68c-75e8647b19c4",
@@ -579,6 +595,22 @@
         "topics": [
           "math"
         ]
+      },
+      {
+        "slug": "reverse-string",
+        "name": "Reverse String",
+        "uuid": "59c6319b-2799-4e4c-bef1-e28626878446",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
+        "slug": "simple-cipher",
+        "name": "Simple Cipher",
+        "uuid": "c3cc6d91-b633-44d6-b7e1-04abb33e712c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
       },
       {
         "slug": "affine-cipher",
@@ -630,6 +662,14 @@
         ]
       },
       {
+        "slug": "circular-buffer",
+        "name": "Circular Buffer",
+        "uuid": "d2eaa3fa-42b3-4287-9b87-714a73ac0c65",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "crypto-square",
         "name": "Crypto Square",
         "uuid": "884cd761-e764-4c1e-8240-bb4454b43ea9",
@@ -664,6 +704,14 @@
         "difficulty": 5
       },
       {
+        "slug": "food-chain",
+        "name": "Food Chain",
+        "uuid": "ac1c0246-0fed-46e7-819a-0b013b2b4585",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "game-of-life",
         "name": "Conway's Game of Life",
         "uuid": "4e8130a9-bdde-46c5-bb50-e780c3af8670",
@@ -674,6 +722,30 @@
           "control_flow_loops",
           "lists"
         ]
+      },
+      {
+        "slug": "grade-school",
+        "name": "Grade School",
+        "uuid": "e5ab14bd-9eeb-4c63-8143-55e1e56b4ac1",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "isbn-verifier",
+        "name": "ISBN Verifier",
+        "uuid": "b0cbc3b5-1d6c-40b8-bdd1-5ba9089024aa",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "linked-list",
+        "name": "Linked List",
+        "uuid": "ede3b6fb-b399-44a8-8aee-7bdcabec408e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
       },
       {
         "slug": "luhn",
@@ -687,6 +759,14 @@
           "list_operations",
           "strings"
         ]
+      },
+      {
+        "slug": "meetup",
+        "name": "Meetup",
+        "uuid": "80000759-8ca8-4ff8-a88f-34c4244ac6c5",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
       },
       {
         "slug": "minesweeper",
@@ -712,6 +792,14 @@
           "sorting",
           "strings"
         ]
+      },
+      {
+        "slug": "pig-latin",
+        "name": "Pig Latin",
+        "uuid": "3bee6827-8766-4d4d-9d0f-3facc3bfd3f4",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
       },
       {
         "slug": "pythagorean-triplet",
@@ -754,6 +842,14 @@
         "difficulty": 5
       },
       {
+        "slug": "say",
+        "name": "Say",
+        "uuid": "7a6c586a-c8fa-4313-8036-5ff21097702c",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "spiral-matrix",
         "name": "Spiral Matrix",
         "uuid": "4ce2b869-140a-4d5d-90dd-6fc717ef7696",
@@ -776,9 +872,9 @@
         ]
       },
       {
-        "slug": "isbn-verifier",
-        "name": "ISBN Verifier",
-        "uuid": "b0cbc3b5-1d6c-40b8-bdd1-5ba9089024aa",
+        "slug": "yacht",
+        "name": "Yacht",
+        "uuid": "5d06fd6e-2ca7-425d-a3dd-892cb3f7bf65",
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
@@ -787,6 +883,22 @@
         "slug": "satellite",
         "name": "Satellite",
         "uuid": "02d23d01-c4c6-4fd1-9e0b-f6a457c402ed",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 6
+      },
+      {
+        "slug": "two-bucket",
+        "name": "Two Bucket",
+        "uuid": "2eb39d6e-52de-4822-8cd1-ef789c1f5e22",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 6
+      },
+      {
+        "slug": "variable-length-quantity",
+        "name": "Variable Length Quantity",
+        "uuid": "5073fd82-3025-4370-ae93-37b661c17483",
         "practices": [],
         "prerequisites": [],
         "difficulty": 6
@@ -803,30 +915,6 @@
         ]
       },
       {
-        "slug": "pig-latin",
-        "name": "Pig Latin",
-        "uuid": "3bee6827-8766-4d4d-9d0f-3facc3bfd3f4",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
-      },
-      {
-        "slug": "food-chain",
-        "name": "Food Chain",
-        "uuid": "ac1c0246-0fed-46e7-819a-0b013b2b4585",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
-      },
-      {
-        "slug": "circular-buffer",
-        "name": "Circular Buffer",
-        "uuid": "d2eaa3fa-42b3-4287-9b87-714a73ac0c65",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
-      },
-      {
         "slug": "bank-account",
         "name": "Bank Account",
         "uuid": "edc5fa4b-35b3-4313-b4c3-16153708f0ac",
@@ -835,76 +923,12 @@
         "difficulty": 8
       },
       {
-        "slug": "yacht",
-        "name": "Yacht",
-        "uuid": "5d06fd6e-2ca7-425d-a3dd-892cb3f7bf65",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
-      },
-      {
-        "slug": "accumulate",
-        "name": "Accumulate",
-        "uuid": "093463bf-e8df-4dd9-b6e3-b5ec007cb781",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 2
-      },
-      {
-        "slug": "grade-school",
-        "name": "Grade School",
-        "uuid": "e5ab14bd-9eeb-4c63-8143-55e1e56b4ac1",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
-      },
-      {
-        "slug": "meetup",
-        "name": "Meetup",
-        "uuid": "80000759-8ca8-4ff8-a88f-34c4244ac6c5",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
-      },
-      {
-        "slug": "two-bucket",
-        "name": "Two Bucket",
-        "uuid": "2eb39d6e-52de-4822-8cd1-ef789c1f5e22",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 6
-      },
-      {
         "slug": "zebra-puzzle",
         "name": "Zebra Puzzle",
         "uuid": "bd7c4195-2d89-436b-918f-24224a95610d",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 5
-      },
-      {
-        "slug": "strain",
-        "name": "Strain",
-        "uuid": "daff70f7-504a-4ba5-89a5-1a2860dcd98e",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 2
-      },
-      {
-        "slug": "proverb",
-        "name": "Proverb",
-        "uuid": "e946ec2a-749a-4018-877b-25c42d4ee5b0",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 2
-      },
-      {
-        "slug": "say",
-        "name": "Say",
-        "uuid": "7a6c586a-c8fa-4313-8036-5ff21097702c",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
+        "difficulty": 8
       },
       {
         "slug": "parallel-letter-frequency",
@@ -913,30 +937,6 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 10
-      },
-      {
-        "slug": "variable-length-quantity",
-        "name": "Variable Length Quantity",
-        "uuid": "5073fd82-3025-4370-ae93-37b661c17483",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 6
-      },
-      {
-        "slug": "linked-list",
-        "name": "Linked List",
-        "uuid": "ede3b6fb-b399-44a8-8aee-7bdcabec408e",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
-      },
-      {
-        "slug": "resistor-color-trio",
-        "name": "Resistor Color Trio",
-        "uuid": "e63a974b-1d30-4323-8059-98d131d52f6e",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 2
       }
     ]
   },
