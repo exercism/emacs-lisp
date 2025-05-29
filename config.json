@@ -261,7 +261,7 @@
         "uuid": "c000a3e1-3488-41ba-9d4c-6f06a96bc892",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 2
+        "difficulty": 4
       },
       {
         "slug": "pangram",
@@ -402,7 +402,7 @@
         "uuid": "c3cc6d91-b633-44d6-b7e1-04abb33e712c",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 2
+        "difficulty": 4
       },
       {
         "slug": "space-age",
@@ -880,7 +880,7 @@
         "uuid": "bd7c4195-2d89-436b-918f-24224a95610d",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 5
+        "difficulty": 8
       },
       {
         "slug": "strain",
