@@ -89,9 +89,11 @@ files=$(jq -r --arg dir "${exercise_dir}" '.files | to_entries | map({key: .key,
 
 cat << NEXT_STEPS
 
+The test specifications have been copied into the test methods stubs by the generator.
+
 Your next steps are:
 - Implement the test suite in $(jq -r '.test' <<< "${files}")
-  - The tests should be based on the canonical data at 'https://github.com/exercism/problem-specifications/blob/main/exercises/${slug}/canonical-data.json'
+  - The tests are based on the canonical data at 'https://github.com/exercism/problem-specifications/blob/main/exercises/${slug}/canonical-data.json'
   - Any test cases you don't implement, mark them in 'exercises/practice/${slug}/.meta/tests.toml' with "include = false"
 - Review the stub solution in $(jq -r '.solution' <<< "${files}")
 - Implement the example solution in $(jq -r '.example' <<< "${files}")
