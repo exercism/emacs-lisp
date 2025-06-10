@@ -24,7 +24,7 @@
     (let ((cleaned-texts (mapcar #'clean-text texts)))
     (if (cl-every #'string-empty-p cleaned-texts)
         (make-hash-table :test 'equal)
-      (let* ((num-processes (min (length cleaned-texts) (max 1 (string-to-number (shell-command-to-string "nproc")))))
+      (let* ((num-processes (min (length cleaned-texts) 8 (max 1 (string-to-number (shell-command-to-string "nproc")))))
              (texts-per-process (ceiling (/ (float (length cleaned-texts)) num-processes)))
              (results (make-hash-table :test 'equal))
              (pending num-processes)
