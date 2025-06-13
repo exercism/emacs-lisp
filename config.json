@@ -904,6 +904,14 @@
         "difficulty": 6
       },
       {
+        "slug": "dominoes",
+        "name": "Dominoes",
+        "uuid": "9260be95-c9a5-4975-a00e-21828f5e9241",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 7
+      },
+      {
         "slug": "knapsack",
         "name": "Knapsack",
         "uuid": "41029de7-58a6-431b-9f82-6d4603604fb3",
