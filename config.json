@@ -547,6 +547,14 @@
         ]
       },
       {
+        "slug": "bottle-song",
+        "name": "Bottle Song",
+        "uuid": "7e6f3680-2906-414e-bc73-5c03985ab071",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
         "slug": "diamond",
         "name": "Diamond",
         "uuid": "312bff7d-34f4-4ade-bbd3-479bce9bff58",
