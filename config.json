@@ -704,6 +704,17 @@
         "difficulty": 5
       },
       {
+        "slug": "flower-field",
+        "name": "Flower Field",
+        "uuid": "31e7c5c0-17eb-4521-b4f9-0579e3917c83",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5,
+        "topics": [
+          "control_flow_loops"
+        ]
+      },
+      {
         "slug": "food-chain",
         "name": "Food Chain",
         "uuid": "ac1c0246-0fed-46e7-819a-0b013b2b4585",
@@ -777,7 +788,8 @@
         "difficulty": 5,
         "topics": [
           "control_flow_loops"
-        ]
+        ],
+        "status": "deprecated"
       },
       {
         "slug": "nucleotide-count",
