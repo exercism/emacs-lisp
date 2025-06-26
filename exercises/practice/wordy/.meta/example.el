@@ -25,4 +25,3 @@
 
 (provide 'wordy)
 ;;; wordy.el ends here
-
