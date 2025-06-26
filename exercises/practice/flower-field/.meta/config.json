@@ -1,0 +1,20 @@
+{
+  "authors": [
+    "keiravillekode"
+  ],
+  "contributors": [
+    "BNAndras"
+  ],
+  "files": {
+    "solution": [
+      "flower-field.el"
+    ],
+    "test": [
+      "flower-field-test.el"
+    ],
+    "example": [
+      ".meta/example.el"
+    ]
+  },
+  "blurb": "Mark all the flowers in a garden."
+}
