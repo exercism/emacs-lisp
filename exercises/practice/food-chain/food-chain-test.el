@@ -14,7 +14,6 @@
                     "I don't know why she swallowed the fly. Perhaps she'll die.")))
     (should (equal (recite 1 1) expected))))
 
-
 (ert-deftest spider ()
   (let ((expected '("I know an old lady who swallowed a spider."
                     "It wriggled and jiggled and tickled inside her."
