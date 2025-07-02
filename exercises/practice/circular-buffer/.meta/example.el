@@ -4,6 +4,7 @@
 
 ;;; Code:
 
+(require 'eieio)
 
 (define-error 'empty-buffer-error "buffer is empty")
 
