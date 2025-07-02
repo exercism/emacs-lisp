@@ -6,13 +6,13 @@
 
 
 (defun encode (hex-numbers)
-  "Encode a list of hexadecimal numbers into VLQ format, returning a list of hexadecimal values."
+  "Encode a list of hexadecimal numbers into VLQ format."
   (let ((encode-single (lambda (number)
                          (let ((byte-string (list (logand number #x7F)))) ; Initialize with the least significant byte
-                           (setq number (lsh number -7)) ; Shift right before the loop
+                           (setq number (ash number -7)) ; Shift right before the loop
                            (while (> number 0)
                              (push (logior (logand number #x7F) #x80) byte-string)
-                             (setq number (lsh number -7)))
+                             (setq number (ash number -7)))
                            byte-string))))
     (apply #'append (mapcar encode-single hex-numbers))))
 
@@ -23,7 +23,7 @@
         (number 0)
         (incomplete t))
     (dolist (byte hex-values)
-      (setq number (lsh number 7))
+      (setq number (ash number 7))
       (setq number (logior number (logand byte #x7F)))
       (if (= (logand byte #x80) 0)
           (progn
