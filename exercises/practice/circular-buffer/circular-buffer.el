@@ -4,6 +4,7 @@
 
 ;;; Code:
 
+(require 'eieio)
 
 (define-error 'empty-buffer-error
               (error "Delete this S-Expression and write your own implementation"))
