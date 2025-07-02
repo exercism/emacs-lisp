@@ -25,7 +25,7 @@
     ("UAA" nil)
     ("UAG" nil)
     ("UGA" nil)
-    (otherwise (error "Invalid codon"))))
+    (_ (error "Invalid codon"))))
 
 (defun proteins (strand)
   (let* ((len (length strand))
