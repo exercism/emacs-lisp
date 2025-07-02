@@ -11,7 +11,7 @@
 
 (defun ability ()
   (let ((rolls '()))
-    (dotimes (i 4)
+    (dotimes (_ 4)
       (push (+ 1 (random 6)) rolls))
     (apply '+ (cdr (sort rolls '<)))))
 
