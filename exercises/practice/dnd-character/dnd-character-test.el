@@ -90,7 +90,7 @@
           (intelligence (aref dnd-char 4))
           (wisdom (aref dnd-char 5))
           (charisma (aref dnd-char 6))
-          (hitpoints (aref dnd-char 7)))
+          (_hitpoints (aref dnd-char 7)))
       (should (and (recordp dnd-char)
                    (valid-range-p strength)
                    (valid-range-p dexterity)
