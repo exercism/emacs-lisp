@@ -6,7 +6,7 @@
 
 
 (load-file "gigasecond.el")
-(declare-function add "gigasecond.el" (moment))
+(declare-function add "gigasecond.el" (second minute hour day month year))
 
 
 (ert-deftest date-only-specification-of-time ()
