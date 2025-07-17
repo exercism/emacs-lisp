@@ -48,7 +48,8 @@
     (+ (mod (* (mmi a m) (- (- char ?a) b)) m) ?a)))
 
 (defun mmi (a m)
-  "Find the modular multiplicative inverse (MMI) of A mod M."
+  "Find the modular multiplicative inverse (MMI) of A mod M
+using the extended Euclidean algorithm."
   (let ((tt 0) ;; t is already used as constant for truth
         (newtt 1)
         (r m)
