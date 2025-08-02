@@ -18,6 +18,10 @@
   (should (equal (encode '(#x40)) '(#x40))))
 
 
+(ert-deftest asymmetric-single-byte ()
+  (should (equal (encode '(#x53)) '(#x53))))
+
+
 (ert-deftest largest-single-byte ()
   (should (equal (encode '(#x7F)) '(#x7F))))
 
@@ -28,6 +32,10 @@
 
 (ert-deftest arbitrary-double-byte ()
   (should (equal (encode '(#x2000)) '(#xC0 #x0))))
+
+
+(ert-deftest asymmetric-double-byte ()
+  (should (equal (encode '(#xAD)) '(#x81 #x2D))))
 
 
 (ert-deftest largest-double-byte ()
@@ -42,6 +50,10 @@
   (should (equal (encode '(#x100000)) '(#xC0 #x80 #x0))))
 
 
+(ert-deftest asymmetric-triple-byte ()
+  (should (equal (encode '(#x1D59C)) '(#x87 #xAB #x1C))))
+
+
 (ert-deftest largest-triple-byte ()
   (should (equal (encode '(#x1FFFFF)) '(#xFF #xFF #x7F))))
 
@@ -54,6 +66,10 @@
   (should (equal (encode '(#x8000000)) '(#xC0 #x80 #x80 #x0))))
 
 
+(ert-deftest asymmetric-quadruple-byte ()
+  (should (equal (encode '(#x357704)) '(#x81 #xD5 #xEE #x4))))
+
+
 (ert-deftest largest-quadruple-byte ()
   (should (equal (encode '(#xFFFFFFF)) '(#xFF #xFF #xFF #x7F))))
 
@@ -64,6 +80,10 @@
 
 (ert-deftest arbitrary-quintuple-byte ()
   (should (equal (encode '(#xFF000000)) '(#x8F #xF8 #x80 #x80 #x0))))
+
+
+(ert-deftest asymmetric-quintuple-byte ()
+  (should (equal (encode '(#x86656105)) '(#x88 #xB3 #x95 #xC2 #x5))))
 
 
 (ert-deftest maximum-32-bit-integer-input ()
