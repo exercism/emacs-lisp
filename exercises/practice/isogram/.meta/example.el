@@ -19,7 +19,7 @@
          (characters (cl-coerce (upcase phrase) 'list))
          (letters (cl-remove-if-not 'upper-char-p characters)))
     (cl-loop for c in letters
-      do (setq updated (logior bitset (lsh 1 (- c ?A))))
+      do (setq updated (logior bitset (ash 1 (- c ?A))))
       always (> updated bitset)
       do (setq bitset updated))))
 
