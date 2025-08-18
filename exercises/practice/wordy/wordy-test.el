@@ -13,8 +13,24 @@
   (should (= 5 (answer "What is 5?"))))
 
 
+(ert-deftest just-a-zero ()
+  (should (= 0 (answer "What is 0?"))))
+
+
+(ert-deftest just-a-negative-number ()
+  (should (= -123 (answer "What is -123?"))))
+
+
 (ert-deftest addition ()
   (should (= 2 (answer "What is 1 plus 1?"))))
+
+
+(ert-deftest addition-with-a-left-hand-zero ()
+  (should (= 2 (answer "What is 0 plus 2?"))))
+
+
+(ert-deftest addition-with-a-right-hand-zero ()
+  (should (= 3 (answer "What is 3 plus 0?"))))
 
 
 (ert-deftest more-addition ()
@@ -70,35 +86,35 @@
 
 
 (ert-deftest unknown-operation ()
-  (should-error (answer "What is 52 cubed?")))
+  (should-error (answer "What is 52 cubed?") :type 'parse-error))
 
 
 (ert-deftest non-math-question ()
-  (should-error (answer "Who is the President of the United States?")))
+  (should-error (answer "Who is the President of the United States?") :type 'parse-error))
 
 
 (ert-deftest reject-problem-missing-an-operand ()
-  (should-error (answer "What is 1 plus?")))
+  (should-error (answer "What is 1 plus?") :type 'parse-error))
 
 
 (ert-deftest reject-problem-with-no-operands-or-operators ()
-  (should-error (answer "What is?")))
+  (should-error (answer "What is?") :type 'parse-error))
 
 
 (ert-deftest reject-two-operations-in-a-row ()
-  (should-error (answer "What is 1 plus plus 2?")))
+  (should-error (answer "What is 1 plus plus 2?") :type 'parse-error))
 
 
 (ert-deftest reject-two-numbers-in-a-row ()
-  (should-error (answer "What is 1 plus 2 1?")))
+  (should-error (answer "What is 1 plus 2 1?") :type 'parse-error))
 
 
 (ert-deftest reject-postfix-notation ()
-  (should-error (answer "What is 1 2 plus?")))
+  (should-error (answer "What is 1 2 plus?") :type 'parse-error))
 
 
 (ert-deftest reject-prefix-notation ()
-  (should-error (answer "What is plus 1 2?")))
+  (should-error (answer "What is plus 1 2?") :type 'parse-error))
 
 
 (provide 'wordy-test)
