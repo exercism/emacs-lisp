@@ -2,6 +2,9 @@
 
 ;;; Commentary:
 
+;; For this exercise we don't require specific error strings,
+;; to avoid constraining solution approaches.
+
 ;;; Code:
 
 
