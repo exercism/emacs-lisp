@@ -956,6 +956,14 @@
         "difficulty": 6
       },
       {
+        "slug": "wordy",
+        "name": "Wordy",
+        "uuid": "4aab08ad-7c41-427c-966e-cd90f4dc7ba5",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 6
+      },
+      {
         "slug": "dominoes",
         "name": "Dominoes",
         "uuid": "9260be95-c9a5-4975-a00e-21828f5e9241",
