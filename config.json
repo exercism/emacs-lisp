@@ -583,6 +583,14 @@
         ]
       },
       {
+        "slug": "line-up",
+        "name": "Line Up",
+        "uuid": "cb7d3d70-185d-47cb-b8b7-a0f6ce1c0cf5",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
         "slug": "matching-brackets",
         "name": "Matching Brackets",
         "uuid": "c000a3e1-3488-41ba-9d4c-6f06a96bc892",
@@ -818,10 +826,10 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 5,
+        "status": "deprecated",
         "topics": [
           "control_flow_loops"
-        ],
-        "status": "deprecated"
+        ]
       },
       {
         "slug": "nucleotide-count",
