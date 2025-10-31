@@ -1,4 +1,4 @@
-;;; isbn-verifier-test.el --- Tests for Isbn Verifier (exercism)  -*- lexical-binding: t; -*-
+;;; isbn-verifier-test.el --- Tests for ISBN Verifier (exercism)  -*- lexical-binding: t; -*-
 
 ;;; Commentary:
 
@@ -34,6 +34,14 @@
 
 (ert-deftest x-is-only-valid-as-a-check-digit ()
   (should-not (validp "3-598-2X507-9")))
+
+
+(ert-deftest only-one-check-digit-is-allowed ()
+  (should-not (validp "3-598-21508-96")))
+
+
+(ert-deftest x-is-not-substituted-by-the-value-10 ()
+  (should-not (validp "3-598-2X507-5")))
 
 
 (ert-deftest valid-isbn-without-separating-dashes ()

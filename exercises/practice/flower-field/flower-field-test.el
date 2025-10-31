@@ -131,5 +131,11 @@
                    "      ")))))
 
 
+(ert-deftest multiple-adjacent-flowers ()
+  (should (equal '("1**1")
+
+       (annotate '(" ** ")))))
+
+
 (provide 'flower-field-test)
 ;;; flower-field-test.el ends here
