@@ -9,7 +9,7 @@
 
 ;;; Perfect Numbers
 (ert-deftest smallest-perfect-number ()
-    (should (equal (classify 6) 'perfect)))
+  (should (equal (classify 6) 'perfect)))
 
 (ert-deftest medium-perfect-number ()
   (should (equal (classify 28) 'perfect)))
@@ -27,8 +27,11 @@
 (ert-deftest large-abundant-number ()
   (should (equal (classify 33550335) 'abundant)))
 
+(ert-deftest perfect-square-abundant-number ()
+  (should (equal (classify 196) 'abundant)))
+
 ;;; Deficient Numbers
-(ert-deftest smallest-deficient-number ()
+(ert-deftest smallest-prime-deficient-number ()
   (should (equal (classify 2) 'deficient)))
 
 (ert-deftest smallest-non-prime-deficient-number ()
@@ -40,7 +43,7 @@
 (ert-deftest large-deficient-number ()
   (should (equal (classify 33550337) 'deficient)))
 
-(ert-deftest edge-case-no-factors-other-than-self ()
+(ert-deftest edge-case-no-factors-other-than-itself ()
   (should (equal (classify 1) 'deficient)))
 
 ;;; Invalid Inputs
@@ -56,5 +59,5 @@
     (should-error (classify -1))
     '(error . ("Classification is only possible for natural numbers")))))
 
-(provide 'perfect-numbers)
+(provide 'perfect-numbers-test)
 ;;; perfect-numbers-test.el ends here
