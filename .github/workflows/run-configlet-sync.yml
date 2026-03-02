@@ -8,6 +8,3 @@ on:
 jobs:
   call-gha-workflow:
     uses: exercism/github-actions/.github/workflows/configlet-sync.yml@main
-    with:
-      sync_docs: true
-      sync_tests: false
