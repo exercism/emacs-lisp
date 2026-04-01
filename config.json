@@ -494,6 +494,14 @@
         ]
       },
       {
+        "slug": "high-scores",
+        "name": "High Scores",
+        "uuid": "ef8598df-4c7d-4fa0-aeee-b7ca32f0b2ad",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "prime-factors",
         "name": "Prime Factors",
         "uuid": "cb79cb42-7efe-49fe-98c4-68dbdc32f2a3",
