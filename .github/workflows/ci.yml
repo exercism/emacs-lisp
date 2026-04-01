@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-24.04
 
     steps:
-      - uses: purcell/setup-emacs@7a92187aa5b5a3b854cbdfa47499fbd3d1207163
+      - uses: purcell/setup-emacs@bdc64dc730ae1fcba200bfd52cb1b4cf6159cbe5
         with:
           version: 30.1
 
