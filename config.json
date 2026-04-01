@@ -873,6 +873,14 @@
         "difficulty": 5
       },
       {
+        "slug": "rational-numbers",
+        "name": "Rational Numbers",
+        "uuid": "c95f7c1f-eb73-4506-abe2-0496fd365793",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "robot-name",
         "name": "Robot Name",
         "uuid": "55bc8c2a-1db3-4d26-b7c6-a778b61bf46b",
