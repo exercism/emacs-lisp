@@ -932,6 +932,14 @@
         "difficulty": 5
       },
       {
+        "slug": "relative-distance",
+        "name": "Relative Distance",
+        "uuid": "87476418-9bee-4f93-b266-0a3c5f9abef4",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 6
+      },
+      {
         "slug": "satellite",
         "name": "Satellite",
         "uuid": "02d23d01-c4c6-4fd1-9e0b-f6a457c402ed",
