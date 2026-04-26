@@ -13,7 +13,7 @@
 (declare-function absrational "rational-numbers.el" (r))
 (declare-function exprational "rational-numbers.el" (r n))
 (declare-function expreal "rational-numbers.el" (x r))
-(declare-function reduce "rational-numbers.el" (r))
+(declare-function reducerational "rational-numbers.el" (r))
 
 
 (ert-deftest add-two-positive-rational-numbers ()
@@ -161,31 +161,31 @@
 
 
 (ert-deftest reduce-a-positive-rational-number-to-lowest-terms ()
-  (should (equal '(1 . 2) (reduce '(2 . 4)))))
+  (should (equal '(1 . 2) (reducerational '(2 . 4)))))
 
 
 (ert-deftest reduce-places-the-minus-sign-on-the-numerator ()
-  (should (equal '(-3 . 4) (reduce '(3 . -4)))))
+  (should (equal '(-3 . 4) (reducerational '(3 . -4)))))
 
 
 (ert-deftest reduce-a-negative-rational-number-to-lowest-terms ()
-  (should (equal '(-2 . 3) (reduce '(-4 . 6)))))
+  (should (equal '(-2 . 3) (reducerational '(-4 . 6)))))
 
 
 (ert-deftest reduce-a-rational-number-with-a-negative-denominator-to-lowest-terms ()
-  (should (equal '(-1 . 3) (reduce '(3 . -9)))))
+  (should (equal '(-1 . 3) (reducerational '(3 . -9)))))
 
 
 (ert-deftest reduce-zero-to-lowest-terms ()
-  (should (equal '(0 . 1) (reduce '(0 . 6)))))
+  (should (equal '(0 . 1) (reducerational '(0 . 6)))))
 
 
 (ert-deftest reduce-an-integer-to-lowest-terms ()
-  (should (equal '(-2 . 1) (reduce '(-14 . 7)))))
+  (should (equal '(-2 . 1) (reducerational '(-14 . 7)))))
 
 
 (ert-deftest reduce-one-to-lowest-terms ()
-  (should (equal '(1 . 1) (reduce '(13 . 13)))))
+  (should (equal '(1 . 1) (reducerational '(13 . 13)))))
 
 
 (provide 'rational-numbers-test)

@@ -5,7 +5,7 @@
 ;;; Code:
 
 
-(defun reduce (r)
+(defun reducerational (r)
   (cl-labels ((rat-gcd (a b)
                 (if (= b 0) (abs a)
                   (rat-gcd b (% a b)))))
@@ -16,24 +16,24 @@
       (cons (/ a c) (/ b c)))))
 
 (defun add (r1 r2)
-  (reduce (cons (+ (* (car r1) (cdr r2)) (* (car r2) (cdr r1)))
-                (* (cdr r1) (cdr r2)))))
+  (reducerational (cons (+ (* (car r1) (cdr r2)) (* (car r2) (cdr r1)))
+                        (* (cdr r1) (cdr r2)))))
 
 (defun sub (r1 r2)
   (add r1 (cons (- (car r2)) (cdr r2))))
 
 (defun mul (r1 r2)
-  (reduce (cons (* (car r1) (car r2))
-                (* (cdr r1) (cdr r2)))))
+  (reducerational (cons (* (car r1) (car r2))
+                        (* (cdr r1) (cdr r2)))))
 
 (defun div (r1 r2)
   (mul r1 (cons (cdr r2) (car r2))))
 
 (defun absrational (r)
-  (reduce (cons (abs (car r)) (abs (cdr r)))))
+  (reducerational (cons (abs (car r)) (abs (cdr r)))))
 
 (defun exprational (r n)
-  (let ((r (reduce r)))
+  (let ((r (reducerational r)))
     (if (< n 0)
         (exprational (cons (cdr r) (car r)) (- n))
       (cons (expt (car r) n) (expt (cdr r) n)))))

@@ -5,7 +5,7 @@
 ;;; Code:
 
 
-(defun reduce (r)
+(defun reducerational (r)
   (error "Delete this S-Expression and write your own implementation"))
 
 (defun add (r1 r2)
