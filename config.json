@@ -988,6 +988,14 @@
         "difficulty": 6
       },
       {
+        "slug": "book-store",
+        "name": "Book Store",
+        "uuid": "58518532-020f-4824-930f-4eb12532fa08",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 7
+      },
+      {
         "slug": "dominoes",
         "name": "Dominoes",
         "uuid": "9260be95-c9a5-4975-a00e-21828f5e9241",
