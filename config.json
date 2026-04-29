@@ -1023,6 +1023,14 @@
         "difficulty": 8
       },
       {
+        "slug": "connect",
+        "name": "Connect",
+        "uuid": "0f7224b0-bb7c-401f-b203-0b3098f206fd",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 9
+      },
+      {
         "slug": "parallel-letter-frequency",
         "name": "Parallel Letter Frequency",
         "uuid": "3daf3903-1eb0-49b9-827a-76e6b7ca25fb",
