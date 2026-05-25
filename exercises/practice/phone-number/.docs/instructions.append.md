@@ -1,5 +1,7 @@
 # Instructions Append
 
+## Implementation
+
 In addition to the function, _numbers_, that cleans up phone numbers, you need to write two more functions, _area-code_ and _pprint_ in the Emacs Lisp track. 
 
 Each of the extra functions takes the phone number as its only parameter.
