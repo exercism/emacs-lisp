@@ -15,7 +15,7 @@ jobs:
         with:
           version: 30.2
 
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v4.0.0
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
 
       - name: Run exercism/emacs-lisp ci (runs tests) for all exercises
         run: |
