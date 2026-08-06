@@ -97,7 +97,8 @@
                    (valid-range-p constitution)
                    (valid-range-p intelligence)
                    (valid-range-p wisdom)
-                   (valid-range-p charisma)))))
+                   (valid-range-p charisma)
+                   (should (= (+ 10 (modifier constitution)) _hitpoints))))))
 
 
 (provide 'dnd-character-test)
