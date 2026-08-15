@@ -1015,6 +1015,14 @@
         "difficulty": 8
       },
       {
+        "slug": "piecing-it-together",
+        "name": "Piecing It Together",
+        "uuid": "1d6c913c-dada-4c6c-88eb-b8450d3e5a43",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 8
+      },
+      {
         "slug": "zebra-puzzle",
         "name": "Zebra Puzzle",
         "uuid": "bd7c4195-2d89-436b-918f-24224a95610d",
