@@ -956,6 +956,14 @@
         "difficulty": 5
       },
       {
+        "slug": "change",
+        "name": "Change",
+        "uuid": "8b322fd1-d481-4cc4-911e-ad0e3b74d620",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 6
+      },
+      {
         "slug": "satellite",
         "name": "Satellite",
         "uuid": "02d23d01-c4c6-4fd1-9e0b-f6a457c402ed",
