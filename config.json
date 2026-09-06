@@ -653,6 +653,14 @@
         "difficulty": 4
       },
       {
+        "slug": "transpose",
+        "name": "Transpose",
+        "uuid": "486e4c05-1741-4b33-8191-86bd3f50149d",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 4
+      },
+      {
         "slug": "twelve-days",
         "name": "Twelve Days",
         "uuid": "de31fc58-e80b-485f-9370-5409bb229cd8",
