@@ -49,9 +49,9 @@ There are several ways of contributing to the Emacs Lisp track. Examples would b
 - contributing [approaches][exercism-approaches]
 - contributing [articles][exercism-articles]
 
-Feel free to open an issue or open a pull request for any of those items.
-Pull Requests should be focused on a single change.
-They must pass the CI system and need a review by a maintainer before they can get merged.
+Before opening a pull request please have look into [Contributors Pull Request
+Guide](https://exercism.org/docs/building/github/contributors-pull-request-guide)
+and discuss your proposed contribution in the [discourse forum][discourse-forum-emacs-lisp].
 
 You can also start work on
 
@@ -59,7 +59,7 @@ You can also start work on
 - an [analyzer][exercism-analyzers], used to give automated feedback on student solutions
 - a [representer][exercism-representers], used to give automated feedback on sutdent solutions
 
-If you want to start work on one of those items please first get in touch via [GitHub issues][emacs-lisp-github-issues] or the [discourse forum][discourse-forum-emacs-lisp].
+If you want to start work on one of those items please first get in touch via the [discourse forum][discourse-forum-emacs-lisp].
 
 <img align="left" width="85" height="80" src="https://github.com/exercism/website-icons/blob/main/exercises/word-search.svg">
 
