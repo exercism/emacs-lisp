@@ -83,15 +83,22 @@
                    :factors ((3297 3333)))
                  (smallest 3215 4000))))
 
+
+;; Emacs Lisp track specific:
+
 (ert-deftest find-the-smallest-palindrome-from-six-digit-factors ()
   (should (equal '(:value 50067176005
                    :factors ((223619 223895)))
                  (smallest 223617 244818))))
 
+
+;; Emacs Lisp track specific:
+
 (ert-deftest find-the-largest-palindrome-from-six-digit-factors ()
   (should (equal '(:value 59842824895
                    :factors ((244445 244811)))
                  (largest 223617 244818))))
+
 
 (provide 'palindrome-products-test)
 ;;; palindrome-products-test.el ends here
