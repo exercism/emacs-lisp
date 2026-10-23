@@ -9,15 +9,16 @@
 (declare-function jigsaw-data "piecing-it-together.el" (partial))
 
 
-(ert-deftest 1000-pieces-puzzle-with-1.6-aspect-ratio ()
+(defun exercism/plist-equal-p (a b)
+  (seq-set-equal-p (seq-partition a 2) (seq-partition b 2)))
+
+
+(ert-deftest 1000-pieces-puzzle-with-1_6-aspect-ratio ()
   (let ((expected (list :pieces 1000 :border 126 :inside 874
                         :rows 25 :columns 40
                         :aspect-ratio 1.6 :format 'landscape))
         (actual (jigsaw-data (list :pieces 1000 :aspect-ratio 1.6))))
-    (dolist (key (list :pieces :border :inside :rows
-                       :columns :aspect-ratio :format))
-      (should (equal (plist-get expected key)
-                     (plist-get actual key))))))
+    (should (exercism/plist-equal-p expected actual))))
 
 
 (ert-deftest square-puzzle-with-32-rows ()
@@ -25,10 +26,7 @@
                         :rows 32 :columns 32
                         :aspect-ratio 1.0 :format 'square))
         (actual (jigsaw-data (list :rows 32 :format 'square))))
-    (dolist (key (list :pieces :border :inside :rows
-                       :columns :aspect-ratio :format))
-      (should (equal (plist-get expected key)
-                     (plist-get actual key))))))
+    (should (exercism/plist-equal-p expected actual))))
 
 
 (ert-deftest 400-pieces-square-puzzle-with-only-inside-pieces-and-aspect-ratio ()
@@ -36,21 +34,15 @@
                         :rows 20 :columns 20
                         :aspect-ratio 1.0 :format 'square))
         (actual (jigsaw-data (list :inside 324 :aspect-ratio 1.0))))
-    (dolist (key (list :pieces :border :inside :rows
-                       :columns :aspect-ratio :format))
-      (should (equal (plist-get expected key)
-                     (plist-get actual key))))))
+    (should (exercism/plist-equal-p expected actual))))
 
 
-(ert-deftest 1500-pieces-landscape-puzzle-with-30-rows-and-1.6-aspect-ratio ()
+(ert-deftest 1500-pieces-landscape-puzzle-with-30-rows-and-1_6-aspect-ratio ()
   (let ((expected (list :pieces 1500 :border 156 :inside 1344
                         :rows 30 :columns 50
                         :aspect-ratio 1.6666666666666667 :format 'landscape))
         (actual (jigsaw-data (list :rows 30 :aspect-ratio 1.6666666666666667))))
-    (dolist (key (list :pieces :border :inside :rows
-                       :columns :aspect-ratio :format))
-      (should (equal (plist-get expected key)
-                     (plist-get actual key))))))
+    (should (exercism/plist-equal-p expected actual))))
 
 
 (ert-deftest 300-pieces-portrait-puzzle-with-70-border-pieces ()
@@ -58,18 +50,22 @@
                         :rows 25 :columns 12
                         :aspect-ratio 0.48 :format 'portrait))
         (actual (jigsaw-data (list :pieces 300 :border 70 :format 'portrait))))
-    (dolist (key (list :pieces :border :inside :rows
-                       :columns :aspect-ratio :format))
-      (should (equal (plist-get expected key)
-                     (plist-get actual key))))))
+    (should (exercism/plist-equal-p expected actual))))
 
 
 (ert-deftest puzzle-with-insufficient-data ()
-  (should-error (jigsaw-data (list :pieces 1500 :format 'landscape))))
+  (let ((error-data
+         (should-error (jigsaw-data (list :pieces 1500 :format 'landscape)))))
+    (should
+     (string= "Insufficient data" (error-message-string error-data)))))
 
 
 (ert-deftest puzzle-with-contradictory-data ()
-  (should-error (jigsaw-data (list :rows 100 :columns 1000 :format 'square))))
+  (let ((error-data
+         (should-error
+          (jigsaw-data (list :rows 100 :columns 1000 :format 'square)))))
+    (should
+     (string= "Contradictory data" (error-message-string error-data)))))
 
 
 (provide 'piecing-it-together-test)
