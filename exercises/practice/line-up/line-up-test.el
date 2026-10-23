@@ -79,9 +79,44 @@
                    (ticket "Washi" 21))))
 
 
+(ert-deftest
+    format-exceptional-ordinal-numeral-22-ending-in-nd-even-though-it-is-a-multiple-of-11
+    ()
+  (should (string= "Ingrid, you are the 22nd customer we serve today. Thank you!"
+                   (ticket "Ingrid" 22))))
+
+
+(ert-deftest
+    format-exceptional-ordinal-numeral-33-ending-in-rd-even-though-it-is-a-multiple-of-11
+    ()
+  (should (string= "Mario, you are the 33rd customer we serve today. Thank you!"
+                   (ticket "Mario" 33))))
+
+
+(ert-deftest
+    format-exceptional-ordinal-numeral-52-ending-in-nd-even-though-it-is-a-multiple-of-13
+    ()
+  (should (string= "Quentin, you are the 52nd customer we serve today. Thank you!"
+                   (ticket "Quentin" 52))))
+
+
 (ert-deftest format-exceptional-ordinal-numeral-62 ()
   (should (string= "Nayra, you are the 62nd customer we serve today. Thank you!"
                    (ticket "Nayra" 62))))
+
+
+(ert-deftest
+    format-non-exceptional-ordinal-numeral-72-ending-in-nd-even-though-it-is-a-multiple-of-12
+    ()
+  (should (string= "Ugo, you are the 72nd customer we serve today. Thank you!"
+                   (ticket "Ugo" 72))))
+
+
+(ert-deftest
+    format-exceptional-ordinal-numeral-91-ending-in-st-even-though-it-is-a-multiple-of-13
+    ()
+  (should (string= "Boris, you are the 91st customer we serve today. Thank you!"
+                   (ticket "Boris" 91))))
 
 
 (ert-deftest format-exceptional-ordinal-numeral-100 ()
@@ -102,6 +137,11 @@
 (ert-deftest format-exceptional-ordinal-numeral-123 ()
   (should (string= "Yma, you are the 123rd customer we serve today. Thank you!"
                    (ticket "Yma" 123))))
+
+
+(ert-deftest format-large-number-972-ending-in-nd-even-though-it-is-a-multiple-of-12 ()
+  (should (string= "Elias, you are the 972nd customer we serve today. Thank you!"
+                   (ticket "Elias" 972))))
 
 
 (provide 'line-up-test)
