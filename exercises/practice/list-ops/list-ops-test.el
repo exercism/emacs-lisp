@@ -101,8 +101,12 @@
   (should (equal '() (list-reverse '()))))
 
 
-(ert-deftest reverse-list-with-members ()
+(ert-deftest reverse-non-empty-even-length-list ()
   (should (equal '(7 5 3 1) (list-reverse '(1 3 5 7)))))
+
+
+(ert-deftest reverse-non-empty-odd-length-list ()
+  (should (equal '(13 11 9 7 5 3 1) (list-reverse '(1 3 5 7 9 11 13)))))
 
 
 (ert-deftest reverse-list-not-flattened ()

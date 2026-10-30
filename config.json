@@ -1023,6 +1023,14 @@
         "difficulty": 8
       },
       {
+        "slug": "palindrome-products",
+        "name": "Palindrome Products",
+        "uuid": "ddbf1590-ce3d-4ab5-94c5-08ecbee79764",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 8
+      },
+      {
         "slug": "piecing-it-together",
         "name": "Piecing It Together",
         "uuid": "1d6c913c-dada-4c6c-88eb-b8450d3e5a43",
