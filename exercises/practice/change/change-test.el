@@ -59,16 +59,28 @@
                  (find-fewest-coins 0 '(1 5 10 21 25)))))
 
 
+;; Error messages use "cannot" rather than the canonical "can't", as `error'
+;; would convert the apostrophe to a curly quote.
+
 (ert-deftest error-testing-for-change-smaller-than-the-smallest-of-coins ()
-  (should-error (find-fewest-coins 3 '(5 10))))
+  (let ((error-data (should-error (find-fewest-coins 3 '(5 10)))))
+    (should
+     (string=
+      "cannot make target with given coins" (error-message-string error-data)))))
 
 
 (ert-deftest error-if-no-combination-can-add-up-to-target ()
-  (should-error (find-fewest-coins 94 '(5 10))))
+  (let ((error-data (should-error (find-fewest-coins 94 '(5 10)))))
+    (should
+     (string=
+      "cannot make target with given coins" (error-message-string error-data)))))
 
 
 (ert-deftest cannot-find-negative-change-values ()
-  (should-error (find-fewest-coins -5 '(1 2 5))))
+  (let ((error-data (should-error (find-fewest-coins -5 '(1 2 5)))))
+    (should
+     (string=
+      "target cannot be negative" (error-message-string error-data)))))
 
 
 (provide 'change-test)

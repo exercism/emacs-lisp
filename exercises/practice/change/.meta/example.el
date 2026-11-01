@@ -7,7 +7,7 @@
 (require 'cl-lib)
 
 (defun find-fewest-coins (target coins)
-  (when (< target 0) (error "target can't be negative"))
+  (when (< target 0) (error "target cannot be negative"))
   (let* ((len (+ target (apply #'max coins) 1))
          (best-count (make-vector len len))
          (best-coin (make-vector len 0)))
@@ -21,7 +21,7 @@
               (aset best-coin j coin)))
 
     (when (= (aref best-count target) len)
-      (error "can't make target with given coins"))
+      (error "cannot make target with given coins"))
     (cl-loop for remaining = target then (- remaining coin)
       for coin = (aref best-coin remaining)
       while (> remaining 0)
