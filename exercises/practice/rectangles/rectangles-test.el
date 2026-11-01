@@ -118,6 +118,8 @@
                            "+-+ +-+")))))
 
 
+;; Emacs Lisp track specific:
+
 (ert-deftest very-large-input ()
   (should (= 2063
              (rectangles '("      +-----+--------+    +-----+ "
