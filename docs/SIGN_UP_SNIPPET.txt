@@ -1,0 +1,8 @@
+(defun most-common-word (text)
+  (let ((counts (make-hash-table :test #'equal))
+        (best ""))
+    (dolist (word (split-string (downcase text) " "))
+      (puthash word (1+ (gethash word counts 0)) counts)
+      (when (> (gethash word counts) (gethash best counts 0))
+        (setq best word)))
+    (format "\"%s\" appears %d times" best (gethash best counts))))
